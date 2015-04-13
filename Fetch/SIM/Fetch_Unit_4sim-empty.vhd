@@ -11,6 +11,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
+use ieee.numeric_std.ALL; 
 
 -- ***************************************************************************************************
 -- ***************************************************************************************************
@@ -215,28 +216,63 @@ CK <=  CK_25MHz;
 
 IMem_adrs <= PC_reg; -- connect PC_reg to IMem
 
+	process (CK,RESET)
+	begin
+		if RESET = '1' then 
+			PC_reg <= x"00400000";
+		elsif CK'event and CK='1' then
+			if HOLD = '0' then
+				PC_reg <= PC_mux_out;
+			end if;
+		end if;
+	end process;
+
 --PC source mux
-
-
+	
+	with PC_source select
+		PC_mux_out <=
+		PC_plus_4 when "00", 
+		branch_adrs when "01",
+		jr_adrs when "10",
+		jump_adrs when "11";
+		
 -- PC Adder - incrementing PC by 4  (create the PC_plus_4 signal)
-
+	
+	PC_plus_4 <= PC_reg + 4;
 
 -- IR_reg   (rename of the IMem_rd_data signal)
-
+	
+	IR_reg <= IMem_rd_data;
 
 -- imm sign extension	  (create the sext_imm signal)
 
+	sext_imm <= SXT(imm, 32);
 
 -- BRANCH address  (create the branch_adrs signal)
-
-
+	
+	branch_adrs <= PC_plus_4_pID + to_stdlogicvector(to_bitvector(imm) sla 4);
+	
 -- JUMP address    (create the jump_adrs signal)
 
-
+	jump_adrs <= PC_plus_4_pID(31 downto 28) & IR_Reg(25 downto 0) & b"00";
+	
 -- JR address    (create the jr_adrs signal)  
 
+	jr_adrs <= x"00400004";
 	
 --PC_plus_4_dlyd register    (create the PC_plus_4_pID signal)
+
+	process (CK,RESET)
+	begin
+		if RESET = '1' then 
+			PC_plus_4_pID <= b"00000000000000000000000000000000";
+		elsif CK'event and CK='1' then
+			if HOLD = '0' then
+				PC_plus_4_pID <= pc_plus_4;
+			end if;
+		end if;
+	end process;
+
 
 
 -- instruction decoder
