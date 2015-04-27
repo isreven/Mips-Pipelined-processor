@@ -180,13 +180,13 @@ IMem_adrs <= PC_reg; -- connect PC_reg to IMem
 	with imm(16 downto 15) select
 		sext_imm <=
 		x"0000" & imm when "0",
-		x"1111" & imm when "1";
+		x"FFFF" & imm when "1";
 		
 	-- sext_imm <= SXT(imm, 32);
 
 -- BRANCH address  (create the branch_adrs signal)
 	
-	branch_adrs <= PC_plus_4_pID + imm(29 downto 0) & b"00";
+	branch_adrs <= PC_plus_4_pID + (imm(29 downto 0) & b"00");
 
 -- JUMP address    (create the jump_adrs signal)
 

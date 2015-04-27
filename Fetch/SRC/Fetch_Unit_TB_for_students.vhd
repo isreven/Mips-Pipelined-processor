@@ -145,7 +145,7 @@ function  to_hex_string(std_vec: in std_logic_vector) return string is
 -- =========================================================================
 
 	
- FILE data_file : text open read_mode is "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\Fetch\SIM\HW2_Fetch_Unit_TB_data.dat";
+ FILE data_file : text open read_mode is "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\SRC\HW2_Fetch_Unit_TB_data.dat";
 
 
 
