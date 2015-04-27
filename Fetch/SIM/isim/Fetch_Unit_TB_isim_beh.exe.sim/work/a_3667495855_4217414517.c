@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/Fetch/SIM/Clock_driver_for_sim.vhd";
+static const char *ng0 = "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/Fetch/SIM/Clock_driver_for_sim.vhd";
 extern char *IEEE_P_2592010699;
 
 unsigned char ieee_p_2592010699_sub_1690584930_503743352(char *, unsigned char );

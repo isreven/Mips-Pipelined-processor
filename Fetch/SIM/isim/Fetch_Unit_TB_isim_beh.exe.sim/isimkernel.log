@@ -2,5 +2,9 @@ Command line:
    Fetch_Unit_TB_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  51615
+     -socket  58906
 
+Mon Apr 20 20:38:15 2015
+
+
+ Elaboration Time: 0.171601 sec

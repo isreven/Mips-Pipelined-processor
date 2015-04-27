@@ -60,6 +60,38 @@
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Fetch_Unit_TB_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Fetch_Unit_TB_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Fetch_Unit_TB_stx_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="HW2_top_4sim.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="HW2_top_4sim.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="HW2_top_4sim.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="HW2_top_4sim.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="HW2_top_4sim.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="HW2_top_4sim.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="HW2_top_4sim.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="HW2_top_4sim.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="HW2_top_4sim.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="HW2_top_4sim.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="HW2_top_4sim.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="HW2_top_4sim.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="HW2_top_4sim.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="HW2_top_4sim.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="HW2_top_4sim.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="HW2_top_4sim.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="HW2_top_4sim.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="HW2_top_4sim.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="HW2_top_4sim.xst"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="HW2_top_4sim_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="HW2_top_4sim_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="HW2_top_4sim_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="HW2_top_4sim_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="HW2_top_4sim_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="HW2_top_4sim_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="HW2_top_4sim_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="HW2_top_4sim_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="HW2_top_4sim_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="HW2_top_4sim_par.xrpt"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="HW2_top_4sim_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="HW2_top_4sim_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="HW2_top_4sim_xst.xrpt"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
@@ -77,50 +109,51 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1428946101" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1428946101">
+    <transform xil_pn:end_ts="1429551483" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1429551483">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1428946101" xil_pn:in_ck="-777581612450710730" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1428946101">
+    <transform xil_pn:end_ts="1429551484" xil_pn:in_ck="6068109120713513732" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1429551483">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Clock_driver_for_sim.vhd"/>
       <outfile xil_pn:name="Fetch_Unit_4sim-empty.vhd"/>
       <outfile xil_pn:name="Fetch_Unit_Host_Intf_4sim.vhd"/>
-      <outfile xil_pn:name="Fetch_Unit_TB.vhd"/>
+      <outfile xil_pn:name="Fetch_Unit_TB_for_students.vhd"/>
+      <outfile xil_pn:name="HW2_top_4sim.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1428946101" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-7617379025153892820" xil_pn:start_ts="1428946101">
+    <transform xil_pn:end_ts="1429551484" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-7617379025153892820" xil_pn:start_ts="1429551484">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1428946101" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-5498577286246217512" xil_pn:start_ts="1428946101">
+    <transform xil_pn:end_ts="1429551484" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-5498577286246217512" xil_pn:start_ts="1429551484">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1428946101" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="6566721970975998591" xil_pn:start_ts="1428946101">
+    <transform xil_pn:end_ts="1429551484" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="8994970328537762777" xil_pn:start_ts="1429551484">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1428946101" xil_pn:in_ck="-777581612450710730" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1428946101">
+    <transform xil_pn:end_ts="1429551484" xil_pn:in_ck="6068109120713513732" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1429551484">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Clock_driver_for_sim.vhd"/>
       <outfile xil_pn:name="Fetch_Unit_4sim-empty.vhd"/>
       <outfile xil_pn:name="Fetch_Unit_Host_Intf_4sim.vhd"/>
-      <outfile xil_pn:name="Fetch_Unit_TB.vhd"/>
+      <outfile xil_pn:name="Fetch_Unit_TB_for_students.vhd"/>
+      <outfile xil_pn:name="HW2_top_4sim.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1428946109" xil_pn:in_ck="-777581612450710730" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-1887063232705316015" xil_pn:start_ts="1428946101">
+    <transform xil_pn:end_ts="1429551491" xil_pn:in_ck="6068109120713513732" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-1887063232705316015" xil_pn:start_ts="1429551484">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Fetch_Unit_TB_beh.prj"/>
       <outfile xil_pn:name="Fetch_Unit_TB_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1428946131" xil_pn:in_ck="6243462947820013517" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="6366960790608845172" xil_pn:start_ts="1428946131">
+    <transform xil_pn:end_ts="1429551492" xil_pn:in_ck="6243462947820013517" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="6366960790608845172" xil_pn:start_ts="1429551491">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Fetch_Unit_TB_isim_beh.wdb"/>
@@ -131,11 +164,11 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1428941535" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-5821995700115980962" xil_pn:start_ts="1428941535">
+    <transform xil_pn:end_ts="1429547110" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-7306375826375668168" xil_pn:start_ts="1429547110">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1428941535" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="6566721970975998591" xil_pn:start_ts="1428941535">
+    <transform xil_pn:end_ts="1429547110" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="8994970328537762777" xil_pn:start_ts="1429547110">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -143,7 +176,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1428941535" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="2566934573542928690" xil_pn:start_ts="1428941535">
+    <transform xil_pn:end_ts="1429547110" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-2431771083235741044" xil_pn:start_ts="1429547110">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -151,74 +184,74 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1428941535" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-5601301430798164599" xil_pn:start_ts="1428941535">
+    <transform xil_pn:end_ts="1429547110" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="5383511036389045027" xil_pn:start_ts="1429547110">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1428945899" xil_pn:in_ck="-6304158890244605176" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="2886102149176518441" xil_pn:start_ts="1428945843">
+    <transform xil_pn:end_ts="1429551250" xil_pn:in_ck="-1122889790865048905" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="9113050231136685219" xil_pn:start_ts="1429551191">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="Fetch_Unit_4sim.lso"/>
-      <outfile xil_pn:name="Fetch_Unit_4sim.ngc"/>
-      <outfile xil_pn:name="Fetch_Unit_4sim.ngr"/>
-      <outfile xil_pn:name="Fetch_Unit_4sim.prj"/>
-      <outfile xil_pn:name="Fetch_Unit_4sim.stx"/>
-      <outfile xil_pn:name="Fetch_Unit_4sim.syr"/>
-      <outfile xil_pn:name="Fetch_Unit_4sim.xst"/>
-      <outfile xil_pn:name="Fetch_Unit_4sim_xst.xrpt"/>
+      <outfile xil_pn:name="HW2_top_4sim.lso"/>
+      <outfile xil_pn:name="HW2_top_4sim.ngc"/>
+      <outfile xil_pn:name="HW2_top_4sim.ngr"/>
+      <outfile xil_pn:name="HW2_top_4sim.prj"/>
+      <outfile xil_pn:name="HW2_top_4sim.stx"/>
+      <outfile xil_pn:name="HW2_top_4sim.syr"/>
+      <outfile xil_pn:name="HW2_top_4sim.xst"/>
+      <outfile xil_pn:name="HW2_top_4sim_xst.xrpt"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1428941592" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="5779714282078196445" xil_pn:start_ts="1428941592">
+    <transform xil_pn:end_ts="1429547169" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-6516854127985637065" xil_pn:start_ts="1429547169">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1428945912" xil_pn:in_ck="-2157364226384362933" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="8717679015571809565" xil_pn:start_ts="1428945899">
+    <transform xil_pn:end_ts="1429551264" xil_pn:in_ck="-3733682610890289787" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="3046109974838923959" xil_pn:start_ts="1429551250">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="Fetch_Unit_4sim.bld"/>
-      <outfile xil_pn:name="Fetch_Unit_4sim.ngd"/>
-      <outfile xil_pn:name="Fetch_Unit_4sim_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="HW2_top_4sim.bld"/>
+      <outfile xil_pn:name="HW2_top_4sim.ngd"/>
+      <outfile xil_pn:name="HW2_top_4sim_ngdbuild.xrpt"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1428945962" xil_pn:in_ck="-2157364226384362932" xil_pn:name="TRANEXT_map_virtex7" xil_pn:prop_ck="3373610943407121171" xil_pn:start_ts="1428945912">
+    <transform xil_pn:end_ts="1429551322" xil_pn:in_ck="-3733682610890289786" xil_pn:name="TRANEXT_map_virtex7" xil_pn:prop_ck="3373610943407121171" xil_pn:start_ts="1429551264">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="Fetch_Unit_4sim.pcf"/>
-      <outfile xil_pn:name="Fetch_Unit_4sim_map.map"/>
-      <outfile xil_pn:name="Fetch_Unit_4sim_map.mrp"/>
-      <outfile xil_pn:name="Fetch_Unit_4sim_map.ncd"/>
-      <outfile xil_pn:name="Fetch_Unit_4sim_map.ngm"/>
-      <outfile xil_pn:name="Fetch_Unit_4sim_map.xrpt"/>
-      <outfile xil_pn:name="Fetch_Unit_4sim_summary.xml"/>
-      <outfile xil_pn:name="Fetch_Unit_4sim_usage.xml"/>
+      <outfile xil_pn:name="HW2_top_4sim.pcf"/>
+      <outfile xil_pn:name="HW2_top_4sim_map.map"/>
+      <outfile xil_pn:name="HW2_top_4sim_map.mrp"/>
+      <outfile xil_pn:name="HW2_top_4sim_map.ncd"/>
+      <outfile xil_pn:name="HW2_top_4sim_map.ngm"/>
+      <outfile xil_pn:name="HW2_top_4sim_map.xrpt"/>
+      <outfile xil_pn:name="HW2_top_4sim_summary.xml"/>
+      <outfile xil_pn:name="HW2_top_4sim_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1428946018" xil_pn:in_ck="7628587262982133605" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="-8066324139983898644" xil_pn:start_ts="1428945962">
+    <transform xil_pn:end_ts="1429551383" xil_pn:in_ck="-6848598738047275105" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="-8066324139983898644" xil_pn:start_ts="1429551322">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="Fetch_Unit_4sim.ncd"/>
-      <outfile xil_pn:name="Fetch_Unit_4sim.pad"/>
-      <outfile xil_pn:name="Fetch_Unit_4sim.par"/>
-      <outfile xil_pn:name="Fetch_Unit_4sim.ptwx"/>
-      <outfile xil_pn:name="Fetch_Unit_4sim.unroutes"/>
-      <outfile xil_pn:name="Fetch_Unit_4sim.xpi"/>
-      <outfile xil_pn:name="Fetch_Unit_4sim_pad.csv"/>
-      <outfile xil_pn:name="Fetch_Unit_4sim_pad.txt"/>
-      <outfile xil_pn:name="Fetch_Unit_4sim_par.xrpt"/>
+      <outfile xil_pn:name="HW2_top_4sim.ncd"/>
+      <outfile xil_pn:name="HW2_top_4sim.pad"/>
+      <outfile xil_pn:name="HW2_top_4sim.par"/>
+      <outfile xil_pn:name="HW2_top_4sim.ptwx"/>
+      <outfile xil_pn:name="HW2_top_4sim.unroutes"/>
+      <outfile xil_pn:name="HW2_top_4sim.xpi"/>
+      <outfile xil_pn:name="HW2_top_4sim_pad.csv"/>
+      <outfile xil_pn:name="HW2_top_4sim_pad.txt"/>
+      <outfile xil_pn:name="HW2_top_4sim_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1428946018" xil_pn:in_ck="-2157364226384363064" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="-3742689831323817471" xil_pn:start_ts="1428945996">
+    <transform xil_pn:end_ts="1429551383" xil_pn:in_ck="-3733682610890289918" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="-3742689831323817471" xil_pn:start_ts="1429551358">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="Fetch_Unit_4sim.twr"/>
-      <outfile xil_pn:name="Fetch_Unit_4sim.twx"/>
+      <outfile xil_pn:name="HW2_top_4sim.twr"/>
+      <outfile xil_pn:name="HW2_top_4sim.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
     </transform>
   </transforms>

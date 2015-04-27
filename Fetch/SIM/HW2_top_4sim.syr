@@ -1,0 +1,178 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: HW2_top_4sim.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "HW2_top_4sim.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "HW2_top_4sim"
+Output Format                      : NGC
+Target Device                      : xa7a100t-2I-csg324
+
+---- Source Options
+Top Module Name                    : HW2_top_4sim
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\Fetch\SIM\Fetch_Unit_Host_Intf_4sim.vhd" into library work
+Parsing entity <Fetch_Unit_Host_intf_4sim>.
+Parsing architecture <Behavioral> of entity <fetch_unit_host_intf_4sim>.
+Parsing VHDL file "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\Fetch\SIM\Fetch_Unit_4sim-empty.vhd" into library work
+Parsing entity <Fetch_Unit_4sim>.
+Parsing architecture <Behavioral> of entity <fetch_unit_4sim>.
+Parsing VHDL file "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\Fetch\SIM\Clock_driver_for_sim.vhd" into library work
+Parsing entity <Clock_Driver>.
+Parsing architecture <clock_divider> of entity <clock_driver>.
+Parsing VHDL file "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\Fetch\SIM\HW2_top_4sim.vhd" into library work
+Parsing entity <HW2_top_4sim>.
+Parsing architecture <Behavioral> of entity <hw2_top_4sim>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <HW2_top_4sim> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Fetch_Unit_4sim> (architecture <Behavioral>) from library <work>.
+ERROR:HDLCompiler:1318 - "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\Fetch\SIM\Fetch_Unit_4sim-empty.vhd" Line 180: Left bound value <16> of slice is out of range [15:0] of array <imm>
+ERROR:HDLCompiler:308 - "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\Fetch\SIM\Fetch_Unit_4sim-empty.vhd" Line 182: Choice "0" should have 2 elements
+ERROR:HDLCompiler:308 - "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\Fetch\SIM\Fetch_Unit_4sim-empty.vhd" Line 183: Choice "1" should have 2 elements
+WARNING:HDLCompiler:794 - "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\Fetch\SIM\Fetch_Unit_4sim-empty.vhd" Line 180: Statement might not cover all choices ; 'others' clause recommended
+WARNING:HDLCompiler:1127 - "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\Fetch\SIM\Fetch_Unit_4sim-empty.vhd" Line 181: Assignment to sext_imm ignored, since the identifier is never used
+Netlist Fetch_Unit_4sim(Behavioral) remains a blackbox, due to errors in its contents
+
+Elaborating entity <Fetch_Unit_Host_intf_4sim> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:1127 - "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\Fetch\SIM\Fetch_Unit_Host_Intf_4sim.vhd" Line 259: Assignment to fu_rdbk0 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\Fetch\SIM\Fetch_Unit_Host_Intf_4sim.vhd" Line 260: Assignment to fu_rdbk1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\Fetch\SIM\Fetch_Unit_Host_Intf_4sim.vhd" Line 261: Assignment to fu_rdbk2 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\Fetch\SIM\Fetch_Unit_Host_Intf_4sim.vhd" Line 262: Assignment to fu_rdbk3 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\Fetch\SIM\Fetch_Unit_Host_Intf_4sim.vhd" Line 263: Assignment to fu_rdbk4 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\Fetch\SIM\Fetch_Unit_Host_Intf_4sim.vhd" Line 264: Assignment to fu_rdbk5 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\Fetch\SIM\Fetch_Unit_Host_Intf_4sim.vhd" Line 265: Assignment to fu_rdbk6 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\Fetch\SIM\Fetch_Unit_Host_Intf_4sim.vhd" Line 266: Assignment to fu_rdbk7 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\Fetch\SIM\Fetch_Unit_Host_Intf_4sim.vhd" Line 267: Assignment to fu_rdbk8 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\Fetch\SIM\Fetch_Unit_Host_Intf_4sim.vhd" Line 268: Assignment to fu_rdbk9 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\Fetch\SIM\Fetch_Unit_Host_Intf_4sim.vhd" Line 269: Assignment to fu_rdbk10 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\Fetch\SIM\Fetch_Unit_Host_Intf_4sim.vhd" Line 270: Assignment to fu_rdbk11 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\Fetch\SIM\Fetch_Unit_Host_Intf_4sim.vhd" Line 271: Assignment to fu_rdbk12 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\Fetch\SIM\Fetch_Unit_Host_Intf_4sim.vhd" Line 272: Assignment to fu_rdbk13 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\Fetch\SIM\Fetch_Unit_Host_Intf_4sim.vhd" Line 273: Assignment to fu_rdbk14 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\Fetch\SIM\Fetch_Unit_Host_Intf_4sim.vhd" Line 274: Assignment to fu_rdbk15 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\Fetch\SIM\Fetch_Unit_Host_Intf_4sim.vhd" Line 277: Assignment to furs232_rx ignored, since the identifier is never used
+
+Elaborating entity <Clock_Driver> (architecture <clock_divider>) from library <work>.
+WARNING:HDLCompiler:634 - "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\Fetch\SIM\HW2_top_4sim.vhd" Line 135: Net <rdbk0_signal[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\Fetch\SIM\HW2_top_4sim.vhd" Line 136: Net <rdbk1_signal[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\Fetch\SIM\HW2_top_4sim.vhd" Line 137: Net <rdbk2_signal[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\Fetch\SIM\HW2_top_4sim.vhd" Line 138: Net <rdbk3_signal[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\Fetch\SIM\HW2_top_4sim.vhd" Line 139: Net <rdbk4_signal[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\Fetch\SIM\HW2_top_4sim.vhd" Line 140: Net <rdbk5_signal[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\Fetch\SIM\HW2_top_4sim.vhd" Line 141: Net <rdbk6_signal[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\Fetch\SIM\HW2_top_4sim.vhd" Line 142: Net <rdbk7_signal[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\Fetch\SIM\HW2_top_4sim.vhd" Line 143: Net <rdbk8_signal[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\Fetch\SIM\HW2_top_4sim.vhd" Line 144: Net <rdbk9_signal[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\Fetch\SIM\HW2_top_4sim.vhd" Line 145: Net <rdbk10_signal[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\Fetch\SIM\HW2_top_4sim.vhd" Line 146: Net <rdbk11_signal[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\Fetch\SIM\HW2_top_4sim.vhd" Line 147: Net <rdbk12_signal[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\Fetch\SIM\HW2_top_4sim.vhd" Line 148: Net <rdbk13_signal[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\Fetch\SIM\HW2_top_4sim.vhd" Line 149: Net <rdbk14_signal[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\Fetch\SIM\HW2_top_4sim.vhd" Line 150: Net <rdbk15_signal[31]> does not have a driver.
+--> 
+
+Total memory usage is 244568 kilobytes
+
+Number of errors   :    3 (   0 filtered)
+Number of warnings :   35 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

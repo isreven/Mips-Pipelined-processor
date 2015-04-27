@@ -1,0 +1,35 @@
+V3 18
+FL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/Fetch/ISE/Fetch_Unit-empty.vhd" 2015/04/27.19:48:23 P.20131013
+EN work/Fetch_Unit 1430153344 \
+      FL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/Fetch/ISE/Fetch_Unit-empty.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Fetch_Unit/Behavioral 1430153345 \
+      FL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/Fetch/ISE/Fetch_Unit-empty.vhd" \
+      EN work/Fetch_Unit 1430153344
+FL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/Fetch/ISE/HW2_top.vhd" 2015/04/18.23:55:30 P.20131013
+EN work/HW2_top 1430153350 \
+      FL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/Fetch/ISE/HW2_top.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/HW2_top/Behavioral 1430153351 \
+      FL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/Fetch/ISE/HW2_top.vhd" \
+      EN work/HW2_top 1430153350 CP Fetch_Unit CP Fetch_Unit_Host_intf \
+      CP Clock_Driver
+FL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/Fetch/SRC/Clock_driver.vhd" 2015/02/23.22:10:00 P.20131013
+EN work/Clock_Driver 1430153348 \
+      FL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/Fetch/SRC/Clock_driver.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/std_logic_arith 1381692177 PB ieee/NUMERIC_STD 1381692181 LB unisim \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Clock_Driver/clock_divider 1430153349 \
+      FL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/Fetch/SRC/Clock_driver.vhd" \
+      EN work/Clock_Driver 1430153348 CP BUFG
+FL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/Fetch/SRC/Fetch_Unit_Host_Intf.vhd" 2015/02/28.14:05:28 P.20131013
+EN work/Fetch_Unit_Host_intf 1430153346 \
+      FL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/Fetch/SRC/Fetch_Unit_Host_Intf.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Fetch_Unit_Host_intf/Behavioral 1430153347 \
+      FL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/Fetch/SRC/Fetch_Unit_Host_Intf.vhd" \
+      EN work/Fetch_Unit_Host_intf 1430153346 CP BYOC_Host_intf

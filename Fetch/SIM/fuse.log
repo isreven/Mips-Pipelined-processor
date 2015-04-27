@@ -1,14 +1,15 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/Fetch/SIM/Fetch_Unit_TB_isim_beh.exe -prj C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/Fetch/SIM/Fetch_Unit_TB_beh.prj work.Fetch_Unit_TB 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/Fetch/SIM/Fetch_Unit_TB_isim_beh.exe -prj C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/Fetch/SIM/Fetch_Unit_TB_beh.prj work.Fetch_Unit_TB 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Parsing VHDL file "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/Fetch/SIM/Fetch_Unit_Host_Intf_4sim.vhd" into library work
-Parsing VHDL file "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/Fetch/SIM/Clock_driver_for_sim.vhd" into library work
-Parsing VHDL file "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/Fetch/SIM/Fetch_Unit_4sim-empty.vhd" into library work
-Parsing VHDL file "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/Fetch/SIM/Fetch_Unit_TB.vhd" into library work
+Parsing VHDL file "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/Fetch/SIM/Fetch_Unit_Host_Intf_4sim.vhd" into library work
+Parsing VHDL file "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/Fetch/SIM/Fetch_Unit_4sim-empty.vhd" into library work
+Parsing VHDL file "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/Fetch/SIM/Clock_driver_for_sim.vhd" into library work
+Parsing VHDL file "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/Fetch/SIM/HW2_top_4sim.vhd" into library work
+Parsing VHDL file "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/Fetch/SIM/Fetch_Unit_TB_for_students.vhd" into library work
 Starting static elaboration
-WARNING:HDLCompiler:794 - "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/Fetch/SIM/Fetch_Unit_4sim-empty.vhd" Line 232: Statement might not cover all choices ; 'others' clause recommended
+WARNING:HDLCompiler:794 - "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/Fetch/SIM/Fetch_Unit_4sim-empty.vhd" Line 162: Statement might not cover all choices ; 'others' clause recommended
 Completed static elaboration
 Compiling package standard
 Compiling package std_logic_1164
@@ -16,13 +17,14 @@ Compiling package std_logic_arith
 Compiling package std_logic_unsigned
 Compiling package textio
 Compiling package numeric_std
+Compiling architecture behavioral of entity Fetch_Unit_4sim [fetch_unit_4sim_default]
 Compiling architecture behavioral of entity Fetch_Unit_Host_intf_4sim [fetch_unit_host_intf_4sim_defaul...]
 Compiling architecture clock_divider of entity Clock_Driver [clock_driver_default]
-Compiling architecture behavioral of entity Fetch_Unit_4sim [fetch_unit_4sim_default]
+Compiling architecture behavioral of entity HW2_top_4sim [hw2_top_4sim_default]
 Compiling architecture testing of entity fetch_unit_tb
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
-Compiled 13 VHDL Units
-Built simulation executable C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/Fetch/SIM/Fetch_Unit_TB_isim_beh.exe
-Fuse Memory Usage: 35668 KB
-Fuse CPU Usage: 1124 ms
+Waiting for 2 sub-compilation(s) to finish...
+Compiled 15 VHDL Units
+Built simulation executable C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/Fetch/SIM/Fetch_Unit_TB_isim_beh.exe
+Fuse Memory Usage: 36804 KB
+Fuse CPU Usage: 1201 ms

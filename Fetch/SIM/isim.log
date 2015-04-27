@@ -1,14 +1,27 @@
 ISim log file
-Running: C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\SIM\Fetch_Unit_TB_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/Fetch/SIM/Fetch_Unit_TB_isim_beh.wdb 
+Running: C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\Fetch\SIM\Fetch_Unit_TB_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/Fetch/SIM/Fetch_Unit_TB_isim_beh.wdb 
 ISim P.20131013 (signature 0x7708f090)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
 WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
 This is a Lite version of ISim.
-ERROR: at 0 ps: Could not open file 'C:\HW2\HW2_src_for_sim\HW2_Fetch_Unit_TB_data.dat' of text
-ERROR: Time resolution is 1 fs
+Time resolution is 1 ps
 # onerror resume
 # wave add /
-No active Database
 # run 1000 ns
-Unable to execute live simulation command.
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /fetch_unit_tb/Testing_Fetch_Unit/Fetch_unit_imp/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /fetch_unit_tb/Testing_Fetch_Unit/Fetch_unit_imp/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Finished circuit initialization process.
+at 0 ps, Instance /fetch_unit_tb/Testing_Fetch_Unit/Fetch_unit_imp/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 601 ns: Note: ================== Start checking signals ====================================== (/fetch_unit_tb/).
+# run all
+at 3040 ns(7): Note: ============ Test pass!! =============== (/fetch_unit_tb/).
+ERROR:Portability:3 - This Xilinx application has run out of memory or has
+   encountered a memory conflict.  Current memory usage is 12012224 kb.  You can
+   try increasing your system's physical or virtual memory.  If you are using a
+   Win32 system, you can increase your application memory from 2GB to 3GB using
+   the /3G switch in your boot.ini file. For more information on this, please
+   refer to Xilinx Answer Record #14932. For technical support on this issue,
+   please visit http://www.xilinx.com/support. 
+The simulator has terminated in an unexpected manner.  Please review the ISim log (isim.log) for details.
