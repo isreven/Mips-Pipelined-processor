@@ -174,7 +174,7 @@ IMem_adrs <= PC_reg; -- connect PC_reg to IMem
 	with imm(15 downto 15) select
 		sext_imm <=
 		x"0000" & imm when b"0",
-		x"1111" & imm when b"1";
+		x"FFFF" & imm when b"1";
 
 -- BRANCH address  (create the branch_adrs signal)
 
