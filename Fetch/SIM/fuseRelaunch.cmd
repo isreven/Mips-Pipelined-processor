@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/Fetch/SIM/Fetch_Unit_TB_isim_beh.exe" -prj "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/Fetch/SIM/Fetch_Unit_TB_beh.prj" "work.Fetch_Unit_TB" 
