@@ -1,0 +1,8 @@
+EN fetch_unit_host_intf NULL "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/Fetch/Ise/Src_4ise/Fetch_Unit_Host_Intf.vhd" sub00/vhpl00 1430760999
+EN clock_driver NULL "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/Fetch/Ise/Src_4ise/Clock_driver.vhd" sub00/vhpl02 1430761001
+AR hw2_top behavioral "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/Fetch/Ise/Src_4ise/HW2_top.vhd" sub00/vhpl05 1430761004
+EN hw2_top NULL "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/Fetch/Ise/Src_4ise/HW2_top.vhd" sub00/vhpl04 1430761003
+AR fetch_unit_host_intf behavioral "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/Fetch/Ise/Src_4ise/Fetch_Unit_Host_Intf.vhd" sub00/vhpl01 1430761000
+AR fetch_unit behavioral "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/Fetch/Ise/Src_4ise/Fetch_Unit-empty.vhd" sub00/vhpl07 1430760998
+EN fetch_unit NULL "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/Fetch/Ise/Src_4ise/Fetch_Unit-empty.vhd" sub00/vhpl06 1430760997
+AR clock_driver clock_divider "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/Fetch/Ise/Src_4ise/Clock_driver.vhd" sub00/vhpl03 1430761002

@@ -1,0 +1,294 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Reading design: HW2_top_4sim.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "HW2_top_4sim.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "HW2_top_4sim"
+Output Format                      : NGC
+Target Device                      : xa7a100t-2I-csg324
+
+---- Source Options
+Top Module Name                    : HW2_top_4sim
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\Fetch_Unit_Host_Intf_4sim.vhd" into library work
+Parsing entity <Fetch_Unit_Host_intf_4sim>.
+Parsing architecture <Behavioral> of entity <fetch_unit_host_intf_4sim>.
+Parsing VHDL file "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\Fetch_Unit_4sim-empty.vhd" into library work
+Parsing entity <Fetch_Unit_4sim>.
+Parsing architecture <Behavioral> of entity <fetch_unit_4sim>.
+Parsing VHDL file "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\Clock_driver_for_sim.vhd" into library work
+Parsing entity <Clock_Driver>.
+Parsing architecture <clock_divider> of entity <clock_driver>.
+Parsing VHDL file "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\HW2_top_4sim.vhd" into library work
+Parsing entity <HW2_top_4sim>.
+Parsing architecture <Behavioral> of entity <hw2_top_4sim>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <HW2_top_4sim> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Fetch_Unit_4sim> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Fetch_Unit_Host_intf_4sim> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:1127 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\Fetch_Unit_Host_Intf_4sim.vhd" Line 259: Assignment to fu_rdbk0 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\Fetch_Unit_Host_Intf_4sim.vhd" Line 260: Assignment to fu_rdbk1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\Fetch_Unit_Host_Intf_4sim.vhd" Line 261: Assignment to fu_rdbk2 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\Fetch_Unit_Host_Intf_4sim.vhd" Line 262: Assignment to fu_rdbk3 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\Fetch_Unit_Host_Intf_4sim.vhd" Line 263: Assignment to fu_rdbk4 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\Fetch_Unit_Host_Intf_4sim.vhd" Line 264: Assignment to fu_rdbk5 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\Fetch_Unit_Host_Intf_4sim.vhd" Line 265: Assignment to fu_rdbk6 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\Fetch_Unit_Host_Intf_4sim.vhd" Line 266: Assignment to fu_rdbk7 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\Fetch_Unit_Host_Intf_4sim.vhd" Line 267: Assignment to fu_rdbk8 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\Fetch_Unit_Host_Intf_4sim.vhd" Line 268: Assignment to fu_rdbk9 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\Fetch_Unit_Host_Intf_4sim.vhd" Line 269: Assignment to fu_rdbk10 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\Fetch_Unit_Host_Intf_4sim.vhd" Line 270: Assignment to fu_rdbk11 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\Fetch_Unit_Host_Intf_4sim.vhd" Line 271: Assignment to fu_rdbk12 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\Fetch_Unit_Host_Intf_4sim.vhd" Line 272: Assignment to fu_rdbk13 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\Fetch_Unit_Host_Intf_4sim.vhd" Line 273: Assignment to fu_rdbk14 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\Fetch_Unit_Host_Intf_4sim.vhd" Line 274: Assignment to fu_rdbk15 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\Fetch_Unit_Host_Intf_4sim.vhd" Line 277: Assignment to furs232_rx ignored, since the identifier is never used
+
+Elaborating entity <Clock_Driver> (architecture <clock_divider>) from library <work>.
+WARNING:HDLCompiler:634 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\HW2_top_4sim.vhd" Line 135: Net <rdbk0_signal[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\HW2_top_4sim.vhd" Line 136: Net <rdbk1_signal[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\HW2_top_4sim.vhd" Line 137: Net <rdbk2_signal[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\HW2_top_4sim.vhd" Line 138: Net <rdbk3_signal[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\HW2_top_4sim.vhd" Line 139: Net <rdbk4_signal[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\HW2_top_4sim.vhd" Line 140: Net <rdbk5_signal[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\HW2_top_4sim.vhd" Line 141: Net <rdbk6_signal[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\HW2_top_4sim.vhd" Line 142: Net <rdbk7_signal[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\HW2_top_4sim.vhd" Line 143: Net <rdbk8_signal[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\HW2_top_4sim.vhd" Line 144: Net <rdbk9_signal[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\HW2_top_4sim.vhd" Line 145: Net <rdbk10_signal[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\HW2_top_4sim.vhd" Line 146: Net <rdbk11_signal[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\HW2_top_4sim.vhd" Line 147: Net <rdbk12_signal[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\HW2_top_4sim.vhd" Line 148: Net <rdbk13_signal[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\HW2_top_4sim.vhd" Line 149: Net <rdbk14_signal[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\HW2_top_4sim.vhd" Line 150: Net <rdbk15_signal[31]> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <HW2_top_4sim>.
+    Related source file is "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\HW2_top_4sim.vhd".
+INFO:Xst:3210 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\HW2_top_4sim.vhd" line 165: Output port <rdbk0> of the instance <Fetch_unit_imp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\HW2_top_4sim.vhd" line 165: Output port <rdbk1> of the instance <Fetch_unit_imp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\HW2_top_4sim.vhd" line 165: Output port <rdbk2> of the instance <Fetch_unit_imp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\HW2_top_4sim.vhd" line 165: Output port <rdbk3> of the instance <Fetch_unit_imp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\HW2_top_4sim.vhd" line 165: Output port <rdbk4> of the instance <Fetch_unit_imp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\HW2_top_4sim.vhd" line 165: Output port <rdbk5> of the instance <Fetch_unit_imp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\HW2_top_4sim.vhd" line 165: Output port <rdbk6> of the instance <Fetch_unit_imp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\HW2_top_4sim.vhd" line 165: Output port <rdbk7> of the instance <Fetch_unit_imp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\HW2_top_4sim.vhd" line 165: Output port <rdbk8> of the instance <Fetch_unit_imp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\HW2_top_4sim.vhd" line 165: Output port <rdbk9> of the instance <Fetch_unit_imp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\HW2_top_4sim.vhd" line 165: Output port <rdbk10> of the instance <Fetch_unit_imp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\HW2_top_4sim.vhd" line 165: Output port <rdbk11> of the instance <Fetch_unit_imp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\HW2_top_4sim.vhd" line 165: Output port <rdbk12> of the instance <Fetch_unit_imp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\HW2_top_4sim.vhd" line 165: Output port <rdbk13> of the instance <Fetch_unit_imp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\HW2_top_4sim.vhd" line 165: Output port <rdbk14> of the instance <Fetch_unit_imp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\HW2_top_4sim.vhd" line 165: Output port <rdbk15> of the instance <Fetch_unit_imp> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <rdbk0_signal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <rdbk1_signal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <rdbk2_signal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <rdbk3_signal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <rdbk4_signal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <rdbk5_signal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <rdbk6_signal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <rdbk7_signal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <rdbk8_signal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <rdbk9_signal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <rdbk10_signal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <rdbk11_signal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <rdbk12_signal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <rdbk13_signal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <rdbk14_signal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <rdbk15_signal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <HW2_top_4sim> synthesized.
+
+Synthesizing Unit <Fetch_Unit_4sim>.
+    Related source file is "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\Fetch_Unit_4sim-empty.vhd".
+    Found 32-bit register for signal <PC_plus_4_pID>.
+    Found 32-bit register for signal <PC_reg>.
+    Found 32-bit adder for signal <PC_plus_4> created at line 171.
+    Found 32-bit adder for signal <branch_adrs> created at line 187.
+    Found 32-bit 4-to-1 multiplexer for signal <PC_mux_out> created at line 162.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  64 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+Unit <Fetch_Unit_4sim> synthesized.
+
+Synthesizing Unit <Fetch_Unit_Host_intf_4sim>.
+    Related source file is "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\Fetch_Unit_Host_Intf_4sim.vhd".
+WARNING:Xst:647 - Input <rdbk0> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rdbk1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rdbk2> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rdbk3> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rdbk4> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rdbk5> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rdbk6> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rdbk7> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rdbk8> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rdbk9> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rdbk10> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rdbk11> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rdbk12> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rdbk13> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rdbk14> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rdbk15> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <buttons_in> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <switches_in<5:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <switches_in<7:7>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <RS232_Rx> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <powerup_reset>.
+    Found 8-bit register for signal <hold_cntr>.
+    Found 32-bit register for signal <IMem_rd_data>.
+    Found 4-bit register for signal <reset_cntr>.
+    Found 4-bit adder for signal <reset_cntr[3]_GND_8_o_add_1_OUT> created at line 135.
+    Found 8-bit adder for signal <hold_cntr[7]_GND_8_o_add_6_OUT> created at line 162.
+    Found 32x32-bit Read Only RAM for signal <_n0197>
+    Found 4-bit comparator greater for signal <reset_cntr[3]_PWR_7_o_LessThan_1_o> created at line 134
+    Summary:
+	inferred   1 RAM(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  45 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <Fetch_Unit_Host_intf_4sim> synthesized.
+
+Synthesizing Unit <Clock_Driver>.
+    Related source file is "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Src_4sim\Clock_driver_for_sim.vhd".
+    Found 1-bit register for signal <half_ck_signal>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <Clock_Driver> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 32x32-bit single-port Read Only RAM                   : 1
+# Adders/Subtractors                                   : 4
+ 32-bit adder                                          : 2
+ 4-bit adder                                           : 1
+ 8-bit adder                                           : 1
+# Registers                                            : 7
+ 1-bit register                                        : 2
+ 32-bit register                                       : 3
+ 4-bit register                                        : 1
+ 8-bit register                                        : 1
+# Comparators                                          : 1
+ 4-bit comparator greater                              : 1
+# Multiplexers                                         : 3
+ 1-bit 2-to-1 multiplexer                              : 2
+ 32-bit 4-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst - The specified part-type was not generated at build time. XST is loading the full part-type and will therefore consume more CPU and memory.
+Loading device for application Rf_Device from file '7a100t.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+Loading device for application Rf_Device from file '7a100t.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.

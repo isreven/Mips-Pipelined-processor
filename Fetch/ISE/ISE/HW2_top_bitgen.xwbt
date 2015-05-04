@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Ise\ISE\HW2_top.ncd
+OUTFILE=C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Ise\ISE\HW2_top.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\Fetch\Ise\ISE
+LICENSE=WebPack
+USER_INFO=211020430_0_0_412

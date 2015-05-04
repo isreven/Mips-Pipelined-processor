@@ -1,0 +1,5 @@
+vhdl isim_temp "../Src_4sim/Fetch_Unit_Host_Intf_4sim.vhd"
+vhdl isim_temp "../Src_4sim/Fetch_Unit_4sim-empty.vhd"
+vhdl isim_temp "../Src_4sim/Clock_driver_for_sim.vhd"
+vhdl isim_temp "../Src_4sim/HW2_top_4sim.vhd"
+vhdl isim_temp "../Src_4sim/Fetch_Unit_TB_for_students.vhd"

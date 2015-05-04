@@ -1,0 +1,29 @@
+Command line:
+   HW2_top_4sim_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  54730
+
+Mon May 04 20:16:10 2015
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 365.498 Meg
+
+ Total Signals          : 132
+ Total Nets             : 2162
+ Total Signal Drivers   : 74
+ Total Blocks           : 8
+ Total Primitive Blocks : 7
+ Total Processes        : 74
+ Total Traceable Variables  : 15
+ Total Scalar Nets and Variables : 2663
+Total Line Count : 135
+
+ Total Simulation Time: 0.15625 sec
+
+ Current Memory Usage: 365.498 Meg
+
+Mon May 04 20:16:33 2015
+
