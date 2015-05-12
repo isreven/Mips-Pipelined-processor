@@ -1,0 +1,18 @@
+ISim log file
+Running: C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\GPR and ALU\MIPS_ALU\MIPS_ALU_SIM\MIPS_ALU_TB_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/MIPS_ALU/MIPS_ALU_SIM/MIPS_ALU_TB_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 ps: Note: ================== Start checking signals ====================================== (/mips_alu_tb/).
+at 0 ps, Instance /mips_alu_tb/Testing_MIPS_ALU/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Finished circuit initialization process.
+# run all
+at 1120 ns(1): Note: ============ Test pass!! =============== (/mips_alu_tb/).
+Stopped at time : 131990560 ns : File "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/MIPS_ALU_src/MIPS_ALU_TB.vhd" Line 160

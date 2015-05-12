@@ -79,6 +79,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="HW2_top_4sim.unroutes" xil_pn:subbranch="Par"/>
     <file xil_pn:fileType="FILE_XPI" xil_pn:name="HW2_top_4sim.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="HW2_top_4sim.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="HW2_top_4sim_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="HW2_top_4sim_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="HW2_top_4sim_map.map" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="HW2_top_4sim_map.mrp" xil_pn:subbranch="Map"/>
@@ -89,6 +90,8 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="HW2_top_4sim_pad.csv" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="HW2_top_4sim_pad.txt" xil_pn:subbranch="Par"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="HW2_top_4sim_par.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="HW2_top_4sim_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="HW2_top_4sim_summary.html"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="HW2_top_4sim_summary.xml"/>
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="HW2_top_4sim_usage.xml"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="HW2_top_4sim_xst.xrpt"/>
@@ -109,6 +112,10 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1430749601" xil_pn:name="TRANEXT_compLibraries2_virtex5" xil_pn:prop_ck="-4990878548368482105" xil_pn:start_ts="1430749601">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
     <transform xil_pn:end_ts="1429551483" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1429551483">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -151,7 +158,8 @@
     <transform xil_pn:end_ts="1430156097" xil_pn:in_ck="6243462947820013517" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="6366960790608845172" xil_pn:start_ts="1430156097">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="Fetch_Unit_TB_isim_beh.wdb"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputRemoved"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
     </transform>
@@ -183,13 +191,11 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1429551250" xil_pn:in_ck="-1122889790865048905" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="9113050231136685219" xil_pn:start_ts="1429551191">
+    <transform xil_pn:end_ts="1430749010" xil_pn:in_ck="-1038326997111229025" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="9113050231136685219" xil_pn:start_ts="1430748952">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="HW2_top_4sim.lso"/>
       <outfile xil_pn:name="HW2_top_4sim.ngc"/>
@@ -198,6 +204,7 @@
       <outfile xil_pn:name="HW2_top_4sim.stx"/>
       <outfile xil_pn:name="HW2_top_4sim.syr"/>
       <outfile xil_pn:name="HW2_top_4sim.xst"/>
+      <outfile xil_pn:name="HW2_top_4sim_stx_beh.prj"/>
       <outfile xil_pn:name="HW2_top_4sim_xst.xrpt"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
@@ -207,23 +214,19 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1429551264" xil_pn:in_ck="-3733682610890289787" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="3046109974838923959" xil_pn:start_ts="1429551250">
+    <transform xil_pn:end_ts="1430749026" xil_pn:in_ck="7408268692643349968" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="3046109974838923959" xil_pn:start_ts="1430749010">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="HW2_top_4sim.bld"/>
       <outfile xil_pn:name="HW2_top_4sim.ngd"/>
       <outfile xil_pn:name="HW2_top_4sim_ngdbuild.xrpt"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1429551322" xil_pn:in_ck="-3733682610890289786" xil_pn:name="TRANEXT_map_virtex7" xil_pn:prop_ck="3373610943407121171" xil_pn:start_ts="1429551264">
+    <transform xil_pn:end_ts="1430749112" xil_pn:in_ck="3582939597430155218" xil_pn:name="TRANEXT_map_virtex7" xil_pn:prop_ck="3373610943407121171" xil_pn:start_ts="1430749026">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="HW2_top_4sim.pcf"/>
       <outfile xil_pn:name="HW2_top_4sim_map.map"/>
       <outfile xil_pn:name="HW2_top_4sim_map.mrp"/>
@@ -234,11 +237,9 @@
       <outfile xil_pn:name="HW2_top_4sim_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1429551383" xil_pn:in_ck="-6848598738047275105" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="-8066324139983898644" xil_pn:start_ts="1429551322">
+    <transform xil_pn:end_ts="1430749191" xil_pn:in_ck="3271968673606130564" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="-8066324139983898644" xil_pn:start_ts="1430749112">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="HW2_top_4sim.ncd"/>
       <outfile xil_pn:name="HW2_top_4sim.pad"/>
       <outfile xil_pn:name="HW2_top_4sim.par"/>
@@ -250,10 +251,9 @@
       <outfile xil_pn:name="HW2_top_4sim_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1429551383" xil_pn:in_ck="-3733682610890289918" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="-3742689831323817471" xil_pn:start_ts="1429551358">
+    <transform xil_pn:end_ts="1430749191" xil_pn:in_ck="-7982453898295583030" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="-3742689831323817471" xil_pn:start_ts="1430749159">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="HW2_top_4sim.twr"/>
       <outfile xil_pn:name="HW2_top_4sim.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>

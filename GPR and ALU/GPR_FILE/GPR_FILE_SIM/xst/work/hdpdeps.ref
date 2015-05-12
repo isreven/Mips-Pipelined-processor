@@ -1,0 +1,25 @@
+V3 11
+FL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/src/dual_port_memory-empty.vhd" 2015/05/04.19:54:48 P.20131013
+EN work/dual_port_memory_no_CK_read 1430765394 \
+      FL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/src/dual_port_memory-empty.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177
+AR work/dual_port_memory_no_CK_read/dual_port_memory 1430765395 \
+      FL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/src/dual_port_memory-empty.vhd" \
+      EN work/dual_port_memory_no_CK_read 1430765394
+FL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/src/GPR-empty.vhd" 2015/05/04.20:42:25 P.20131013
+EN work/GPR 1430765396 \
+      FL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/src/GPR-empty.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/GPR/Behavioral 1430765397 \
+      FL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/src/GPR-empty.vhd" \
+      EN work/GPR 1430765396 CP dual_port_memory_no_CK_read
+FL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/src/GPR_TB.vhd" 2015/04/27.20:34:20 P.20131013
+EN work/GPR_TB 0 \
+      FL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/src/GPR_TB.vhd" \
+      PB ieee/std_logic_arith 1381692177 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/std_logic_1164 1381692176 PB std/TEXTIO 1381692176 \
+      PB ieee/NUMERIC_STD 1381692181
+AR work/GPR_TB/Testing 0 \
+      FL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/src/GPR_TB.vhd" \
+      EN work/GPR_TB 0 CP GPR

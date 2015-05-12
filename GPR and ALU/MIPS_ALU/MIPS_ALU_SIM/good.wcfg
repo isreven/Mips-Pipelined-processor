@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/ALU_SIM/MIPS_ALU_TB_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="mips_alu_tb" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="textio" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="/mips_alu_tb/tb_aluop" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_aluop[1:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_aluop[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_alu_tb/tb_funct" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_funct[5:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_funct[5:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_alu_tb/tb_a_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_a_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_a_in[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_alu_tb/tb_b_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_b_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_b_in[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_alu_tb/tb_sext_imm" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_sext_imm[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_sext_imm[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_alu_tb/tb_alusrcb" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_alusrcb</obj_property>
+      <obj_property name="ObjectShortName">tb_alusrcb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_alu_tb/tb_alu_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_alu_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_alu_out[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_alu_tb/tb_ck" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_ck</obj_property>
+      <obj_property name="ObjectShortName">tb_ck</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_alu_tb/i" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">i</obj_property>
+      <obj_property name="ObjectShortName">i</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_alu_tb/err_cntr" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">err_cntr</obj_property>
+      <obj_property name="ObjectShortName">err_cntr</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_alu_tb/expected_alu_out_value" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">expected_alu_out_value[31:0]</obj_property>
+      <obj_property name="ObjectShortName">expected_alu_out_value[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_alu_tb/Testing_MIPS_ALU/alu_output" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">alu_output[31:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_output[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_alu_tb/Testing_MIPS_ALU/alu_cmd" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">alu_cmd[2:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_cmd[2:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_alu_tb/tb_a_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_a_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_a_in[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_alu_tb/tb_b_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_b_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_b_in[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+</wave_config>

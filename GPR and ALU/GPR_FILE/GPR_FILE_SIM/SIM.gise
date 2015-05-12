@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="SIM.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="GPR.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="GPR.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="GPR.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="GPR.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="GPR.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="GPR.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="GPR.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="GPR.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="GPR.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="GPR.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="GPR.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="GPR.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="GPR.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="GPR.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="GPR.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="GPR.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="GPR.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="GPR.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="GPR.xst"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="GPR_TB.cmd_log"/>
+    <file xil_pn:fileType="FILE_LSO" xil_pn:name="GPR_TB.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="GPR_TB.prj"/>
+    <file xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="GPR_TB.syr"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="GPR_TB.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="GPR_TB_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="GPR_TB_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="GPR_TB_isim_beh.wdb"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="GPR_TB_stx_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="GPR_TB_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="GPR_TB_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="GPR_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="GPR_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="GPR_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="GPR_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="GPR_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="GPR_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="GPR_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="GPR_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="GPR_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="GPR_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="GPR_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="GPR_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="GPR_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="GPR_usage.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="GPR_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="GPR_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1430760532" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1430760532">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1431358922" xil_pn:in_ck="1264963070522855436" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1431358922">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="../GPR_FILE_src/GPR-empty.vhd"/>
+      <outfile xil_pn:name="../GPR_FILE_src/GPR_TB.vhd"/>
+      <outfile xil_pn:name="../GPR_FILE_src/dual_port_memory-empty.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1430760532" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="242190141264199682" xil_pn:start_ts="1430760532">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1430760532" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="5542874588264233604" xil_pn:start_ts="1430760532">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1431358922" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-3155074198154251468" xil_pn:start_ts="1431358922">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1431358922" xil_pn:in_ck="1264963070522855436" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1431358922">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="../GPR_FILE_src/GPR-empty.vhd"/>
+      <outfile xil_pn:name="../GPR_FILE_src/GPR_TB.vhd"/>
+      <outfile xil_pn:name="../GPR_FILE_src/dual_port_memory-empty.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1431359212" xil_pn:in_ck="1264963070522855436" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="845655599244321784" xil_pn:start_ts="1431359205">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="GPR_TB_beh.prj"/>
+      <outfile xil_pn:name="GPR_TB_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1431359213" xil_pn:in_ck="-5173779256193093619" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-5604815061451793147" xil_pn:start_ts="1431359212">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="GPR_TB_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
+    <transform xil_pn:end_ts="1430758531" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1430758531">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1430759886" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="4361991055487023246" xil_pn:start_ts="1430759886">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+    </transform>
+    <transform xil_pn:end_ts="1430759886" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-3155074198154251468" xil_pn:start_ts="1430759886">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+    </transform>
+    <transform xil_pn:end_ts="1430758531" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1430758531">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1430759886" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-9185239233587570932" xil_pn:start_ts="1430759886">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+    </transform>
+    <transform xil_pn:end_ts="1430758531" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3893270297158069842" xil_pn:start_ts="1430758531">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+    <transform xil_pn:end_ts="1430759886" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="6973481562396449662" xil_pn:start_ts="1430759886">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+    <transform xil_pn:end_ts="1430765404" xil_pn:in_ck="-1426799161613171193" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-1083350653845924911" xil_pn:start_ts="1430765390">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="GPR.lso"/>
+      <outfile xil_pn:name="GPR.ngc"/>
+      <outfile xil_pn:name="GPR.ngr"/>
+      <outfile xil_pn:name="GPR.prj"/>
+      <outfile xil_pn:name="GPR.stx"/>
+      <outfile xil_pn:name="GPR.syr"/>
+      <outfile xil_pn:name="GPR.xst"/>
+      <outfile xil_pn:name="GPR_TB.prj"/>
+      <outfile xil_pn:name="GPR_TB_beh.prj"/>
+      <outfile xil_pn:name="GPR_TB_stx_beh.prj"/>
+      <outfile xil_pn:name="GPR_TB_vhdl.prj"/>
+      <outfile xil_pn:name="GPR_vhdl.prj"/>
+      <outfile xil_pn:name="GPR_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1430759899" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="3861006109227626945" xil_pn:start_ts="1430759898">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+    <transform xil_pn:end_ts="1430765412" xil_pn:in_ck="94924079151" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="8653247219842250753" xil_pn:start_ts="1430765404">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="GPR.bld"/>
+      <outfile xil_pn:name="GPR.ngd"/>
+      <outfile xil_pn:name="GPR_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1430765418" xil_pn:in_ck="94924079152" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-5849673150125579957" xil_pn:start_ts="1430765412">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="GPR.pcf"/>
+      <outfile xil_pn:name="GPR_map.map"/>
+      <outfile xil_pn:name="GPR_map.mrp"/>
+      <outfile xil_pn:name="GPR_map.ncd"/>
+      <outfile xil_pn:name="GPR_map.ngm"/>
+      <outfile xil_pn:name="GPR_map.xrpt"/>
+      <outfile xil_pn:name="GPR_summary.xml"/>
+      <outfile xil_pn:name="GPR_usage.xml"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1430765438" xil_pn:in_ck="112574545665451849" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-5563652517805085498" xil_pn:start_ts="1430765418">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="GPR.ncd"/>
+      <outfile xil_pn:name="GPR.pad"/>
+      <outfile xil_pn:name="GPR.par"/>
+      <outfile xil_pn:name="GPR.ptwx"/>
+      <outfile xil_pn:name="GPR.unroutes"/>
+      <outfile xil_pn:name="GPR.xpi"/>
+      <outfile xil_pn:name="GPR_pad.csv"/>
+      <outfile xil_pn:name="GPR_pad.txt"/>
+      <outfile xil_pn:name="GPR_par.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1430765438" xil_pn:in_ck="94924079020" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1430765433">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="GPR.twr"/>
+      <outfile xil_pn:name="GPR.twx"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+    </transform>
+  </transforms>
+
+</generated_project>

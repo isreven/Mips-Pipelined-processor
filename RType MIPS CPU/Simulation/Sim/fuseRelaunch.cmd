@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/HW4_TB_isim_beh.exe" -prj "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/HW4_TB_beh.prj" "work.HW4_TB" 

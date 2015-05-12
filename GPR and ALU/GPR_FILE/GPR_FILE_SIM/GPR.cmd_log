@@ -1,0 +1,18 @@
+xst -intstyle ise -ifn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/SIM/GPR.xst" -ofn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/SIM/GPR.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "GPR.ngc" GPR.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o GPR_map.ncd GPR.ngd GPR.pcf 
+par -w -intstyle ise -ol high -t 1 GPR_map.ncd GPR.ncd GPR.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml GPR.twx GPR.ncd -o GPR.twr GPR.pcf 
+xst -intstyle ise -ifn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/SIM/GPR.xst" -ofn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/SIM/GPR.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "GPR.ngc" GPR.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o GPR_map.ncd GPR.ngd GPR.pcf 
+xst -intstyle ise -ifn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/SIM/GPR.xst" -ofn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/SIM/GPR.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "GPR.ngc" GPR.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o GPR_map.ncd GPR.ngd GPR.pcf 
+par -w -intstyle ise -ol high -t 1 GPR_map.ncd GPR.ncd GPR.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml GPR.twx GPR.ncd -o GPR.twr GPR.pcf 
+xst -intstyle ise -ifn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/SIM/GPR.xst" -ofn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/SIM/GPR.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "GPR.ngc" GPR.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o GPR_map.ncd GPR.ngd GPR.pcf 
+par -w -intstyle ise -ol high -t 1 GPR_map.ncd GPR.ncd GPR.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml GPR.twx GPR.ncd -o GPR.twr GPR.pcf 

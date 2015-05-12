@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/MIPS_ALU_SIM/MIPS_ALU_TB_isim_beh.exe" -prj "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/MIPS_ALU_SIM/MIPS_ALU_TB_beh.prj" "work.MIPS_ALU_TB" 

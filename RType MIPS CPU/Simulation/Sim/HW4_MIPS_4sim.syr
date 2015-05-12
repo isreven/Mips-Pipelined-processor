@@ -1,0 +1,665 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: HW4_MIPS_4sim.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "HW4_MIPS_4sim.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "HW4_MIPS_4sim"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : HW4_MIPS_4sim
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/Fetch_Unit-empty.vhd" in Library work.
+Architecture behavioral of Entity fetch_unit is up to date.
+Compiling vhdl file "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/GPR-empty.vhd" in Library work.
+Architecture behavioral of Entity gpr is up to date.
+Compiling vhdl file "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/MIPS_ALU-empty.vhd" in Library work.
+Architecture behavioral of Entity mips_alu is up to date.
+Compiling vhdl file "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/Clock_driver_for_sim.vhd" in Library work.
+Architecture clock_divider of Entity clock_driver is up to date.
+Compiling vhdl file "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/HW4_Host_Intf_4sim_for_students.vhd" in Library work.
+Architecture behavioral of Entity hw4_host_intf_4sim is up to date.
+Compiling vhdl file "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/HW4_MIPS_4sim-empty.vhd" in Library work.
+Architecture behavioral of Entity hw4_mips_4sim is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <HW4_MIPS_4sim> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Fetch_Unit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Clock_Driver> in library <work> (architecture <clock_divider>).
+
+Analyzing hierarchy for entity <HW4_Host_intf_4sim> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <HW4_MIPS_4sim> in library <work> (Architecture <behavioral>).
+WARNING:Xst:2211 - "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/HW4_MIPS_4sim-empty.vhd" line 400: Instantiating black box module <GPR>.
+WARNING:Xst:2211 - "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/HW4_MIPS_4sim-empty.vhd" line 417: Instantiating black box module <MIPS_ALU>.
+Entity <HW4_MIPS_4sim> analyzed. Unit <HW4_MIPS_4sim> generated.
+
+Analyzing Entity <Fetch_Unit> in library <work> (Architecture <behavioral>).
+Entity <Fetch_Unit> analyzed. Unit <Fetch_Unit> generated.
+
+Analyzing Entity <Clock_Driver> in library <work> (Architecture <clock_divider>).
+Entity <Clock_Driver> analyzed. Unit <Clock_Driver> generated.
+
+Analyzing Entity <HW4_Host_intf_4sim> in library <work> (Architecture <behavioral>).
+Entity <HW4_Host_intf_4sim> analyzed. Unit <HW4_Host_intf_4sim> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Fetch_Unit>.
+    Related source file is "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/Fetch_Unit-empty.vhd".
+WARNING:Xst:653 - Signal <sext_imm> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
+WARNING:Xst:1780 - Signal <opcode> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <jump_adrs> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <jr_adrs> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <imm> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <funct> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <branch_adrs> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Rs_equals_Rt> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <RESET> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <PC_reg> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
+WARNING:Xst:653 - Signal <PC_plus_4_pID> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
+WARNING:Xst:1780 - Signal <PC_plus_4> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <PC_mux_out> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <PC_Source> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HOLD> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <CK> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <Fetch_Unit> synthesized.
+
+
+Synthesizing Unit <Clock_Driver>.
+    Related source file is "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/Clock_driver_for_sim.vhd".
+    Found 1-bit register for signal <half_ck_signal>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <Clock_Driver> synthesized.
+
+
+Synthesizing Unit <HW4_Host_intf_4sim>.
+    Related source file is "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/HW4_Host_Intf_4sim_for_students.vhd".
+WARNING:Xst:647 - Input <buttons_in> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <switches_in<7>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <switches_in<5:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <HI_rdbk9> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_rdbk8> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_rdbk7> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_rdbk6> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_rdbk5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_rdbk4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_rdbk3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_rdbk2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_rdbk15> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_rdbk14> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_rdbk13> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_rdbk12> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_rdbk11> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_rdbk10> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_rdbk1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_rdbk0> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <FURS232_Rx> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 8-bit up counter for signal <hold_cntr>.
+    Found 32-bit register for signal <IMem_rd_data>.
+    Found 1-bit register for signal <powerup_reset>.
+    Found 4-bit up counter for signal <reset_cntr>.
+    Found 4-bit comparator less for signal <reset_cntr$cmp_lt0000> created at line 131.
+    Summary:
+	inferred   2 Counter(s).
+	inferred  33 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <HW4_Host_intf_4sim> synthesized.
+
+
+Synthesizing Unit <HW4_MIPS_4sim>.
+    Related source file is "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/HW4_MIPS_4sim-empty.vhd".
+WARNING:Xst:653 - Signal <sext_imm_reg> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
+WARNING:Xst:1780 - Signal <Rt_pEX> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <Rt> is used but never assigned. This sourceless signal will be automatically connected to value 00000.
+WARNING:Xst:653 - Signal <Rs_equals_Rt> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <Rs> is used but never assigned. This sourceless signal will be automatically connected to value 00000.
+WARNING:Xst:653 - Signal <RegWrite_pWB> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:1780 - Signal <RegWrite_pEX> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <RegWrite> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:1780 - Signal <RegDst_pEX> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <RegDst> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <Rd_pWB> is used but never assigned. This sourceless signal will be automatically connected to value 00000.
+WARNING:Xst:1780 - Signal <Rd_pEX> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <Rd> is used but never assigned. This sourceless signal will be automatically connected to value 00000.
+WARNING:Xst:1780 - Signal <Opcode> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <Funct_pEX> is used but never assigned. This sourceless signal will be automatically connected to value 000000.
+WARNING:Xst:653 - Signal <Funct> is used but never assigned. This sourceless signal will be automatically connected to value 000000.
+WARNING:Xst:653 - Signal <B_reg> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
+WARNING:Xst:653 - Signal <A_reg> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
+WARNING:Xst:653 - Signal <ALUsrcB_pEX> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:1780 - Signal <ALUsrcB> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <ALUout_reg> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
+WARNING:Xst:653 - Signal <ALUOP_pEX> is used but never assigned. This sourceless signal will be automatically connected to value 00.
+WARNING:Xst:1780 - Signal <ALUOP> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <HW4_MIPS_4sim> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 4-bit up counter                                      : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 3
+ 1-bit register                                        : 2
+ 32-bit register                                       : 1
+# Comparators                                          : 1
+ 4-bit comparator less                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <IMem_rd_data_0> in Unit <hostintf> is equivalent to the following 31 FFs/Latches, which will be removed : <IMem_rd_data_1> <IMem_rd_data_2> <IMem_rd_data_3> <IMem_rd_data_4> <IMem_rd_data_5> <IMem_rd_data_6> <IMem_rd_data_7> <IMem_rd_data_8> <IMem_rd_data_9> <IMem_rd_data_10> <IMem_rd_data_11> <IMem_rd_data_12> <IMem_rd_data_13> <IMem_rd_data_14> <IMem_rd_data_15> <IMem_rd_data_16> <IMem_rd_data_17> <IMem_rd_data_18> <IMem_rd_data_19> <IMem_rd_data_20> <IMem_rd_data_21> <IMem_rd_data_22> <IMem_rd_data_23> <IMem_rd_data_24> <IMem_rd_data_25> <IMem_rd_data_26> <IMem_rd_data_27> <IMem_rd_data_28> <IMem_rd_data_29> <IMem_rd_data_30> <IMem_rd_data_31> 
+WARNING:Xst:1710 - FF/Latch <IMem_rd_data_0> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2404 -  FFs/Latches <IMem_rd_data<31:30>> (without init value) have a constant value of 0 in block <HW4_Host_intf_4sim>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 4-bit up counter                                      : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 32
+ Flip-Flops                                            : 32
+# Comparators                                          : 1
+ 4-bit comparator less                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <IMem_rd_data_26> (without init value) has a constant value of 0 in block <HW4_Host_intf_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IMem_rd_data_29> (without init value) has a constant value of 0 in block <HW4_Host_intf_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IMem_rd_data_28> (without init value) has a constant value of 0 in block <HW4_Host_intf_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IMem_rd_data_27> (without init value) has a constant value of 0 in block <HW4_Host_intf_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IMem_rd_data_25> (without init value) has a constant value of 0 in block <HW4_Host_intf_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IMem_rd_data_24> (without init value) has a constant value of 0 in block <HW4_Host_intf_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IMem_rd_data_23> (without init value) has a constant value of 0 in block <HW4_Host_intf_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IMem_rd_data_22> (without init value) has a constant value of 0 in block <HW4_Host_intf_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IMem_rd_data_21> (without init value) has a constant value of 0 in block <HW4_Host_intf_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IMem_rd_data_20> (without init value) has a constant value of 0 in block <HW4_Host_intf_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IMem_rd_data_19> (without init value) has a constant value of 0 in block <HW4_Host_intf_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IMem_rd_data_18> (without init value) has a constant value of 0 in block <HW4_Host_intf_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IMem_rd_data_17> (without init value) has a constant value of 0 in block <HW4_Host_intf_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IMem_rd_data_16> (without init value) has a constant value of 0 in block <HW4_Host_intf_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IMem_rd_data_15> (without init value) has a constant value of 0 in block <HW4_Host_intf_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IMem_rd_data_14> (without init value) has a constant value of 0 in block <HW4_Host_intf_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IMem_rd_data_13> (without init value) has a constant value of 0 in block <HW4_Host_intf_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IMem_rd_data_12> (without init value) has a constant value of 0 in block <HW4_Host_intf_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IMem_rd_data_11> (without init value) has a constant value of 0 in block <HW4_Host_intf_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IMem_rd_data_10> (without init value) has a constant value of 0 in block <HW4_Host_intf_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IMem_rd_data_9> (without init value) has a constant value of 0 in block <HW4_Host_intf_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IMem_rd_data_8> (without init value) has a constant value of 0 in block <HW4_Host_intf_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IMem_rd_data_7> (without init value) has a constant value of 0 in block <HW4_Host_intf_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IMem_rd_data_6> (without init value) has a constant value of 0 in block <HW4_Host_intf_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IMem_rd_data_5> (without init value) has a constant value of 0 in block <HW4_Host_intf_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IMem_rd_data_4> (without init value) has a constant value of 0 in block <HW4_Host_intf_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IMem_rd_data_3> (without init value) has a constant value of 0 in block <HW4_Host_intf_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IMem_rd_data_2> (without init value) has a constant value of 0 in block <HW4_Host_intf_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IMem_rd_data_1> (without init value) has a constant value of 0 in block <HW4_Host_intf_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IMem_rd_data_0> (without init value) has a constant value of 0 in block <HW4_Host_intf_4sim>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <HW4_MIPS_4sim> ...
+
+Optimizing unit <HW4_Host_intf_4sim> ...
+
+Mapping all equations...
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk5_out_to_TB<31>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk5_out_to_TB<30>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk5_out_to_TB<29>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk5_out_to_TB<28>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk5_out_to_TB<27>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk5_out_to_TB<26>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk5_out_to_TB<25>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk5_out_to_TB<24>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk5_out_to_TB<23>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk5_out_to_TB<22>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk5_out_to_TB<21>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk5_out_to_TB<20>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk5_out_to_TB<19>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk5_out_to_TB<18>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk5_out_to_TB<17>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk5_out_to_TB<16>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk5_out_to_TB<15>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk5_out_to_TB<14>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk5_out_to_TB<13>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk5_out_to_TB<12>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk5_out_to_TB<11>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk5_out_to_TB<10>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk5_out_to_TB<9>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk5_out_to_TB<8>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk5_out_to_TB<7>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk5_out_to_TB<6>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk5_out_to_TB<5>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk5_out_to_TB<4>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk5_out_to_TB<3>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk5_out_to_TB<2>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk5_out_to_TB<1>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk5_out_to_TB<0>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk11_out_to_TB<31>> driven by black box <MIPS_ALU>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk11_out_to_TB<30>> driven by black box <MIPS_ALU>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk11_out_to_TB<29>> driven by black box <MIPS_ALU>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk11_out_to_TB<28>> driven by black box <MIPS_ALU>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk11_out_to_TB<27>> driven by black box <MIPS_ALU>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk11_out_to_TB<26>> driven by black box <MIPS_ALU>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk11_out_to_TB<25>> driven by black box <MIPS_ALU>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk11_out_to_TB<24>> driven by black box <MIPS_ALU>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk11_out_to_TB<23>> driven by black box <MIPS_ALU>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk11_out_to_TB<22>> driven by black box <MIPS_ALU>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk11_out_to_TB<21>> driven by black box <MIPS_ALU>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk11_out_to_TB<20>> driven by black box <MIPS_ALU>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk11_out_to_TB<19>> driven by black box <MIPS_ALU>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk11_out_to_TB<18>> driven by black box <MIPS_ALU>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk11_out_to_TB<17>> driven by black box <MIPS_ALU>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk11_out_to_TB<16>> driven by black box <MIPS_ALU>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk11_out_to_TB<15>> driven by black box <MIPS_ALU>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk11_out_to_TB<14>> driven by black box <MIPS_ALU>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk11_out_to_TB<13>> driven by black box <MIPS_ALU>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk11_out_to_TB<12>> driven by black box <MIPS_ALU>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk11_out_to_TB<11>> driven by black box <MIPS_ALU>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk11_out_to_TB<10>> driven by black box <MIPS_ALU>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk11_out_to_TB<9>> driven by black box <MIPS_ALU>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk11_out_to_TB<8>> driven by black box <MIPS_ALU>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk11_out_to_TB<7>> driven by black box <MIPS_ALU>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk11_out_to_TB<6>> driven by black box <MIPS_ALU>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk11_out_to_TB<5>> driven by black box <MIPS_ALU>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk11_out_to_TB<4>> driven by black box <MIPS_ALU>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk11_out_to_TB<3>> driven by black box <MIPS_ALU>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk11_out_to_TB<2>> driven by black box <MIPS_ALU>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk11_out_to_TB<1>> driven by black box <MIPS_ALU>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk11_out_to_TB<0>> driven by black box <MIPS_ALU>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk6_out_to_TB<31>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk6_out_to_TB<30>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk6_out_to_TB<29>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk6_out_to_TB<28>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk6_out_to_TB<27>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk6_out_to_TB<26>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk6_out_to_TB<25>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk6_out_to_TB<24>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk6_out_to_TB<23>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk6_out_to_TB<22>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk6_out_to_TB<21>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk6_out_to_TB<20>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk6_out_to_TB<19>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk6_out_to_TB<18>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk6_out_to_TB<17>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk6_out_to_TB<16>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk6_out_to_TB<15>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk6_out_to_TB<14>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk6_out_to_TB<13>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk6_out_to_TB<12>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk6_out_to_TB<11>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk6_out_to_TB<10>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk6_out_to_TB<9>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk6_out_to_TB<8>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk6_out_to_TB<7>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk6_out_to_TB<6>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk6_out_to_TB<5>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk6_out_to_TB<4>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk6_out_to_TB<3>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk6_out_to_TB<2>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk6_out_to_TB<1>> driven by black box <GPR>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <rdbk6_out_to_TB<0>> driven by black box <GPR>. Possible simulation mismatch.
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block HW4_MIPS_4sim, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 14
+ Flip-Flops                                            : 14
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : HW4_MIPS_4sim.ngr
+Top Level Output File Name         : HW4_MIPS_4sim
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 538
+
+Cell Usage :
+# BELS                             : 36
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 7
+#      LUT2                        : 4
+#      LUT3                        : 1
+#      LUT4                        : 5
+#      MUXCY                       : 7
+#      VCC                         : 1
+#      XORCY                       : 8
+# FlipFlops/Latches                : 14
+#      FDC                         : 8
+#      FDE                         : 4
+#      FDR                         : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 525
+#      IBUF                        : 1
+#      OBUF                        : 524
+# Others                           : 2
+#      GPR                         : 1
+#      MIPS_ALU                    : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       11  out of   4656     0%  
+ Number of Slice Flip Flops:             14  out of   9312     0%  
+ Number of 4 input LUTs:                 19  out of   9312     0%  
+ Number of IOs:                         538
+ Number of bonded IOBs:                 526  out of    232   226% (*) 
+ Number of GCLKs:                         1  out of     24     4%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+----------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)      | Load  |
+-----------------------------------+----------------------------+-------+
+clock_divider/half_ck_signal       | NONE(hostintf/reset_cntr_3)| 13    |
+CK_50MHz                           | BUFGP                      | 1     |
+-----------------------------------+----------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------------+---------------------------+-------+
+Control Signal                               | Buffer(FF name)           | Load  |
+---------------------------------------------+---------------------------+-------+
+MIPS_reset_from_Fetch_Unit(hostintf/RESET1:O)| NONE(hostintf/hold_cntr_0)| 8     |
+---------------------------------------------+---------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 3.788ns (Maximum Frequency: 263.992MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 6.908ns
+   Maximum combinational path delay: 6.236ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock_divider/half_ck_signal'
+  Clock period: 3.788ns (frequency: 263.992MHz)
+  Total number of paths / destination ports: 66 / 17
+-------------------------------------------------------------------------
+Delay:               3.788ns (Levels of Logic = 8)
+  Source:            hostintf/hold_cntr_1 (FF)
+  Destination:       hostintf/hold_cntr_7 (FF)
+  Source Clock:      clock_divider/half_ck_signal rising
+  Destination Clock: clock_divider/half_ck_signal rising
+
+  Data Path: hostintf/hold_cntr_1 to hostintf/hold_cntr_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.591   0.622  hostintf/hold_cntr_1 (hostintf/hold_cntr_1)
+     LUT1:I0->O            1   0.704   0.000  hostintf/Mcount_hold_cntr_cy<1>_rt (hostintf/Mcount_hold_cntr_cy<1>_rt)
+     MUXCY:S->O            1   0.464   0.000  hostintf/Mcount_hold_cntr_cy<1> (hostintf/Mcount_hold_cntr_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  hostintf/Mcount_hold_cntr_cy<2> (hostintf/Mcount_hold_cntr_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  hostintf/Mcount_hold_cntr_cy<3> (hostintf/Mcount_hold_cntr_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  hostintf/Mcount_hold_cntr_cy<4> (hostintf/Mcount_hold_cntr_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  hostintf/Mcount_hold_cntr_cy<5> (hostintf/Mcount_hold_cntr_cy<5>)
+     MUXCY:CI->O           0   0.059   0.000  hostintf/Mcount_hold_cntr_cy<6> (hostintf/Mcount_hold_cntr_cy<6>)
+     XORCY:CI->O           1   0.804   0.000  hostintf/Mcount_hold_cntr_xor<7> (hostintf/Result<7>)
+     FDC:D                     0.308          hostintf/hold_cntr_7
+    ----------------------------------------
+    Total                      3.788ns (3.166ns logic, 0.622ns route)
+                                       (83.6% logic, 16.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CK_50MHz'
+  Clock period: 2.519ns (frequency: 396.983MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.519ns (Levels of Logic = 0)
+  Source:            clock_divider/half_ck_signal (FF)
+  Destination:       clock_divider/half_ck_signal (FF)
+  Source Clock:      CK_50MHz rising
+  Destination Clock: CK_50MHz rising
+
+  Data Path: clock_divider/half_ck_signal to clock_divider/half_ck_signal
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             15   0.591   1.017  clock_divider/half_ck_signal (clock_divider/half_ck_signal)
+     FDR:R                     0.911          clock_divider/half_ck_signal
+    ----------------------------------------
+    Total                      2.519ns (1.502ns logic, 1.017ns route)
+                                       (59.6% logic, 40.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CK_50MHz'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              4.880ns (Levels of Logic = 1)
+  Source:            clock_divider/half_ck_signal (FF)
+  Destination:       CK_out_to_TB (PAD)
+  Source Clock:      CK_50MHz rising
+
+  Data Path: clock_divider/half_ck_signal to CK_out_to_TB
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             15   0.591   1.017  clock_divider/half_ck_signal (clock_divider/half_ck_signal)
+     OBUF:I->O                 3.272          CK_out_to_TB_OBUF (CK_out_to_TB)
+    ----------------------------------------
+    Total                      4.880ns (3.863ns logic, 1.017ns route)
+                                       (79.2% logic, 20.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock_divider/half_ck_signal'
+  Total number of paths / destination ports: 17 / 3
+-------------------------------------------------------------------------
+Offset:              6.908ns (Levels of Logic = 3)
+  Source:            hostintf/hold_cntr_1 (FF)
+  Destination:       HOLD_out_to_TB (PAD)
+  Source Clock:      clock_divider/half_ck_signal rising
+
+  Data Path: hostintf/hold_cntr_1 to HOLD_out_to_TB
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.591   0.622  hostintf/hold_cntr_1 (hostintf/hold_cntr_1)
+     LUT4:I0->O            1   0.704   0.595  hostintf/HOLD_or000028 (hostintf/HOLD_or000028)
+     LUT2:I0->O            1   0.704   0.420  hostintf/HOLD_or000040 (HOLD_out_to_TB_OBUF)
+     OBUF:I->O                 3.272          HOLD_out_to_TB_OBUF (HOLD_out_to_TB)
+    ----------------------------------------
+    Total                      6.908ns (5.271ns logic, 1.637ns route)
+                                       (76.3% logic, 23.7% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 97 / 97
+-------------------------------------------------------------------------
+Delay:               6.236ns (Levels of Logic = 3)
+  Source:            switches_in<6> (PAD)
+  Destination:       RESET_out_to_TB (PAD)
+
+  Data Path: switches_in<6> to RESET_out_to_TB
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.218   0.622  switches_in_6_IBUF (switches_in_6_IBUF)
+     LUT2:I0->O            1   0.704   0.420  RESET1 (RESET_out_to_TB_OBUF)
+     OBUF:I->O                 3.272          RESET_out_to_TB_OBUF (RESET_out_to_TB)
+    ----------------------------------------
+    Total                      6.236ns (5.194ns logic, 1.042ns route)
+                                       (83.3% logic, 16.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.87 secs
+ 
+--> 
+
+Total memory usage is 266496 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  190 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

@@ -1,0 +1,10 @@
+Command line:
+   MIPS_ALU_TB_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  3412
+
+Mon May 11 18:45:02 2015
+
+
+ Elaboration Time: 0.1404 sec

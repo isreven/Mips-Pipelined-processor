@@ -1,0 +1,400 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: GPR.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "GPR.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "GPR"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : GPR
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/src/dual_port_memory-empty.vhd" in Library work.
+Architecture dual_port_memory of Entity dual_port_memory_no_ck_read is up to date.
+ERROR:HDLParsers - Cannot rename dependency database for library "work", file is "xst/work/hdpdeps.ref", Temporary database file "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\GPR and ALU\SIM\xst\work\xil_7908_7" will remain.  System error message is:  File exists
+Compiling vhdl file "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/src/GPR-empty.vhd" in Library work.
+Entity <gpr> compiled.
+Entity <gpr> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <GPR> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <dual_port_memory_no_CK_read> in library <work> (architecture <dual_port_memory>) with generics.
+	depth = 32
+	width = 32
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <GPR> in library <work> (Architecture <behavioral>).
+Entity <GPR> analyzed. Unit <GPR> generated.
+
+Analyzing generic Entity <dual_port_memory_no_CK_read> in library <work> (Architecture <dual_port_memory>).
+	depth = 32
+	width = 32
+Entity <dual_port_memory_no_CK_read> analyzed. Unit <dual_port_memory_no_CK_read> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <dual_port_memory_no_CK_read>.
+    Related source file is "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/src/dual_port_memory-empty.vhd".
+    Found 32x32-bit dual-port RAM <Mram_Memory_array> for signal <Memory_array>.
+    Found 32x32-bit dual-port RAM <Mram_Memory_array_ren> for signal <Memory_array>.
+    Summary:
+	inferred   2 RAM(s).
+Unit <dual_port_memory_no_CK_read> synthesized.
+
+
+Synthesizing Unit <GPR>.
+    Related source file is "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/src/GPR-empty.vhd".
+WARNING:Xst:1780 - Signal <GPR_wr_data> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <GPR> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 32x32-bit dual-port RAM                               : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <dual_port_memory_no_CK_read>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_Memory_array> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <wr_clk>        | rise     |
+    |     weA            | connected to signal <wr_en>         | high     |
+    |     addrA          | connected to signal <wr_address>    |          |
+    |     diA            | connected to signal <wr_data>       |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     addrB          | connected to signal <rd1_address>   |          |
+    |     doB            | connected to signal <rd1_data>      |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_Memory_array_ren> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <wr_clk>        | rise     |
+    |     weA            | connected to signal <wr_en>         | high     |
+    |     addrA          | connected to signal <wr_address>    |          |
+    |     diA            | connected to signal <wr_data>       |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     addrB          | connected to signal <rd2_address>   |          |
+    |     doB            | connected to signal <rd2_data>      |          |
+    -----------------------------------------------------------------------
+Unit <dual_port_memory_no_CK_read> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 32x32-bit dual-port distributed RAM                   : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <GPR> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block GPR, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : GPR.ngr
+Top Level Output File Name         : GPR
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 114
+
+Cell Usage :
+# BELS                             : 71
+#      GND                         : 1
+#      LUT3                        : 2
+#      LUT4                        : 66
+#      MUXF5                       : 2
+# RAMS                             : 128
+#      RAM16X1D                    : 128
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 113
+#      IBUF                        : 49
+#      OBUF                        : 64
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      124  out of   4656     2%  
+ Number of 4 input LUTs:                324  out of   9312     3%  
+    Number used as logic:                68
+    Number used as RAMs:                256
+ Number of IOs:                         114
+ Number of bonded IOBs:                 114  out of    232    49%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CK                                 | BUFGP                  | 128   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 4.208ns
+   Maximum output required time after clock: 6.892ns
+   Maximum combinational path delay: 9.353ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CK'
+  Total number of paths / destination ports: 1536 / 1280
+-------------------------------------------------------------------------
+Offset:              4.208ns (Levels of Logic = 2)
+  Source:            GPR_hold (PAD)
+  Destination:       GPR_file/Mram_Memory_array_ren1 (RAM)
+  Destination Clock: CK rising
+
+  Data Path: GPR_hold to GPR_file/Mram_Memory_array_ren1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.218   0.622  GPR_hold_IBUF (GPR_hold_IBUF)
+     LUT3:I0->O           64   0.704   1.272  write_ctrl (write_ctrl)
+     RAM16X1D:WE               0.392          GPR_file/Mram_Memory_array_ren1
+    ----------------------------------------
+    Total                      4.208ns (2.314ns logic, 1.894ns route)
+                                       (55.0% logic, 45.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CK'
+  Total number of paths / destination ports: 128 / 64
+-------------------------------------------------------------------------
+Offset:              6.892ns (Levels of Logic = 2)
+  Source:            GPR_file/Mram_Memory_array64 (RAM)
+  Destination:       rd_data1<31> (PAD)
+  Source Clock:      CK rising
+
+  Data Path: GPR_file/Mram_Memory_array64 to rd_data1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAM16X1D:WCLK->DPO    1   1.901   0.595  GPR_file/Mram_Memory_array64 (N261)
+     LUT4:I0->O            1   0.704   0.420  GPR_data_out1<31>1 (rd_data1_31_OBUF)
+     OBUF:I->O                 3.272          rd_data1_31_OBUF (rd_data1<31>)
+    ----------------------------------------
+    Total                      6.892ns (5.877ns logic, 1.015ns route)
+                                       (85.3% logic, 14.7% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 896 / 64
+-------------------------------------------------------------------------
+Delay:               9.353ns (Levels of Logic = 5)
+  Source:            rd_reg1<3> (PAD)
+  Destination:       rd_data1<31> (PAD)
+
+  Data Path: rd_reg1<3> to rd_data1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            65   1.218   1.448  rd_reg1_3_IBUF (rd_reg1_3_IBUF)
+     LUT4:I0->O            1   0.704   0.000  GPR_data_out1<0>21 (GPR_data_out1<0>2)
+     MUXF5:I0->O          32   0.321   1.266  GPR_data_out1<0>2_f5 (N22)
+     LUT4:I3->O            1   0.704   0.420  GPR_data_out1<9>1 (rd_data1_9_OBUF)
+     OBUF:I->O                 3.272          rd_data1_9_OBUF (rd_data1<9>)
+    ----------------------------------------
+    Total                      9.353ns (6.219ns logic, 3.134ns route)
+                                       (66.5% logic, 33.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 9.37 secs
+ 
+--> 
+
+Total memory usage is 277952 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

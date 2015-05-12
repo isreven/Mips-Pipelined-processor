@@ -1,0 +1,23 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Map Application Log File for Design 'MIPS_ALU'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off
+-c 100 -o MIPS_ALU_map.ncd MIPS_ALU.ngd MIPS_ALU.pcf 
+Target Device  : xc3s500e
+Target Package : fg320
+Target Speed   : -4
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Mon May 11 18:40:40 2015
+
+Mapping design into LUTs...
+Running directed packing...
+Running delay-based LUT packing...
+Running related packing...
+Updating timing models...
+FATAL_ERROR:MapHelpers:basmpreport.c:318:1.18 - Cannot open mapper report file
+   'MIPS_ALU_map.mrp'.   For technical support on this issue, please visit
+   http://www.xilinx.com/support.
+INTERNAL_ERROR:Portability:Port_MsgStreamImp.c:468:1.20 - Unable to delete
+   requested message stream. 

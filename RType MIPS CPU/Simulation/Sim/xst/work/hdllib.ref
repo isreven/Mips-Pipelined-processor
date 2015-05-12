@@ -1,0 +1,12 @@
+EN clock_driver NULL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/Clock_driver_for_sim.vhd" sub00/vhpl06 1431361881
+EN hw4_host_intf_4sim NULL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/HW4_Host_Intf_4sim_for_students.vhd" sub00/vhpl08 1431361883
+EN mips_alu NULL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/MIPS_ALU-empty.vhd" sub00/vhpl04 1431361879
+AR hw4_host_intf_4sim behavioral "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/HW4_Host_Intf_4sim_for_students.vhd" sub00/vhpl09 1431361884
+AR fetch_unit behavioral "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/Fetch_Unit-empty.vhd" sub00/vhpl01 1431361876
+EN fetch_unit NULL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/Fetch_Unit-empty.vhd" sub00/vhpl00 1431361875
+AR gpr behavioral "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/GPR-empty.vhd" sub00/vhpl03 1431361878
+AR mips_alu behavioral "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/MIPS_ALU-empty.vhd" sub00/vhpl05 1431361880
+EN hw4_mips_4sim NULL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/HW4_MIPS_4sim-empty.vhd" sub00/vhpl10 1431361885
+EN gpr NULL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/GPR-empty.vhd" sub00/vhpl02 1431361877
+AR hw4_mips_4sim behavioral "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/HW4_MIPS_4sim-empty.vhd" sub00/vhpl11 1431361886
+AR clock_driver clock_divider "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/Clock_driver_for_sim.vhd" sub00/vhpl07 1431361882

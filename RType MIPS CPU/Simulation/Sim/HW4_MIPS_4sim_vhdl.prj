@@ -1,0 +1,6 @@
+vhdl work "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\RType MIPS CPU\Simulation\Sim\MIPS_ALU-empty.vhd"
+vhdl work "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\RType MIPS CPU\Simulation\Sim\HW4_Host_Intf_4sim_for_students.vhd"
+vhdl work "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\RType MIPS CPU\Simulation\Sim\GPR-empty.vhd"
+vhdl work "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\RType MIPS CPU\Simulation\Sim\Fetch_Unit-empty.vhd"
+vhdl work "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\RType MIPS CPU\Simulation\Sim\Clock_driver_for_sim.vhd"
+vhdl work "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\RType MIPS CPU\Simulation\Sim\HW4_MIPS_4sim-empty.vhd"

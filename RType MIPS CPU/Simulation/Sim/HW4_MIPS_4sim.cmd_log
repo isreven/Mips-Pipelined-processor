@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/HW4_MIPS_4sim.xst" -ofn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/HW4_MIPS_4sim.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "HW4_MIPS_4sim.ngc" HW4_MIPS_4sim.ngd  
+xst -intstyle ise -ifn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/HW4_MIPS_4sim.xst" -ofn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/HW4_MIPS_4sim.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "HW4_MIPS_4sim.ngc" HW4_MIPS_4sim.ngd  

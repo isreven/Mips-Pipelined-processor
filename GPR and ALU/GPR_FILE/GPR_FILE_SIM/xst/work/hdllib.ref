@@ -1,0 +1,5 @@
+EN gpr_tb NULL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/src/GPR_TB.vhd" sub00/vhpl04 1430759869
+EN dual_port_memory_no_ck_read NULL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/src/dual_port_memory-empty.vhd" sub00/vhpl01 1430765394
+AR gpr behavioral "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/src/GPR-empty.vhd" sub00/vhpl03 1430765397
+AR dual_port_memory_no_ck_read dual_port_memory "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/src/dual_port_memory-empty.vhd" sub00/vhpl02 1430765395
+EN gpr NULL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/src/GPR-empty.vhd" sub00/vhpl00 1430765396
