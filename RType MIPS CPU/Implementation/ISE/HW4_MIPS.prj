@@ -1,0 +1,7 @@
+vhdl work "../Src_4ISE/dual_port_memory-empty.vhd"
+vhdl work "../Src_4ISE/MIPS_ALU-empty.vhd"
+vhdl work "../Src_4ISE/HW4_Host_Intf.vhd"
+vhdl work "../Src_4ISE/GPR-empty.vhd"
+vhdl work "../Src_4ISE/Fetch_Unit-empty.vhd"
+vhdl work "../Src_4ISE/Clock_driver.vhd"
+vhdl work "../Src_4ISE/HW4_MIPS-empty.vhd"

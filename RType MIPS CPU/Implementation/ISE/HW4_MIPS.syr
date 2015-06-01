@@ -1,0 +1,722 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: HW4_MIPS.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "HW4_MIPS.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "HW4_MIPS"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : HW4_MIPS
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"../Src_4ISE"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Implementation/Src_4ISE/dual_port_memory-empty.vhd" in Library work.
+Architecture dual_port_memory of Entity dual_port_memory_no_ck_read is up to date.
+Compiling vhdl file "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Implementation/Src_4ISE/Fetch_Unit-empty.vhd" in Library work.
+Architecture behavioral of Entity fetch_unit is up to date.
+Compiling vhdl file "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Implementation/Src_4ISE/GPR-empty.vhd" in Library work.
+Architecture behavioral of Entity gpr is up to date.
+Compiling vhdl file "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Implementation/Src_4ISE/MIPS_ALU-empty.vhd" in Library work.
+Architecture behavioral of Entity mips_alu is up to date.
+Compiling vhdl file "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Implementation/Src_4ISE/Clock_driver.vhd" in Library work.
+Architecture clock_divider of Entity clock_driver is up to date.
+Compiling vhdl file "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Implementation/Src_4ISE/HW4_Host_Intf.vhd" in Library work.
+Architecture behavioral of Entity hw4_host_intf is up to date.
+Compiling vhdl file "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Implementation/Src_4ISE/HW4_MIPS-empty.vhd" in Library work.
+Architecture behavioral of Entity hw4_mips is up to date.
+ERROR:HDLParsers - Cannot rename dependency database for library "work", file is "xst/work/hdpdeps.ref", Temporary database file "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\RType MIPS CPU\Implementation\ISE\xst\work\xil_3228_13" will remain.  System error message is:  File exists
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <HW4_MIPS> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Fetch_Unit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <GPR> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <MIPS_ALU> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Clock_Driver> in library <work> (architecture <clock_divider>).
+
+Analyzing hierarchy for entity <HW4_Host_intf> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <dual_port_memory_no_CK_read> in library <work> (architecture <dual_port_memory>) with generics.
+	depth = 32
+	width = 32
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <HW4_MIPS> in library <work> (Architecture <behavioral>).
+Entity <HW4_MIPS> analyzed. Unit <HW4_MIPS> generated.
+
+Analyzing Entity <Fetch_Unit> in library <work> (Architecture <behavioral>).
+Entity <Fetch_Unit> analyzed. Unit <Fetch_Unit> generated.
+
+Analyzing Entity <GPR> in library <work> (Architecture <behavioral>).
+Entity <GPR> analyzed. Unit <GPR> generated.
+
+Analyzing generic Entity <dual_port_memory_no_CK_read> in library <work> (Architecture <dual_port_memory>).
+	depth = 32
+	width = 32
+Entity <dual_port_memory_no_CK_read> analyzed. Unit <dual_port_memory_no_CK_read> generated.
+
+Analyzing Entity <MIPS_ALU> in library <work> (Architecture <behavioral>).
+Entity <MIPS_ALU> analyzed. Unit <MIPS_ALU> generated.
+
+Analyzing Entity <Clock_Driver> in library <work> (Architecture <clock_divider>).
+Entity <Clock_Driver> analyzed. Unit <Clock_Driver> generated.
+
+Analyzing Entity <HW4_Host_intf> in library <work> (Architecture <behavioral>).
+WARNING:Xst:2211 - "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Implementation/Src_4ISE/HW4_Host_Intf.vhd" line 225: Instantiating black box module <BYOC_Host_intf>.
+Entity <HW4_Host_intf> analyzed. Unit <HW4_Host_intf> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Fetch_Unit>.
+    Related source file is "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Implementation/Src_4ISE/Fetch_Unit-empty.vhd".
+    Using one-hot encoding for signal <PC_Source>.
+    Found 32-bit adder for signal <branch_adrs>.
+    Found 32-bit adder for signal <PC_plus_4>.
+    Found 32-bit register for signal <PC_plus_4_pID>.
+    Found 32-bit register for signal <PC_reg>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+Unit <Fetch_Unit> synthesized.
+
+
+Synthesizing Unit <MIPS_ALU>.
+    Related source file is "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Implementation/Src_4ISE/MIPS_ALU-empty.vhd".
+WARNING:Xst:646 - Signal <substract<31:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Using one-hot encoding for signal <ALU_cmd>.
+    Found 32-bit addsub for signal <ALU_output$addsub0000>.
+    Found 32-bit xor2 for signal <ALU_output$xor0000> created at line 86.
+    Found 33-bit subtractor for signal <substract>.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+Unit <MIPS_ALU> synthesized.
+
+
+Synthesizing Unit <dual_port_memory_no_CK_read>.
+    Related source file is "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Implementation/Src_4ISE/dual_port_memory-empty.vhd".
+    Found 32x32-bit dual-port RAM <Mram_Memory_array> for signal <Memory_array>.
+    Found 32x32-bit dual-port RAM <Mram_Memory_array_ren> for signal <Memory_array>.
+    Summary:
+	inferred   2 RAM(s).
+Unit <dual_port_memory_no_CK_read> synthesized.
+
+
+Synthesizing Unit <GPR>.
+    Related source file is "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Implementation/Src_4ISE/GPR-empty.vhd".
+WARNING:Xst:1780 - Signal <GPR_wr_data> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <GPR> synthesized.
+
+
+Synthesizing Unit <Clock_Driver>.
+    Related source file is "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Implementation/Src_4ISE/Clock_driver.vhd".
+    Found 1-bit register for signal <half_ck_signal>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <Clock_Driver> synthesized.
+
+
+Synthesizing Unit <HW4_Host_intf>.
+    Related source file is "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Implementation/Src_4ISE/HW4_Host_Intf.vhd".
+WARNING:Xst:1780 - Signal <HOLD> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_sevenseg_out> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_anodes_out> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_VGA_v_sync> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_VGA_red2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_VGA_red1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_VGA_red0> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_VGA_h_sync> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_VGA_grn2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_VGA_grn1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_VGA_grn0> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_VGA_blu2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_VGA_blu1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <HI_PS2_kbd_data> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <HI_PS2_kbd_ck> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <HI_MIPS_DMem_wr_data> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <HI_MIPS_DMem_we> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_MIPS_DMem_rd_data> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <HI_MIPS_DMem_adrs> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_Flash_wr_data> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_Flash_we_n> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <HI_Flash_sts> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_Flash_rp_n> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <HI_Flash_rd_data> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_Flash_oe_n> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_Flash_ce_n> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_Flash_adrs> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <CK> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <HW4_Host_intf> synthesized.
+
+
+Synthesizing Unit <HW4_MIPS>.
+    Related source file is "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Implementation/Src_4ISE/HW4_MIPS-empty.vhd".
+    Found 32-bit register for signal <A_reg>.
+    Found 2-bit register for signal <ALUOP_pEX>.
+    Found 32-bit register for signal <ALUout_reg>.
+    Found 1-bit register for signal <ALUsrcB_pEX>.
+    Found 32-bit register for signal <B_reg>.
+    Found 6-bit register for signal <Funct_pEX>.
+    Found 5-bit register for signal <Rd_pEX>.
+    Found 5-bit register for signal <Rd_pWB>.
+    Found 1-bit register for signal <RegDst_pEX>.
+    Found 1-bit register for signal <RegWrite_pEX>.
+    Found 1-bit register for signal <RegWrite_pWB>.
+    Found 32-bit comparator equal for signal <Rs_equals_Rt$cmp_eq0000> created at line 288.
+    Found 5-bit register for signal <Rt_pEX>.
+    Found 32-bit register for signal <sext_imm_reg>.
+    Summary:
+	inferred 155 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <HW4_MIPS> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 32x32-bit dual-port RAM                               : 2
+# Adders/Subtractors                                   : 4
+ 32-bit adder                                          : 2
+ 32-bit addsub                                         : 1
+ 33-bit subtractor                                     : 1
+# Registers                                            : 16
+ 1-bit register                                        : 5
+ 2-bit register                                        : 1
+ 32-bit register                                       : 6
+ 5-bit register                                        : 3
+ 6-bit register                                        : 1
+# Comparators                                          : 1
+ 32-bit comparator equal                               : 1
+# Xors                                                 : 1
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <../Src_4ISE/BYOC_Host_intf.ngc>.
+Loading core <BYOC_Host_intf> for timing and area information for instance <hostintf>.
+
+Synthesizing (advanced) Unit <dual_port_memory_no_CK_read>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_Memory_array> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <wr_clk>        | rise     |
+    |     weA            | connected to signal <wr_en>         | high     |
+    |     addrA          | connected to signal <wr_address>    |          |
+    |     diA            | connected to signal <wr_data>       |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     addrB          | connected to signal <rd1_address>   |          |
+    |     doB            | connected to signal <rd1_data>      |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_Memory_array_ren> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <wr_clk>        | rise     |
+    |     weA            | connected to signal <wr_en>         | high     |
+    |     addrA          | connected to signal <wr_address>    |          |
+    |     diA            | connected to signal <wr_data>       |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     addrB          | connected to signal <rd2_address>   |          |
+    |     doB            | connected to signal <rd2_data>      |          |
+    -----------------------------------------------------------------------
+Unit <dual_port_memory_no_CK_read> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 32x32-bit dual-port distributed RAM                   : 2
+# Adders/Subtractors                                   : 4
+ 32-bit adder                                          : 2
+ 32-bit addsub                                         : 1
+ 33-bit subtractor                                     : 1
+# Registers                                            : 220
+ Flip-Flops                                            : 220
+# Comparators                                          : 1
+ 32-bit comparator equal                               : 1
+# Xors                                                 : 1
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <HW4_MIPS> ...
+INFO:Xst:2261 - The FF/Latch <ALUOP_pEX_1> in Unit <HW4_MIPS> is equivalent to the following FF/Latch, which will be removed : <RegDst_pEX> 
+INFO:Xst:2261 - The FF/Latch <ALUOP_pEX_1> in Unit <HW4_MIPS> is equivalent to the following FF/Latch, which will be removed : <RegDst_pEX> 
+INFO:Xst:2261 - The FF/Latch <ALUOP_pEX_1> in Unit <HW4_MIPS> is equivalent to the following FF/Latch, which will be removed : <RegDst_pEX> 
+INFO:Xst:2261 - The FF/Latch <ALUOP_pEX_1> in Unit <HW4_MIPS> is equivalent to the following FF/Latch, which will be removed : <RegDst_pEX> 
+
+Optimizing unit <MIPS_ALU> ...
+
+Optimizing unit <Fetch_Unit> ...
+
+Optimizing unit <GPR> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <sext_imm_reg_11> in Unit <HW4_MIPS> is equivalent to the following FF/Latch, which will be removed : <Rd_pEX_0> 
+INFO:Xst:2261 - The FF/Latch <sext_imm_reg_12> in Unit <HW4_MIPS> is equivalent to the following FF/Latch, which will be removed : <Rd_pEX_1> 
+INFO:Xst:2261 - The FF/Latch <sext_imm_reg_13> in Unit <HW4_MIPS> is equivalent to the following FF/Latch, which will be removed : <Rd_pEX_2> 
+INFO:Xst:2261 - The FF/Latch <sext_imm_reg_14> in Unit <HW4_MIPS> is equivalent to the following FF/Latch, which will be removed : <Rd_pEX_3> 
+INFO:Xst:2261 - The FF/Latch <sext_imm_reg_15> in Unit <HW4_MIPS> is equivalent to the following 17 FFs/Latches, which will be removed : <sext_imm_reg_16> <sext_imm_reg_17> <sext_imm_reg_18> <sext_imm_reg_19> <sext_imm_reg_20> <sext_imm_reg_21> <sext_imm_reg_22> <sext_imm_reg_23> <sext_imm_reg_24> <sext_imm_reg_25> <sext_imm_reg_26> <sext_imm_reg_27> <sext_imm_reg_28> <sext_imm_reg_29> <sext_imm_reg_30> <sext_imm_reg_31> <Rd_pEX_4> 
+INFO:Xst:2261 - The FF/Latch <Funct_pEX_0> in Unit <HW4_MIPS> is equivalent to the following FF/Latch, which will be removed : <sext_imm_reg_0> 
+INFO:Xst:2261 - The FF/Latch <Funct_pEX_1> in Unit <HW4_MIPS> is equivalent to the following FF/Latch, which will be removed : <sext_imm_reg_1> 
+INFO:Xst:2261 - The FF/Latch <Funct_pEX_2> in Unit <HW4_MIPS> is equivalent to the following FF/Latch, which will be removed : <sext_imm_reg_2> 
+INFO:Xst:2261 - The FF/Latch <Funct_pEX_3> in Unit <HW4_MIPS> is equivalent to the following FF/Latch, which will be removed : <sext_imm_reg_3> 
+INFO:Xst:2261 - The FF/Latch <Funct_pEX_4> in Unit <HW4_MIPS> is equivalent to the following FF/Latch, which will be removed : <sext_imm_reg_4> 
+INFO:Xst:2261 - The FF/Latch <Funct_pEX_5> in Unit <HW4_MIPS> is equivalent to the following FF/Latch, which will be removed : <sext_imm_reg_5> 
+Found area constraint ratio of 100 (+ 5) on block HW4_MIPS, actual ratio is 26.
+INFO:Xst:2260 - The FF/Latch <CrntState_23> in Unit <hostintf/hostintf> is equivalent to the following FF/Latch : <CrntState_23_1> 
+INFO:Xst:2260 - The FF/Latch <CrntState_30> in Unit <hostintf/hostintf> is equivalent to the following FF/Latch : <CrntState_30_1> 
+INFO:Xst:2260 - The FF/Latch <CrntState_23> in Unit <hostintf/hostintf> is equivalent to the following FF/Latch : <CrntState_23_1> 
+INFO:Xst:2260 - The FF/Latch <CrntState_30> in Unit <hostintf/hostintf> is equivalent to the following FF/Latch : <CrntState_30_1> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 192
+ Flip-Flops                                            : 192
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : HW4_MIPS.ngr
+Top Level Output File Name         : HW4_MIPS
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 23
+
+Cell Usage :
+# BELS                             : 2885
+#      GND                         : 2
+#      INV                         : 35
+#      LUT1                        : 144
+#      LUT2                        : 158
+#      LUT2_D                      : 2
+#      LUT2_L                      : 6
+#      LUT3                        : 684
+#      LUT3_D                      : 42
+#      LUT3_L                      : 15
+#      LUT4                        : 744
+#      LUT4_D                      : 27
+#      LUT4_L                      : 117
+#      MUXCY                       : 342
+#      MUXF5                       : 202
+#      MUXF6                       : 72
+#      MUXF7                       : 32
+#      VCC                         : 2
+#      XORCY                       : 259
+# FlipFlops/Latches                : 889
+#      FD                          : 65
+#      FDC                         : 124
+#      FDCE                        : 362
+#      FDE                         : 237
+#      FDP                         : 2
+#      FDPE                        : 11
+#      FDR                         : 29
+#      FDRE                        : 54
+#      FDRS                        : 2
+#      FDRSE                       : 1
+#      FDS                         : 2
+# RAMS                             : 141
+#      RAM16X1D                    : 128
+#      RAMB16_S18_S18              : 4
+#      RAMB16_S36                  : 1
+#      RAMB16_S4_S4                : 8
+# Shift Registers                  : 4
+#      SRL16                       : 1
+#      SRL16E                      : 3
+# Clock Buffers                    : 3
+#      BUFG                        : 2
+#      BUFGP                       : 1
+# IO Buffers                       : 22
+#      IBUF                        : 13
+#      OBUF                        : 9
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                     1211  out of   4656    26%  
+ Number of Slice Flip Flops:            889  out of   9312     9%  
+ Number of 4 input LUTs:               2234  out of   9312    23%  
+    Number used as logic:              1974
+    Number used as Shift registers:       4
+    Number used as RAMs:                256
+ Number of IOs:                          23
+ Number of bonded IOBs:                  23  out of    232     9%  
+ Number of BRAMs:                        13  out of     20    65%  
+ Number of GCLKs:                         3  out of     24    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------------------+------------------------+-------+
+Clock Signal                                   | Clock buffer(FF name)  | Load  |
+-----------------------------------------------+------------------------+-------+
+clock_divider/half_ck_signal                   | BUFG                   | 981   |
+CK_50MHz                                       | BUFGP                  | 1     |
+hostintf/hostintf/UART_TOP/divider_entity/T_FF1| BUFG                   | 52    |
+-----------------------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+--------------------------------------------------------+-------------------------------------------------------------------+-------+
+Control Signal                                          | Buffer(FF name)                                                   | Load  |
+--------------------------------------------------------+-------------------------------------------------------------------+-------+
+hostintf/hostintf/MIPS_reset(hostintf/hostintf/RESET1:O)| NONE(hostintf/hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd1)| 280   |
+RESET(hostintf/RESET1:O)                                | NONE(ALUOP_pEX_0)                                                 | 191   |
+buttons_in<3>                                           | IBUF                                                              | 28    |
+--------------------------------------------------------+-------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 16.113ns (Maximum Frequency: 62.061MHz)
+   Minimum input arrival time before clock: 6.665ns
+   Maximum output required time after clock: 4.283ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock_divider/half_ck_signal'
+  Clock period: 16.113ns (frequency: 62.061MHz)
+  Total number of paths / destination ports: 286888 / 2978
+-------------------------------------------------------------------------
+Delay:               16.113ns (Levels of Logic = 26)
+  Source:            hostintf/hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2 (RAM)
+  Destination:       hostintf/hostintf/Tx_data_reg_0 (FF)
+  Source Clock:      clock_divider/half_ck_signal rising
+  Destination Clock: clock_divider/half_ck_signal rising
+
+  Data Path: hostintf/hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2 to hostintf/hostintf/Tx_data_reg_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16_S18_S18:CLKA->DOA6    1   2.800   0.595  IMem_in_host_intf/Regular_IMem/Mram_Memory_array2 (IMem_in_host_intf/MIPS_IMem_rd_data_regular<24>)
+     LUT4:I0->O           70   0.704   1.449  IMem_in_host_intf/Mmux_MIPS_IMem_rd_data171 (MIPS_IMem_rd_data<24>)
+     end scope: 'hostintf/hostintf'
+     LUT4_D:I0->O         12   0.704   0.965  GPR_file/GPR_data_out1<1>1_SW0_1 (GPR_file/GPR_data_out1<1>1_SW0)
+     LUT4:I3->O            3   0.704   0.706  GPR_file/GPR_data_out1<2>1 (GPR_rd_data1<2>)
+     LUT4:I0->O            1   0.704   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_lut<1> (Mcompar_Rs_equals_Rt_cmp_eq0000_lut<1>)
+     MUXCY:S->O            1   0.464   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<1> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<2> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<3> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<4> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<5> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<6> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<7> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<8> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<9> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<10> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<11> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<12> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<13> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<14> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<14>)
+     MUXCY:CI->O           3   0.459   0.610  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<15> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<15>)
+     begin scope: 'hostintf/hostintf'
+     LUT3:I1->O            1   0.704   0.000  Mmux_Host_RDBK_data_71 (Mmux_Host_RDBK_data_71)
+     MUXF5:I0->O           1   0.321   0.000  Mmux_Host_RDBK_data_5_f5_0 (Mmux_Host_RDBK_data_5_f51)
+     MUXF6:I1->O           1   0.521   0.000  Mmux_Host_RDBK_data_4_f6 (Mmux_Host_RDBK_data_4_f6)
+     MUXF7:I0->O           1   0.521   0.424  Mmux_Host_RDBK_data_2_f7 (Host_RDBK_data<0>)
+     LUT4_L:I3->LO         1   0.704   0.275  Host_MIPS_rd_data<0>_SW0_SW0 (N316)
+     LUT4:I0->O            1   0.704   0.000  Host_MIPS_rd_data<0> (Host_MIPS_rd_data<0>)
+     FDE:D                     0.308          Tx_data_reg_0
+    ----------------------------------------
+    Total                     16.113ns (11.089ns logic, 5.024ns route)
+                                       (68.8% logic, 31.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CK_50MHz'
+  Clock period: 1.949ns (frequency: 513.084MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.949ns (Levels of Logic = 0)
+  Source:            clock_divider/half_ck_signal (FF)
+  Destination:       clock_divider/half_ck_signal (FF)
+  Source Clock:      CK_50MHz rising
+  Destination Clock: CK_50MHz rising
+
+  Data Path: clock_divider/half_ck_signal to clock_divider/half_ck_signal
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.591   0.447  clock_divider/half_ck_signal (clock_divider/half_ck_signal)
+     FDR:R                     0.911          clock_divider/half_ck_signal
+    ----------------------------------------
+    Total                      1.949ns (1.502ns logic, 0.447ns route)
+                                       (77.1% logic, 22.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'hostintf/hostintf/UART_TOP/divider_entity/T_FF1'
+  Clock period: 6.201ns (frequency: 161.264MHz)
+  Total number of paths / destination ports: 357 / 107
+-------------------------------------------------------------------------
+Delay:               6.201ns (Levels of Logic = 3)
+  Source:            hostintf/hostintf/UART_TOP/receiver_entity/sub_bit_cntr_0 (FF)
+  Destination:       hostintf/hostintf/UART_TOP/Rx_output_sync_entity/Q1 (FF)
+  Source Clock:      hostintf/hostintf/UART_TOP/divider_entity/T_FF1 rising
+  Destination Clock: hostintf/hostintf/UART_TOP/divider_entity/T_FF1 rising
+
+  Data Path: hostintf/hostintf/UART_TOP/receiver_entity/sub_bit_cntr_0 to hostintf/hostintf/UART_TOP/Rx_output_sync_entity/Q1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              6   0.591   0.844  UART_TOP/receiver_entity/sub_bit_cntr_0 (UART_TOP/receiver_entity/sub_bit_cntr<0>)
+     LUT4:I0->O            4   0.704   0.622  UART_TOP/receiver_entity/CrntState_cmp_eq00001 (UART_TOP/receiver_entity/CrntState_cmp_eq0000)
+     LUT3:I2->O           10   0.704   1.057  UART_TOP/receiver_entity/dout_we1 (UART_TOP/Rx_dout_we)
+     LUT3:I0->O            1   0.704   0.420  UART_TOP/Rx_output_sync_entity/Q1_not00011 (UART_TOP/Rx_output_sync_entity/Q1_not0001)
+     FDCE:CE                   0.555          UART_TOP/Rx_output_sync_entity/Q1
+    ----------------------------------------
+    Total                      6.201ns (3.258ns logic, 2.943ns route)
+                                       (52.5% logic, 47.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock_divider/half_ck_signal'
+  Total number of paths / destination ports: 702 / 365
+-------------------------------------------------------------------------
+Offset:              6.665ns (Levels of Logic = 5)
+  Source:            switches_in<5> (PAD)
+  Destination:       B_reg_0 (FF)
+  Destination Clock: clock_divider/half_ck_signal rising
+
+  Data Path: switches_in<5> to B_reg_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.218   0.455  switches_in_5_IBUF (switches_in_5_IBUF)
+     begin scope: 'hostintf/hostintf'
+     LUT3:I2->O            2   0.704   0.482  HOLD_and0000_SW0 (N57)
+     LUT4:I2->O            3   0.704   0.531  HOLD_and0000 (MIPS_hold)
+     end scope: 'hostintf/hostintf'
+     INV:I->O            191   0.704   1.312  fetch_unit_imp/HOLD_in_inv1_INV_0 (HOLD_inv)
+     FDCE:CE                   0.555          B_reg_0
+    ----------------------------------------
+    Total                      6.665ns (3.885ns logic, 2.780ns route)
+                                       (58.3% logic, 41.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'hostintf/hostintf/UART_TOP/divider_entity/T_FF1'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              5.523ns (Levels of Logic = 3)
+  Source:            buttons_in<3> (PAD)
+  Destination:       hostintf/hostintf/UART_TOP/transmitter_entity/CrntState_FSM_FFd2 (FF)
+  Destination Clock: hostintf/hostintf/UART_TOP/divider_entity/T_FF1 rising
+
+  Data Path: buttons_in<3> to hostintf/hostintf/UART_TOP/transmitter_entity/CrntState_FSM_FFd2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            37   1.218   1.343  buttons_in_3_IBUF (buttons_in_3_IBUF)
+     begin scope: 'hostintf/hostintf'
+     LUT2:I1->O          302   0.704   1.347  RESET1 (MIPS_reset)
+     FDR:R                     0.911          UART_TOP/transmitter_entity/CrntState_FSM_FFd2
+    ----------------------------------------
+    Total                      5.523ns (2.833ns logic, 2.690ns route)
+                                       (51.3% logic, 48.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'hostintf/hostintf/UART_TOP/divider_entity/T_FF1'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.283ns (Levels of Logic = 2)
+  Source:            hostintf/hostintf/UART_TOP/transmitter_entity/Out_shift_reg_0 (FF)
+  Destination:       RS232_Tx (PAD)
+  Source Clock:      hostintf/hostintf/UART_TOP/divider_entity/T_FF1 rising
+
+  Data Path: hostintf/hostintf/UART_TOP/transmitter_entity/Out_shift_reg_0 to RS232_Tx
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDPE:C->Q             1   0.591   0.420  UART_TOP/transmitter_entity/Out_shift_reg_0 (RS232_Tx)
+     end scope: 'hostintf/hostintf'
+     OBUF:I->O                 3.272          RS232_Tx_OBUF (RS232_Tx)
+    ----------------------------------------
+    Total                      4.283ns (3.863ns logic, 0.420ns route)
+                                       (90.2% logic, 9.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 26.00 secs
+Total CPU time to Xst completion: 26.07 secs
+ 
+--> 
+
+Total memory usage is 318020 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :   31 (   0 filtered)
+Number of infos    :   22 (   0 filtered)
+

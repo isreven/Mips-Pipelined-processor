@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Implementation/ISE/HW4_MIPS.xst" -ofn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Implementation/ISE/HW4_MIPS.syr" 
+xst -intstyle ise -ifn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Implementation/ISE/HW4_MIPS.xst" -ofn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Implementation/ISE/HW4_MIPS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../Src_4ISE -nt timestamp -uc "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Implementation/Src_4ISE/HW4_MIPS.ucf" -p xc3s500e-fg320-4 "HW4_MIPS.ngc" HW4_MIPS.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o HW4_MIPS_map.ncd HW4_MIPS.ngd HW4_MIPS.pcf 
+par -w -intstyle ise -ol high -t 1 HW4_MIPS_map.ncd HW4_MIPS.ncd HW4_MIPS.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml HW4_MIPS.twx HW4_MIPS.ncd -o HW4_MIPS.twr HW4_MIPS.pcf 
+xst -intstyle ise -ifn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Implementation/ISE/HW4_MIPS.xst" -ofn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Implementation/ISE/HW4_MIPS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../Src_4ISE -nt timestamp -uc "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Implementation/Src_4ISE/HW4_MIPS.ucf" -p xc3s500e-fg320-4 "HW4_MIPS.ngc" HW4_MIPS.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o HW4_MIPS_map.ncd HW4_MIPS.ngd HW4_MIPS.pcf 
+par -w -intstyle ise -ol high -t 1 HW4_MIPS_map.ncd HW4_MIPS.ncd HW4_MIPS.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml HW4_MIPS.twx HW4_MIPS.ncd -o HW4_MIPS.twr HW4_MIPS.pcf 
+bitgen -intstyle ise -f HW4_MIPS.ut HW4_MIPS.ncd 

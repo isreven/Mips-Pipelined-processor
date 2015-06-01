@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="ISE.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="HW4_MIPS.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="HW4_MIPS.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="HW4_MIPS.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="HW4_MIPS.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="HW4_MIPS.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="HW4_MIPS.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="HW4_MIPS.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="HW4_MIPS.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="HW4_MIPS.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="HW4_MIPS.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="HW4_MIPS.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="HW4_MIPS.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="HW4_MIPS.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="HW4_MIPS.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="HW4_MIPS.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="HW4_MIPS.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="HW4_MIPS.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="HW4_MIPS.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="HW4_MIPS.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="HW4_MIPS.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="HW4_MIPS_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="HW4_MIPS_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="HW4_MIPS_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="HW4_MIPS_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="HW4_MIPS_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="HW4_MIPS_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="HW4_MIPS_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="HW4_MIPS_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="HW4_MIPS_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="HW4_MIPS_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="HW4_MIPS_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="HW4_MIPS_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="HW4_MIPS_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="HW4_MIPS_usage.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="HW4_MIPS_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="HW4_MIPS_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="hw4_mips.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="hw4_mips.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="hw4_mips.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1432575431" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1432575431">
+      <status xil_pn:value="SuccessfullyRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1432575431" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="8826773627011620176" xil_pn:start_ts="1432575431">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1432575431" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-7433694068175616874" xil_pn:start_ts="1432575431">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1432575431" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1432575431">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1432575431" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="1724367219256785550" xil_pn:start_ts="1432575431">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1432575431" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3893270297158069842" xil_pn:start_ts="1432575431">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1432575431" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="1062939217341049632" xil_pn:start_ts="1432575431">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1432575461" xil_pn:in_ck="5813676383015798406" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="4416429567584289831" xil_pn:start_ts="1432575431">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="HW4_MIPS.lso"/>
+      <outfile xil_pn:name="HW4_MIPS.ngc"/>
+      <outfile xil_pn:name="HW4_MIPS.ngr"/>
+      <outfile xil_pn:name="HW4_MIPS.prj"/>
+      <outfile xil_pn:name="HW4_MIPS.stx"/>
+      <outfile xil_pn:name="HW4_MIPS.syr"/>
+      <outfile xil_pn:name="HW4_MIPS.xst"/>
+      <outfile xil_pn:name="HW4_MIPS_vhdl.prj"/>
+      <outfile xil_pn:name="HW4_MIPS_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1432575461" xil_pn:in_ck="5082174271676332717" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-7348306887668578557" xil_pn:start_ts="1432575461">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1432575471" xil_pn:in_ck="-853519965873466092" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="8023394824685605251" xil_pn:start_ts="1432575461">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="HW4_MIPS.bld"/>
+      <outfile xil_pn:name="HW4_MIPS.ngd"/>
+      <outfile xil_pn:name="HW4_MIPS_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1432575479" xil_pn:in_ck="7218756337428825727" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-5849673150125579957" xil_pn:start_ts="1432575471">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="HW4_MIPS.pcf"/>
+      <outfile xil_pn:name="HW4_MIPS_map.map"/>
+      <outfile xil_pn:name="HW4_MIPS_map.mrp"/>
+      <outfile xil_pn:name="HW4_MIPS_map.ncd"/>
+      <outfile xil_pn:name="HW4_MIPS_map.ngm"/>
+      <outfile xil_pn:name="HW4_MIPS_map.xrpt"/>
+      <outfile xil_pn:name="HW4_MIPS_summary.xml"/>
+      <outfile xil_pn:name="HW4_MIPS_usage.xml"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1432575517" xil_pn:in_ck="-935749553742840552" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-5563652517805085498" xil_pn:start_ts="1432575479">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="HW4_MIPS.ncd"/>
+      <outfile xil_pn:name="HW4_MIPS.pad"/>
+      <outfile xil_pn:name="HW4_MIPS.par"/>
+      <outfile xil_pn:name="HW4_MIPS.ptwx"/>
+      <outfile xil_pn:name="HW4_MIPS.unroutes"/>
+      <outfile xil_pn:name="HW4_MIPS.xpi"/>
+      <outfile xil_pn:name="HW4_MIPS_pad.csv"/>
+      <outfile xil_pn:name="HW4_MIPS_pad.txt"/>
+      <outfile xil_pn:name="HW4_MIPS_par.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1432575538" xil_pn:in_ck="3774829425842282446" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="287829442711806529" xil_pn:start_ts="1432575517">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="HW4_MIPS.ut"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="hw4_mips.bgn"/>
+      <outfile xil_pn:name="hw4_mips.bit"/>
+      <outfile xil_pn:name="hw4_mips.drc"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1432575517" xil_pn:in_ck="7218756337428825595" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1432575510">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="HW4_MIPS.twr"/>
+      <outfile xil_pn:name="HW4_MIPS.twx"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+    </transform>
+  </transforms>
+
+</generated_project>

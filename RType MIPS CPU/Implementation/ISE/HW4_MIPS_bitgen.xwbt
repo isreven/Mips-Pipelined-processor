@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\RType MIPS CPU\Implementation\ISE\HW4_MIPS.ncd
+OUTFILE=C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\RType MIPS CPU\Implementation\ISE\HW4_MIPS.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\RType MIPS CPU\Implementation\ISE
+LICENSE=WebPack
+USER_INFO=211018701_0_0_839

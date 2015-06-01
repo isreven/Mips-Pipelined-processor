@@ -1,0 +1,14 @@
+EN clock_driver NULL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Implementation/Src_4ISE/Clock_driver.vhd" sub00/vhpl08 1432575443
+AR hw4_mips behavioral "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Implementation/Src_4ISE/HW4_MIPS-empty.vhd" sub00/vhpl13 1432575448
+EN dual_port_memory_no_ck_read NULL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Implementation/Src_4ISE/dual_port_memory-empty.vhd" sub00/vhpl00 1432575435
+EN mips_alu NULL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Implementation/Src_4ISE/MIPS_ALU-empty.vhd" sub00/vhpl06 1432575441
+AR fetch_unit behavioral "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Implementation/Src_4ISE/Fetch_Unit-empty.vhd" sub00/vhpl03 1432575438
+EN fetch_unit NULL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Implementation/Src_4ISE/Fetch_Unit-empty.vhd" sub00/vhpl02 1432575437
+AR gpr behavioral "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Implementation/Src_4ISE/GPR-empty.vhd" sub00/vhpl05 1432575440
+EN hw4_host_intf NULL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Implementation/Src_4ISE/HW4_Host_Intf.vhd" sub00/vhpl10 1432575445
+AR mips_alu behavioral "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Implementation/Src_4ISE/MIPS_ALU-empty.vhd" sub00/vhpl07 1432575442
+AR dual_port_memory_no_ck_read dual_port_memory "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Implementation/Src_4ISE/dual_port_memory-empty.vhd" sub00/vhpl01 1432575436
+EN hw4_mips NULL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Implementation/Src_4ISE/HW4_MIPS-empty.vhd" sub00/vhpl12 1432575447
+EN gpr NULL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Implementation/Src_4ISE/GPR-empty.vhd" sub00/vhpl04 1432575439
+AR hw4_host_intf behavioral "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Implementation/Src_4ISE/HW4_Host_Intf.vhd" sub00/vhpl11 1432575446
+AR clock_driver clock_divider "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Implementation/Src_4ISE/Clock_driver.vhd" sub00/vhpl09 1432575444
