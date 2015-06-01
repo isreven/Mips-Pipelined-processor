@@ -1,0 +1,4 @@
+vhdl work "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\Fetch\SRC\Fetch_Unit_Host_Intf.vhd"
+vhdl work "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\Fetch\SRC\Clock_driver.vhd"
+vhdl work "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\Fetch\ISE\Fetch_Unit-empty.vhd"
+vhdl work "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\Fetch\ISE\HW2_top.vhd"

@@ -16,6 +16,19 @@ Checking Constraint Associations...
 Done...
 
 Checking expanded design ...
+<<<<<<< HEAD
+=======
+ERROR:NgdBuild:604 - logical block 'GPR_file' with type 'GPR' could not be
+   resolved. A pin name misspelling can cause this, a missing edif or ngc file,
+   case mismatch between the block name and the edif or ngc file name, or the
+   misspelling of a type name. Symbol 'GPR' is not supported in target
+   'spartan3e'.
+ERROR:NgdBuild:604 - logical block 'ALU' with type 'MIPS_ALU' could not be
+   resolved. A pin name misspelling can cause this, a missing edif or ngc file,
+   case mismatch between the block name and the edif or ngc file name, or the
+   misspelling of a type name. Symbol 'MIPS_ALU' is not supported in target
+   'spartan3e'.
+>>>>>>> 00db5acc10c57b47ec992e640bd9d77672877e05
 
 Partition Implementation Status
 -------------------------------
@@ -25,6 +38,7 @@ Partition Implementation Status
 -------------------------------
 
 NGDBUILD Design Results Summary:
+<<<<<<< HEAD
   Number of errors:     0
   Number of warnings:   0
 
@@ -34,4 +48,16 @@ Writing NGD file "HW4_MIPS_4sim.ngd" ...
 Total REAL time to NGDBUILD completion:  5 sec
 Total CPU time to NGDBUILD completion:   5 sec
 
+=======
+  Number of errors:     2
+  Number of warnings:   0
+
+Total memory usage is 155736 kilobytes
+
+Total REAL time to NGDBUILD completion:  5 sec
+Total CPU time to NGDBUILD completion:   5 sec
+
+One or more errors were found during NGDBUILD.  No NGD file will be written.
+
+>>>>>>> 00db5acc10c57b47ec992e640bd9d77672877e05
 Writing NGDBUILD log file "HW4_MIPS_4sim.bld"...

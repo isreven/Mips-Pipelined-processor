@@ -1,11 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
+<<<<<<< HEAD
   <DateModified>2015-05-25T20:24:14</DateModified>
   <ModuleName>HW4_MIPS_4sim</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/iseconfig/HW4_MIPS_4sim.xreport</SavedFilePath>
   <ImplementationReportsDirectory>C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim\</ImplementationReportsDirectory>
+=======
+  <DateModified>2015-05-11T19:30:55</DateModified>
+  <ModuleName>HW4_MIPS_4sim</ModuleName>
+  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SavedFilePath>C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/iseconfig/HW4_MIPS_4sim.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim</ImplementationReportsDirectory>
+>>>>>>> 00db5acc10c57b47ec992e640bd9d77672877e05
   <DateInitialized>2015-05-11T19:30:55</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

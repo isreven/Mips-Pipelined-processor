@@ -1,0 +1,4 @@
+vhdl work "../SRC/Fetch_Unit_Host_Intf.vhd"
+vhdl work "../SRC/Clock_driver.vhd"
+vhdl work "Fetch_Unit-empty.vhd"
+vhdl work "HW2_top.vhd"

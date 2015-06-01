@@ -301,6 +301,7 @@ RESET <= switches_in(6) or MIPS_reset_from_Fetch_Unit;
 --============================= ID phase processes ========================================
 --============================= =========================================================
 -- IR fields signals
+<<<<<<< HEAD
 Opcode <= IR_reg(31 downto 26);
 Rs <= IR_reg(25 downto 21);
 Rt <= IR_reg(20 downto 16);
@@ -341,11 +342,27 @@ process (Opcode, Funct)
 		ALUOP <= b"01";
 	end if;
 end process;
+=======
+
+--beq/bne comparator
+
+process (GPR_rd_data1,GPR_rd_data2)
+	begin
+		if GPR_rd_data1 = GPR_rd_data2 then -- R-type
+			Rs_equals_Rt <= 1;
+		else
+			Rs_equals_Rt <= 0;
+		end if;
+	end process;
+	
+-- Control decoder  - calculates the signals in ID phase
+>>>>>>> 00db5acc10c57b47ec992e640bd9d77672877e05
 
 
 --============================= EX phase processes ========================================
 --======================================================================================
 --A & B registers
+<<<<<<< HEAD
 process (CK,RESET)
 begin
 	if RESET = '1' then 
@@ -414,10 +431,23 @@ begin
 		end if;
 	end if;
 end process;
+=======
+
+--sext_imm register
+
+-- Rt register 
+
+-- Rd register
+
+-- control signals regs
+
+
+>>>>>>> 00db5acc10c57b47ec992e640bd9d77672877e05
 
 --============================= WB phase processes ========================================
 --========================================================================================
 --ALUOUT register;
+<<<<<<< HEAD
 process (CK,RESET)
 begin
 	if RESET = '1' then 
@@ -456,6 +486,17 @@ begin
 		end if;
 	end if;
 end process;
+=======
+
+-- RegDst mux and Rd_pWB register
+
+-- RegWrite_pWB FF
+
+
+
+
+
+>>>>>>> 00db5acc10c57b47ec992e640bd9d77672877e05
 
 -- ***************************************************************************************************
 -- build special rdbk signals

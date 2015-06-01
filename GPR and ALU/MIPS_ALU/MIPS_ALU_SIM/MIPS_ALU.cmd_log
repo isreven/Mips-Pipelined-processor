@@ -1,0 +1,35 @@
+xst -intstyle ise -ifn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/ALU_SIM/MIPS_ALU.xst" -ofn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/ALU_SIM/MIPS_ALU.syr" 
+xst -intstyle ise -ifn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/ALU_SIM/MIPS_ALU.xst" -ofn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/ALU_SIM/MIPS_ALU.syr" 
+xst -intstyle ise -ifn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/ALU_SIM/MIPS_ALU.xst" -ofn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/ALU_SIM/MIPS_ALU.syr" 
+xst -intstyle ise -ifn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/ALU_SIM/MIPS_ALU.xst" -ofn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/ALU_SIM/MIPS_ALU.syr" 
+xst -intstyle ise -ifn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/ALU_SIM/MIPS_ALU.xst" -ofn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/ALU_SIM/MIPS_ALU.syr" 
+xst -intstyle ise -ifn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/ALU_SIM/MIPS_ALU.xst" -ofn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/ALU_SIM/MIPS_ALU.syr" 
+xst -intstyle ise -ifn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/ALU_SIM/MIPS_ALU.xst" -ofn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/ALU_SIM/MIPS_ALU.syr" 
+xst -intstyle ise -ifn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/ALU_SIM/MIPS_ALU.xst" -ofn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/ALU_SIM/MIPS_ALU.syr" 
+xst -intstyle ise -ifn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/ALU_SIM/MIPS_ALU.xst" -ofn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/ALU_SIM/MIPS_ALU.syr" 
+xst -intstyle ise -ifn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/ALU_SIM/MIPS_ALU.xst" -ofn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/ALU_SIM/MIPS_ALU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "MIPS_ALU.ngc" MIPS_ALU.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MIPS_ALU_map.ncd MIPS_ALU.ngd MIPS_ALU.pcf 
+xst -intstyle ise -ifn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/ALU_SIM/MIPS_ALU.xst" -ofn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/ALU_SIM/MIPS_ALU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "MIPS_ALU.ngc" MIPS_ALU.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MIPS_ALU_map.ncd MIPS_ALU.ngd MIPS_ALU.pcf 
+xst -intstyle ise -ifn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/ALU_SIM/MIPS_ALU.xst" -ofn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/ALU_SIM/MIPS_ALU.syr" 
+xst -intstyle ise -ifn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/ALU_SIM/MIPS_ALU.xst" -ofn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/ALU_SIM/MIPS_ALU.syr" 
+xst -intstyle ise -ifn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/ALU_SIM/MIPS_ALU.xst" -ofn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/ALU_SIM/MIPS_ALU.syr" 
+xst -intstyle ise -ifn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/ALU_SIM/MIPS_ALU.xst" -ofn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/ALU_SIM/MIPS_ALU.syr" 
+xst -intstyle ise -ifn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/ALU_SIM/MIPS_ALU.xst" -ofn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/ALU_SIM/MIPS_ALU.syr" 
+xst -intstyle ise -ifn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/ALU_SIM/MIPS_ALU.xst" -ofn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/ALU_SIM/MIPS_ALU.syr" 
+xst -intstyle ise -ifn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/ALU_SIM/MIPS_ALU.xst" -ofn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/ALU_SIM/MIPS_ALU.syr" 
+xst -intstyle ise -ifn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/ALU_SIM/MIPS_ALU.xst" -ofn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/ALU_SIM/MIPS_ALU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "MIPS_ALU.ngc" MIPS_ALU.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MIPS_ALU_map.ncd MIPS_ALU.ngd MIPS_ALU.pcf 
+par -w -intstyle ise -ol high -t 1 MIPS_ALU_map.ncd MIPS_ALU.ncd MIPS_ALU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MIPS_ALU.twx MIPS_ALU.ncd -o MIPS_ALU.twr MIPS_ALU.pcf 
+xst -intstyle ise -ifn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/ALU_SIM/MIPS_ALU.xst" -ofn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/ALU_SIM/MIPS_ALU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "MIPS_ALU.ngc" MIPS_ALU.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MIPS_ALU_map.ncd MIPS_ALU.ngd MIPS_ALU.pcf 
+par -w -intstyle ise -ol high -t 1 MIPS_ALU_map.ncd MIPS_ALU.ncd MIPS_ALU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MIPS_ALU.twx MIPS_ALU.ncd -o MIPS_ALU.twr MIPS_ALU.pcf 
+xst -intstyle ise -ifn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/MIPS_ALU_SIM/MIPS_ALU.xst" -ofn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/GPR and ALU/MIPS_ALU_SIM/MIPS_ALU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "MIPS_ALU.ngc" MIPS_ALU.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MIPS_ALU_map.ncd MIPS_ALU.ngd MIPS_ALU.pcf 

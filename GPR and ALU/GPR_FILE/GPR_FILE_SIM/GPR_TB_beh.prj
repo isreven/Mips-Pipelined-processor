@@ -1,0 +1,3 @@
+vhdl work "../GPR_FILE_src/dual_port_memory-empty.vhd"
+vhdl work "../GPR_FILE_src/GPR-empty.vhd"
+vhdl work "../GPR_FILE_src/GPR_TB.vhd"

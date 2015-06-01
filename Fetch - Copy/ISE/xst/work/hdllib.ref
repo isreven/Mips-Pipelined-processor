@@ -1,0 +1,8 @@
+EN fetch_unit_host_intf NULL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/Fetch/SRC/Fetch_Unit_Host_Intf.vhd" sub00/vhpl00 1430153346
+EN clock_driver NULL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/Fetch/SRC/Clock_driver.vhd" sub00/vhpl02 1430153348
+AR hw2_top behavioral "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/Fetch/ISE/HW2_top.vhd" sub00/vhpl05 1430153351
+EN hw2_top NULL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/Fetch/ISE/HW2_top.vhd" sub00/vhpl04 1430153350
+AR fetch_unit_host_intf behavioral "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/Fetch/SRC/Fetch_Unit_Host_Intf.vhd" sub00/vhpl01 1430153347
+AR fetch_unit behavioral "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/Fetch/ISE/Fetch_Unit-empty.vhd" sub00/vhpl07 1430153345
+EN fetch_unit NULL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/Fetch/ISE/Fetch_Unit-empty.vhd" sub00/vhpl06 1430153344
+AR clock_driver clock_divider "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/Fetch/SRC/Clock_driver.vhd" sub00/vhpl03 1430153349

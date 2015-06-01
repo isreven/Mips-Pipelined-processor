@@ -2,6 +2,7 @@ xst -intstyle ise -ifn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Project
 ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "HW4_MIPS_4sim.ngc" HW4_MIPS_4sim.ngd  
 xst -intstyle ise -ifn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/HW4_MIPS_4sim.xst" -ofn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/HW4_MIPS_4sim.syr" 
 ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "HW4_MIPS_4sim.ngc" HW4_MIPS_4sim.ngd  
+<<<<<<< HEAD
 xst -intstyle ise -ifn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/HW4_MIPS_4sim.xst" -ofn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/HW4_MIPS_4sim.syr" 
 xst -intstyle ise -ifn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/HW4_MIPS_4sim.xst" -ofn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/HW4_MIPS_4sim.syr" 
 xst -intstyle ise -ifn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/HW4_MIPS_4sim.xst" -ofn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/HW4_MIPS_4sim.syr" 
@@ -19,3 +20,5 @@ xst -intstyle ise -ifn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Project
 xst -intstyle ise -ifn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/HW4_MIPS_4sim.xst" -ofn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/HW4_MIPS_4sim.syr" 
 ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "HW4_MIPS_4sim.ngc" HW4_MIPS_4sim.ngd  
 map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o HW4_MIPS_4sim_map.ncd HW4_MIPS_4sim.ngd HW4_MIPS_4sim.pcf 
+=======
+>>>>>>> 00db5acc10c57b47ec992e640bd9d77672877e05

@@ -3,11 +3,19 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
+<<<<<<< HEAD:Fetch/Simulator/SIM/webtalk_pn.xml
 <application name="pn" timeStamp="Mon May 04 20:25:59 2015">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="7A507CFB82644F0A91BE36F0D87973D0" type="project"/>
 <property name="ProjectIteration" value="14" type="project"/>
 <property name="ProjectFile" value="C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/Fetch/SIM/FetchUnit.xise" type="project"/>
+=======
+<application name="pn" timeStamp="Mon May 04 17:18:32 2015">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="7A507CFB82644F0A91BE36F0D87973D0" type="project"/>
+<property name="ProjectIteration" value="15" type="project"/>
+<property name="ProjectFile" value="C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/Fetch/SIM/FetchUnit.xise" type="project"/>
+>>>>>>> 00db5acc10c57b47ec992e640bd9d77672877e05:Fetch/SIM/webtalk_pn.xml
 <property name="ProjectCreationTimestamp" value="2015-04-13T18:43:36" type="project"/>
 </section>
 <section name="Project Statistics" visible="true">
@@ -25,7 +33,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_UserConstraintEditorPreference" value="Text Editor" type="process"/>
 <property name="PROP_intProjectCreationTimestamp" value="2015-04-13T18:43:36" type="design"/>
 <property name="PROP_intWbtProjectID" value="7A507CFB82644F0A91BE36F0D87973D0" type="design"/>
-<property name="PROP_intWbtProjectIteration" value="14" type="process"/>
+<property name="PROP_intWbtProjectIteration" value="15" type="process"/>
 <property name="PROP_intWorkingDirLocWRTProjDir" value="Same" type="design"/>
 <property name="PROP_intWorkingDirUsed" value="No" type="design"/>
 <property name="PROP_selectedSimRootSourceNode_behav" value="work.Fetch_Unit_TB" type="process"/>

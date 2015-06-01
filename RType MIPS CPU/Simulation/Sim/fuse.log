@@ -12,6 +12,11 @@ Parsing VHDL file "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mip
 Parsing VHDL file "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/../Src_4sim/HW4_MIPS_4sim-empty.vhd" into library work
 Parsing VHDL file "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/../Src_4sim/HW4_TB_for_students.vhd" into library work
 Starting static elaboration
+<<<<<<< HEAD
+=======
+WARNING:HDLCompiler:794 - "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/../Src_4sim/Fetch_Unit-empty.vhd" Line 126: Statement might not cover all choices ; 'others' clause recommended
+WARNING:HDLCompiler:794 - "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/../Src_4sim/Fetch_Unit-empty.vhd" Line 144: Statement might not cover all choices ; 'others' clause recommended
+>>>>>>> 00db5acc10c57b47ec992e640bd9d77672877e05
 Completed static elaboration
 Compiling package standard
 Compiling package std_logic_1164
@@ -30,8 +35,16 @@ Compiling architecture behavioral of entity HW4_Host_Intf_4sim [hw4_host_intf_4s
 Compiling architecture behavioral of entity HW4_MIPS_4sim [hw4_mips_4sim_default]
 Compiling architecture testing of entity hw4_tb
 Time Resolution for simulation is 1ps.
+<<<<<<< HEAD
 Waiting for 5 sub-compilation(s) to finish...
 Compiled 21 VHDL Units
 Built simulation executable C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/HW4_TB_isim_beh.exe
 Fuse Memory Usage: 37284 KB
 Fuse CPU Usage: 1231 ms
+=======
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 21 VHDL Units
+Built simulation executable C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/HW4_TB_isim_beh.exe
+Fuse Memory Usage: 37280 KB
+Fuse CPU Usage: 1232 ms
+>>>>>>> 00db5acc10c57b47ec992e640bd9d77672877e05

@@ -1,0 +1,2 @@
+vhdl isim_temp "../src/MIPS_ALU-empty.vhd"
+vhdl isim_temp "../src/MIPS_ALU_TB.vhd"

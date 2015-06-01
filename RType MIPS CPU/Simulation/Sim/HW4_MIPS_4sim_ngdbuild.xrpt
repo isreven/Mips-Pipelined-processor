@@ -5,7 +5,11 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
+<<<<<<< HEAD:RType MIPS CPU/Simulation/Sim/HW4_MIPS_4sim_ngdbuild.xrpt
   <application stringID="NgdBuild" timeStamp="Mon May 25 19:57:32 2015">
+=======
+  <application stringID="NgdBuild" timeStamp="Mon May 04 17:17:04 2015">
+>>>>>>> 00db5acc10c57b47ec992e640bd9d77672877e05:Fetch/SIM/HW2_top_4sim_ngdbuild.xrpt
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -67,15 +71,23 @@
       <section stringID="NGDBUILD_PRE_UNISIM_SUMMARY">
         <item dataType="int" stringID="NGDBUILD_NUM_BUFG" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_BUFGP" value="1"/>
+<<<<<<< HEAD:RType MIPS CPU/Simulation/Sim/HW4_MIPS_4sim_ngdbuild.xrpt
         <item dataType="int" stringID="NGDBUILD_NUM_FDC" value="8"/>
         <item dataType="int" stringID="NGDBUILD_NUM_FDCE" value="185"/>
         <item dataType="int" stringID="NGDBUILD_NUM_FDE" value="33"/>
+=======
+        <item dataType="int" stringID="NGDBUILD_NUM_FD" value="21"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDC" value="8"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDCE" value="59"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDE" value="4"/>
+>>>>>>> 00db5acc10c57b47ec992e640bd9d77672877e05:Fetch/SIM/HW2_top_4sim_ngdbuild.xrpt
         <item dataType="int" stringID="NGDBUILD_NUM_FDPE" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_FDR" value="2"/>
         <item dataType="int" stringID="NGDBUILD_NUM_GND" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_IBUF" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_INV" value="4"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT1" value="36"/>
+<<<<<<< HEAD:RType MIPS CPU/Simulation/Sim/HW4_MIPS_4sim_ngdbuild.xrpt
         <item dataType="int" stringID="NGDBUILD_NUM_LUT2" value="105"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT2_D" value="3"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT2_L" value="2"/>
@@ -89,14 +101,30 @@
         <item dataType="int" stringID="NGDBUILD_NUM_MUXF5" value="18"/>
         <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="524"/>
         <item dataType="int" stringID="NGDBUILD_NUM_RAMB16_S36_S36" value="2"/>
+=======
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT2" value="32"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT3" value="3"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT4" value="24"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT5" value="46"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT6" value="8"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_MUXCY" value="65"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="76"/>
+>>>>>>> 00db5acc10c57b47ec992e640bd9d77672877e05:Fetch/SIM/HW2_top_4sim_ngdbuild.xrpt
         <item dataType="int" stringID="NGDBUILD_NUM_VCC" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_XORCY" value="101"/>
       </section>
       <section stringID="NGDBUILD_POST_UNISIM_SUMMARY">
         <item dataType="int" stringID="NGDBUILD_NUM_BUFG" value="2"/>
+<<<<<<< HEAD:RType MIPS CPU/Simulation/Sim/HW4_MIPS_4sim_ngdbuild.xrpt
         <item dataType="int" stringID="NGDBUILD_NUM_FDC" value="8"/>
         <item dataType="int" stringID="NGDBUILD_NUM_FDCE" value="185"/>
         <item dataType="int" stringID="NGDBUILD_NUM_FDE" value="33"/>
+=======
+        <item dataType="int" stringID="NGDBUILD_NUM_FD" value="21"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDC" value="8"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDCE" value="59"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDE" value="4"/>
+>>>>>>> 00db5acc10c57b47ec992e640bd9d77672877e05:Fetch/SIM/HW2_top_4sim_ngdbuild.xrpt
         <item dataType="int" stringID="NGDBUILD_NUM_FDPE" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_FDR" value="2"/>
         <item dataType="int" stringID="NGDBUILD_NUM_GND" value="1"/>
@@ -104,6 +132,7 @@
         <item dataType="int" stringID="NGDBUILD_NUM_IBUFG" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_INV" value="4"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT1" value="36"/>
+<<<<<<< HEAD:RType MIPS CPU/Simulation/Sim/HW4_MIPS_4sim_ngdbuild.xrpt
         <item dataType="int" stringID="NGDBUILD_NUM_LUT2" value="105"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT2_D" value="3"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT2_L" value="2"/>
@@ -117,6 +146,15 @@
         <item dataType="int" stringID="NGDBUILD_NUM_MUXF5" value="18"/>
         <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="524"/>
         <item dataType="int" stringID="NGDBUILD_NUM_RAMB16_S36_S36" value="2"/>
+=======
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT2" value="32"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT3" value="3"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT4" value="24"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT5" value="46"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT6" value="8"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_MUXCY" value="65"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="76"/>
+>>>>>>> 00db5acc10c57b47ec992e640bd9d77672877e05:Fetch/SIM/HW2_top_4sim_ngdbuild.xrpt
         <item dataType="int" stringID="NGDBUILD_NUM_VCC" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_XORCY" value="101"/>
       </section>

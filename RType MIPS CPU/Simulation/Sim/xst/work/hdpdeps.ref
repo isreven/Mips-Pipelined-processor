@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 V3 33
 FL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/Clock_driver_for_sim.vhd" 2015/03/06.19:45:24 P.20131013
 FL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/Fetch_Unit-empty.vhd" 2015/04/25.20:36:54 P.20131013
@@ -61,3 +62,55 @@ EN work/MIPS_ALU 1432573036 \
 AR work/MIPS_ALU/Behavioral 1432573037 \
       FL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Src_4sim/MIPS_ALU-empty.vhd" \
       EN work/MIPS_ALU 1432573036
+=======
+V3 23
+FL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/Clock_driver_for_sim.vhd" 2015/03/06.19:45:24 P.20131013
+EN work/Clock_Driver 1431361881 \
+      FL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/Clock_driver_for_sim.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/std_logic_arith 1381692177 PB ieee/NUMERIC_STD 1381692181
+AR work/Clock_Driver/clock_divider 1431361882 \
+      FL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/Clock_driver_for_sim.vhd" \
+      EN work/Clock_Driver 1431361881
+FL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/Fetch_Unit-empty.vhd" 2015/04/25.20:36:54 P.20131013
+EN work/Fetch_Unit 1431361875 \
+      FL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/Fetch_Unit-empty.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Fetch_Unit/Behavioral 1431361876 \
+      FL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/Fetch_Unit-empty.vhd" \
+      EN work/Fetch_Unit 1431361875
+FL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/GPR-empty.vhd" 2015/04/25.20:37:44 P.20131013
+EN work/GPR 1431361877 \
+      FL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/GPR-empty.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/GPR/Behavioral 1431361878 \
+      FL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/GPR-empty.vhd" \
+      EN work/GPR 1431361877
+FL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/HW4_Host_Intf_4sim_for_students.vhd" 2015/04/25.17:31:46 P.20131013
+EN work/HW4_Host_Intf_4sim 1431361883 \
+      FL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/HW4_Host_Intf_4sim_for_students.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/HW4_Host_Intf_4sim/Behavioral 1431361884 \
+      FL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/HW4_Host_Intf_4sim_for_students.vhd" \
+      EN work/HW4_Host_Intf_4sim 1431361883
+FL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/HW4_MIPS_4sim-empty.vhd" 2015/04/25.20:45:46 P.20131013
+EN work/HW4_MIPS_4sim 1431361885 \
+      FL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/HW4_MIPS_4sim-empty.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/HW4_MIPS_4sim/Behavioral 1431361886 \
+      FL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/HW4_MIPS_4sim-empty.vhd" \
+      EN work/HW4_MIPS_4sim 1431361885 CP Fetch_Unit CP GPR CP MIPS_ALU \
+      CP Clock_Driver CP HW4_Host_intf_4sim
+FL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/MIPS_ALU-empty.vhd" 2015/04/25.20:40:50 P.20131013
+EN work/MIPS_ALU 1431361879 \
+      FL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/MIPS_ALU-empty.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/MIPS_ALU/Behavioral 1431361880 \
+      FL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/RType MIPS CPU/Simulation/Sim/MIPS_ALU-empty.vhd" \
+      EN work/MIPS_ALU 1431361879
+>>>>>>> 00db5acc10c57b47ec992e640bd9d77672877e05

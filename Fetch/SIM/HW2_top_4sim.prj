@@ -1,0 +1,4 @@
+vhdl work "../SRC/Fetch_Unit_Host_Intf_4sim.vhd"
+vhdl work "../SRC/Fetch_Unit_4sim-empty.vhd"
+vhdl work "../SRC/Clock_driver_for_sim.vhd"
+vhdl work "../SRC/HW2_top_4sim.vhd"

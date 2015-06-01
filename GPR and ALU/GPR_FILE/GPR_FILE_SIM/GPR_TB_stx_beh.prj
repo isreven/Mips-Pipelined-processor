@@ -1,0 +1,3 @@
+vhdl isim_temp "../src/dual_port_memory-empty.vhd"
+vhdl isim_temp "../src/GPR-empty.vhd"
+vhdl isim_temp "../src/GPR_TB.vhd"

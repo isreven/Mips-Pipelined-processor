@@ -64,13 +64,21 @@
          <ClosedNode>PROJECT</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
+<<<<<<< HEAD:Fetch/Simulator/SIM/iseconfig/FetchUnit.projectmgr
          <SelectedItem>Fetch_Unit_TB - Testing (C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/Fetch/Simulator/Src_4sim/Fetch_Unit_TB_for_students.vhd)</SelectedItem>
+=======
+         <SelectedItem>Unassigned User Library Modules</SelectedItem>
+>>>>>>> 00db5acc10c57b47ec992e640bd9d77672877e05:Fetch/SIM/iseconfig/FetchUnit.projectmgr
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >1</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000178000000020000000100000000000000000200000064ffffffff000000810000000300000002000001780000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+<<<<<<< HEAD:Fetch/Simulator/SIM/iseconfig/FetchUnit.projectmgr
       <CurrentItem>Fetch_Unit_TB - Testing (C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/Fetch/Simulator/Src_4sim/Fetch_Unit_TB_for_students.vhd)</CurrentItem>
+=======
+      <CurrentItem>Unassigned User Library Modules</CurrentItem>
+>>>>>>> 00db5acc10c57b47ec992e640bd9d77672877e05:Fetch/SIM/iseconfig/FetchUnit.projectmgr
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -78,13 +86,21 @@
          <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
+<<<<<<< HEAD:Fetch/Simulator/SIM/iseconfig/FetchUnit.projectmgr
          <SelectedItem/>
+=======
+         <SelectedItem>Compile HDL Simulation Libraries</SelectedItem>
+>>>>>>> 00db5acc10c57b47ec992e640bd9d77672877e05:Fetch/SIM/iseconfig/FetchUnit.projectmgr
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000189000000010000000100000000000000000000000064ffffffff000000810000000000000001000001890000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+<<<<<<< HEAD:Fetch/Simulator/SIM/iseconfig/FetchUnit.projectmgr
       <CurrentItem/>
+=======
+      <CurrentItem>Compile HDL Simulation Libraries</CurrentItem>
+>>>>>>> 00db5acc10c57b47ec992e640bd9d77672877e05:Fetch/SIM/iseconfig/FetchUnit.projectmgr
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>

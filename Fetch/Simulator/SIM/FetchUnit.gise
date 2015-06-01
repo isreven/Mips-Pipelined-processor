@@ -113,6 +113,10 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1430749601" xil_pn:name="TRANEXT_compLibraries2_virtex5" xil_pn:prop_ck="-4990878548368482105" xil_pn:start_ts="1430749601">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
     <transform xil_pn:end_ts="1429551483" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1429551483">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -163,8 +167,12 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+<<<<<<< HEAD:Fetch/Simulator/SIM/FetchUnit.gise
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Fetch_Unit_TB_isim_beh.wdb"/>
+=======
+      <status xil_pn:value="OutputRemoved"/>
+>>>>>>> 00db5acc10c57b47ec992e640bd9d77672877e05:Fetch/SIM/FetchUnit.gise
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
     </transform>
@@ -202,6 +210,7 @@
       <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
+<<<<<<< HEAD:Fetch/Simulator/SIM/FetchUnit.gise
     <transform xil_pn:end_ts="1430760399" xil_pn:in_ck="-9155597678535921681" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="9113050231136685219" xil_pn:start_ts="1430760358">
       <status xil_pn:value="AbortedRun"/>
       <status xil_pn:value="WarningsGenerated"/>
@@ -212,6 +221,26 @@
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputRemoved"/>
+=======
+    <transform xil_pn:end_ts="1430749010" xil_pn:in_ck="-1038326997111229025" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="9113050231136685219" xil_pn:start_ts="1430748952">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="HW2_top_4sim.lso"/>
+      <outfile xil_pn:name="HW2_top_4sim.ngc"/>
+      <outfile xil_pn:name="HW2_top_4sim.ngr"/>
+      <outfile xil_pn:name="HW2_top_4sim.prj"/>
+      <outfile xil_pn:name="HW2_top_4sim.stx"/>
+      <outfile xil_pn:name="HW2_top_4sim.syr"/>
+      <outfile xil_pn:name="HW2_top_4sim.xst"/>
+      <outfile xil_pn:name="HW2_top_4sim_stx_beh.prj"/>
+      <outfile xil_pn:name="HW2_top_4sim_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+>>>>>>> 00db5acc10c57b47ec992e640bd9d77672877e05:Fetch/SIM/FetchUnit.gise
     </transform>
     <transform xil_pn:end_ts="1429547169" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-6516854127985637065" xil_pn:start_ts="1429547169">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -219,6 +248,7 @@
       <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
+<<<<<<< HEAD:Fetch/Simulator/SIM/FetchUnit.gise
     <transform xil_pn:end_ts="1430759875" xil_pn:in_ck="7408268692643349968" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="3046109974838923959" xil_pn:start_ts="1430759861">
       <status xil_pn:value="AbortedRun"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -238,25 +268,68 @@
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputRemoved"/>
-    </transform>
-    <transform xil_pn:end_ts="1429551383" xil_pn:in_ck="-6848598738047275105" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="-8066324139983898644" xil_pn:start_ts="1429551322">
+=======
+    <transform xil_pn:end_ts="1430749026" xil_pn:in_ck="7408268692643349968" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="3046109974838923959" xil_pn:start_ts="1430749010">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="HW2_top_4sim.bld"/>
+      <outfile xil_pn:name="HW2_top_4sim.ngd"/>
+      <outfile xil_pn:name="HW2_top_4sim_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1430749112" xil_pn:in_ck="3582939597430155218" xil_pn:name="TRANEXT_map_virtex7" xil_pn:prop_ck="3373610943407121171" xil_pn:start_ts="1430749026">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="HW2_top_4sim.pcf"/>
+      <outfile xil_pn:name="HW2_top_4sim_map.map"/>
+      <outfile xil_pn:name="HW2_top_4sim_map.mrp"/>
+      <outfile xil_pn:name="HW2_top_4sim_map.ncd"/>
+      <outfile xil_pn:name="HW2_top_4sim_map.ngm"/>
+      <outfile xil_pn:name="HW2_top_4sim_map.xrpt"/>
+      <outfile xil_pn:name="HW2_top_4sim_summary.xml"/>
+      <outfile xil_pn:name="HW2_top_4sim_usage.xml"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+>>>>>>> 00db5acc10c57b47ec992e640bd9d77672877e05:Fetch/SIM/FetchUnit.gise
+    </transform>
+    <transform xil_pn:end_ts="1430749191" xil_pn:in_ck="3271968673606130564" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="-8066324139983898644" xil_pn:start_ts="1430749112">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+<<<<<<< HEAD:Fetch/Simulator/SIM/FetchUnit.gise
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputRemoved"/>
+=======
+      <outfile xil_pn:name="HW2_top_4sim.ncd"/>
+      <outfile xil_pn:name="HW2_top_4sim.pad"/>
+      <outfile xil_pn:name="HW2_top_4sim.par"/>
+      <outfile xil_pn:name="HW2_top_4sim.ptwx"/>
+      <outfile xil_pn:name="HW2_top_4sim.unroutes"/>
+      <outfile xil_pn:name="HW2_top_4sim.xpi"/>
+      <outfile xil_pn:name="HW2_top_4sim_pad.csv"/>
+      <outfile xil_pn:name="HW2_top_4sim_pad.txt"/>
+      <outfile xil_pn:name="HW2_top_4sim_par.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+>>>>>>> 00db5acc10c57b47ec992e640bd9d77672877e05:Fetch/SIM/FetchUnit.gise
     </transform>
-    <transform xil_pn:end_ts="1429551383" xil_pn:in_ck="-3733682610890289918" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="-3742689831323817471" xil_pn:start_ts="1429551358">
+    <transform xil_pn:end_ts="1430749191" xil_pn:in_ck="-7982453898295583030" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="-3742689831323817471" xil_pn:start_ts="1430749159">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+<<<<<<< HEAD:Fetch/Simulator/SIM/FetchUnit.gise
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputRemoved"/>
+=======
+      <outfile xil_pn:name="HW2_top_4sim.twr"/>
+      <outfile xil_pn:name="HW2_top_4sim.twx"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+>>>>>>> 00db5acc10c57b47ec992e640bd9d77672877e05:Fetch/SIM/FetchUnit.gise
     </transform>
   </transforms>
 

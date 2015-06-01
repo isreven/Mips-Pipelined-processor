@@ -1,11 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
+<<<<<<< HEAD:Fetch/Simulator/SIM/iseconfig/HW2_top_4sim.xreport
   <DateModified>2015-05-04T20:41:16</DateModified>
   <ModuleName>HW2_top_4sim</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/Fetch/Simulator/SIM/iseconfig/HW2_top_4sim.xreport</SavedFilePath>
   <ImplementationReportsDirectory>C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/Fetch/Simulator/SIM\</ImplementationReportsDirectory>
+=======
+  <DateModified>2015-05-04T18:32:20</DateModified>
+  <ModuleName>HW2_top_4sim</ModuleName>
+  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SavedFilePath>C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/Fetch/SIM/iseconfig/HW2_top_4sim.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/Fetch/SIM\</ImplementationReportsDirectory>
+>>>>>>> 00db5acc10c57b47ec992e640bd9d77672877e05:Fetch/SIM/iseconfig/HW2_top_4sim.xreport
   <DateInitialized>2015-04-27T11:40:37</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

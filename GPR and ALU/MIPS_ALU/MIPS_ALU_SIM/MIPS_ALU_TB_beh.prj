@@ -1,0 +1,2 @@
+vhdl work "../MIPS_ALU_src/MIPS_ALU-empty.vhd"
+vhdl work "../MIPS_ALU_src/MIPS_ALU_TB.vhd"

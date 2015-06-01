@@ -37,7 +37,7 @@ Clock CK_50MHz to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-CK_out_to_TB|         8.780(R)|      SLOW  |         3.390(R)|      FAST  |CK_50MHz_BUFGP    |   0.000|
+CK_out_to_TB|         8.644(R)|      SLOW  |         3.306(R)|      FAST  |CK_50MHz_BUFGP    |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock CK_50MHz
@@ -52,11 +52,11 @@ Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-switches_in<6> |RESET_out_to_TB|    7.292|
+switches_in<6> |RESET_out_to_TB|    7.884|
 ---------------+---------------+---------+
 
 
-Analysis completed Mon Apr 20 20:36:22 2015 
+Analysis completed Mon May 04 17:19:49 2015 
 --------------------------------------------------------------------------------
 
 Trace Settings:
