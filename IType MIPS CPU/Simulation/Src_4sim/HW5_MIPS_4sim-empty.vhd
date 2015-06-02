@@ -129,7 +129,7 @@ END COMPONENT;
 
 
 -- ***************************************************************************************************
-COMPONENT HW5_Host_intf_4sim is
+COMPONENT HW5_Host_Intf_4sim is
 Port	(	
 --
 -- MIPS signals    [to be used by students]
@@ -320,7 +320,10 @@ begin
 
 
 -- all signal equations
+-- =============================== CKs & Rest signals ==============================
 
+-- RESET
+RESET <= switches_in(6) or MIPS_reset_from_Fetch_Unit;
 
 
 --============================= IF phase processes ========================================
@@ -337,10 +340,18 @@ Rt <= IR_reg(20 downto 16);
 Rd <= IR_reg(15 downto 11);
 Funct <= IR_reg(5 downto 0);
 -- imm <= IR_reg(15 downto 0); not required here - already handled inside Fetch_Unit
+
 	
 
 --beq/bne comparator (create Rs_equals_Rt signal)
-
+process (GPR_rd_data1,GPR_rd_data2)
+	begin
+		if GPR_rd_data1 = GPR_rd_data2 then -- R-type
+			Rs_equals_Rt <= '1';
+		else
+			Rs_equals_Rt <= '0';
+		end if;
+end process;
 
 -- Control decoder  - calculates the signals in ID phase
 -- creates the following signals according to the opcode:
@@ -351,59 +362,231 @@ Funct <= IR_reg(5 downto 0);
 --		MemToReg	 '0' - write ALUout_reg data (to "Rd"), '1' - write MDR_reg data (to "Rd")
 --		RegWrite	 '1' - write to GPR file (to "Rd")
 
-
+process (Opcode, Funct)
+	begin
+	-- Initialize all the ID signals.
+	RegWrite <= '0';
+	RegDst <= '0';
+	ALUsrcB <= '0';
+	ALUOP <= b"00";
+	MemWrite <= '0';
+	MemToReg <= '0';
+	if Opcode = b"000000" then -- R Type
+		ALUsrcB <= '0'; -- Take the B register
+		ALUOP <= b"10"; -- ALU op will be decided by Fucnt signals
+		RegDst <= '1'; -- Writes back to Rd
+		RegWrite <= '1'; -- Write the result back to the register
+	elsif Opcode = b"001000" then -- Addi
+			ALUsrcB <= '1'; -- Take the sext imm
+			ALUOP <= b"00"; -- ALU op is add
+			RegDst <= '0'; -- Writes back to Rt
+			RegWrite <= '1'; -- Write the result back to the register
+	elsif Opcode = b"000100" then -- Beq 
+		ALUsrcB <= '0';
+		ALUOP <= b"01";
+	elsif Opcode = b"100011" then -- sw 
+		MemWrite <= '1';
+	elsif Opcode = b"101011" then -- lw 
+		MemToReg <= '1';
+	end if;
+end process;
 --============================= EX phase processes ========================================
 --======================================================================================
 --A & B registers
-
+process (CK,RESET)
+begin
+	if RESET = '1' then 
+		A_reg <= b"00000000000000000000000000000000";
+		B_reg <= b"00000000000000000000000000000000";
+	elsif CK'event and CK='1' then
+		if HOLD = '0' then
+			A_reg <= GPR_rd_data1;
+			B_reg <= GPR_rd_data2;
+		end if;
+	end if;
+end process;
 
 --sext_imm register
+process (CK,RESET)
+begin
+	if RESET = '1' then 
+		sext_imm_reg <= b"00000000000000000000000000000000";
+	elsif CK'event and CK='1' then
+		if HOLD = '0' then
+			sext_imm_reg <= sext_imm;
+		end if;
+	end if;
+end process;
 
+-- Rt register (delayed by 1 clock cycle)
+process (CK,RESET)
+begin
+	if RESET = '1' then 
+		Rt_pEX <= b"00000";
+	elsif CK'event and CK='1' then
+		if HOLD = '0' then
+			Rt_pEX <= Rt;
+		end if;
+	end if;
+end process;
 
--- Rt register 
+-- Rd register (delayed by 1 clock cycle)
+process (CK,RESET)
+begin
+	if RESET = '1' then 
+		Rd_pEX <= b"00000";
+	elsif CK'event and CK='1' then
+		if HOLD = '0' then
+			Rd_pEX <= Rd;
+		end if;
+	end if;
+end process;
 
-
--- Rd register
-
-
--- control signals FFs 
--- RegWrite_pEX, MemToReg_pEX, MemWrite_pEX FFs
+-- control signals regs (Delays all the old values from the ID phase)
+process (CK,RESET)
+begin
+	if RESET = '1' then 
+		ALUsrcB_pEX <= '0';
+		Funct_pEX <= b"000000";
+		ALUOP_pEX <= b"00";
+		RegDst_pEX <= '0';
+		RegWrite_pEX <= '0';
+		MemWrite_pEX <= '0';
+		MemToReg_pEX <= '0';
+	elsif CK'event and CK='1' then
+		if HOLD = '0' then
+			ALUsrcB_pEX <= ALUsrcB;
+			Funct_pEX <= Funct;
+			ALUOP_pEX <= ALUOP;
+			RegDst_pEX <= RegDst;
+			RegWrite_pEX <= RegWrite;
+			MemWrite_pEX <= MemWrite;
+			MemToReg_pEX <= MemToReg;
+		end if;
+	end if;
+end process;
 
 
 
 --============================= MEM phase processes ========================================
 --========================================================================================
---ALUOUT register
-
-
 --B delayed reg
-
+process (CK,RESET)
+begin
+	if RESET = '1' then 
+		B_reg_pMEM <= b"00000000000000000000000000000000";
+	elsif CK'event and CK='1' then
+		if HOLD = '0' then
+			B_reg_pMEM <= B_reg;
+		end if;
+	end if;
+end process;
 
 -- RegDst mux and Rd_pMEM register
-
+process (CK,RESET)
+begin
+	if RESET = '1' then 
+		Rd_pMEM <= b"00000";
+	elsif CK'event and CK='1' then
+		if HOLD = '0' then
+			if RegDst_pEX = '0' then 
+				Rd_pMEM <= Rt_pEX;
+			else 
+				Rd_pMEM <= Rd_pEX;
+			end if;
+		end if;
+	end if;
+end process;
 
 -- control signals FFs 
 -- RegWrite_pMEM, MemToReg_pMEM, MemWrite_pMEM FFs
-
+process (CK,RESET)
+begin
+	if RESET = '1' then 
+		RegWrite_pMEM <= '0';
+		MemWrite_pMEM <= '0';
+		MemToReg_pMEM <= '0';
+	elsif CK'event and CK='1' then
+		if HOLD = '0' then
+			RegWrite_pMEM <= RegWrite_pEX;
+			MemWrite_pMEM <= MemWrite_pEX;
+			MemToReg_pMEM <= MemToReg_pEX;
+		end if;
+	end if;
+end process;
 
 
 --============================= WB phase processes ========================================
 --========================================================================================
+--ALUOUT register;
+process (CK,RESET)
+begin
+	if RESET = '1' then 
+		ALUout_reg <= b"00000000000000000000000000000000";
+	elsif CK'event and CK='1' then
+		if HOLD = '0' then
+			ALUout_reg <= ALU_output;
+		end if;
+	end if;
+end process;
 
--- MDR_reg no need to define -- connected directly from HW5_Host_intf - resides inside the DMem
+-- RegDst mux and Rd_pWB register
+process (CK,RESET)
+begin
+	if RESET = '1' then 
+		Rd_pWB <= b"00000";
+	elsif CK'event and CK='1' then
+		if HOLD = '0' then
+			Rd_pWB <= Rd_pMEM;
+		end if;
+	end if;
+end process;
 
 
 --ALUout_pWB register
-
+process (CK,RESET)
+begin
+	if RESET = '1' then 
+		ALUout_reg_pWB <= b"00000000000000000000000000000000";
+	elsif CK'event and CK='1' then
+		if HOLD = '0' then
+			ALUout_reg_pWB <= ALUout_reg;
+		end if;
+	end if;
+end process;
 
 --MemToReg mux
-
+	with MemToReg_pMEM select
+		GPR_wr_data <=
+		MDR_reg when '1', 
+		ALUout_reg_pWB when others;
 
 -- Rd_pWB register
-
+process (CK,RESET)
+begin
+	if RESET = '1' then 
+		Rd_pWB <= b"00000";
+	elsif CK'event and CK='1' then
+		if HOLD = '0' then
+			Rd_pWB <= Rd_pMEM;
+		end if;
+	end if;
+end process;
 
 -- control signals FFs 
 -- RegWrite_pWB, MemToReg_pWB FFs
+process (CK,RESET)
+begin
+	if RESET = '1' then 
+		RegWrite_pWB <= '0';
+		MemToReg_pMEM <= '0';
+	elsif CK'event and CK='1' then
+		if HOLD = '0' then
+			RegWrite_pWB <= RegWrite_pMEM;
+			MemToReg_pwB <= MemToReg_pMEM;
+		end if;
+	end if;
+end process;
 
 
 
@@ -512,7 +695,7 @@ port map
   
  -- Connecting the HW4_Host_intf_4sim
 -- =========================================
-hostintf : HW5_Host_intf_4sim
+hostintf : HW5_Host_Intf_4sim
 Port map (	
 --
 -- MIPS signals   

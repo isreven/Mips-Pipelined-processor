@@ -34,6 +34,8 @@ signal  GPR_data_out1 	: 	STD_LOGIC_VECTOR (31 downto 0);-- Rt contents
 signal  GPR_data_out2 	: 	STD_LOGIC_VECTOR (31 downto 0);-- Rt contents
 signal  GPR_wr_data 	: 	STD_LOGIC_VECTOR (31 downto 0);-- Rt contents
 
+signal  GPR_we		 	: 	STD_LOGIC;-- the we signal to the memory. made of a combination of Reg_Write and GPR_hold
+
 -- components used
 COMPONENT dual_port_memory_no_CK_read IS
 GENERIC(
@@ -52,12 +54,37 @@ PORT (
    ); 
 END COMPONENT;
 
+begin
 
+  GPR_file : dual_port_memory_no_CK_read
+  generic map(32, 32)
+    port map  (
+      wr_address            => conv_integer(wr_reg),
+      wr_data               => wr_data,
+      wr_clk                => CK,
+      wr_en                 => GPR_we,
+      rd1_address           => conv_integer(rd_reg1),
+      rd2_address           => conv_integer(rd_reg2),
+      rd1_data              => GPR_rd_data1,
+      rd2_data              => GPR_rd_data2
+      );
 
-begin 
+  with rd_reg1 select
+    GPR_data_out1 <= 
+      x"00000000" when b"00000",
+      GPR_rd_data1 when others;
 
--- add your design here
+  with rd_reg2 select
+    GPR_data_out2 <= 
+      x"00000000" when b"00000",
+      GPR_rd_data2 when others;
 	
+  with GPR_hold select
+    GPR_we <=
+      '0' when '1',
+      Reg_Write when others;
+
+  rd_data1 <= GPR_data_out1;
+  rd_data2 <= GPR_data_out2;
+
 end Behavioral;
-
-

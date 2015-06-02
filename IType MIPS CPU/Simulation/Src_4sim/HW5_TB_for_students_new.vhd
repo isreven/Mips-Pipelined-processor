@@ -109,7 +109,7 @@ signal expected_value15 : STD_LOGIC_VECTOR (31 downto 0);
 signal err_cntr		: integer :=0;
 
 	
-FILE data_in_file : text open read_mode is "C:\HW5_Src_for_sim_for_students\HW5_TB_data.dat";
+FILE data_in_file : text open read_mode is "..\Src_4sim\HW5_TB_data.dat";
 
 
 -- =========================================================================
