@@ -1,0 +1,364 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: HW5_MIPS_4sim.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "HW5_MIPS_4sim.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "HW5_MIPS_4sim"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : HW5_MIPS_4sim
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/IType MIPS CPU/Simulation/Src_4sim/dual_port_memory-empty.vhd" in Library work.
+Entity <dual_port_memory_no_CK_read> compiled.
+Entity <dual_port_memory_no_CK_read> (Architecture <dual_port_memory>) compiled.
+Compiling vhdl file "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/IType MIPS CPU/Simulation/Src_4sim/Fetch_Unit-empty.vhd" in Library work.
+Entity <Fetch_Unit> compiled.
+Entity <Fetch_Unit> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/IType MIPS CPU/Simulation/Src_4sim/GPR-empty.vhd" in Library work.
+Entity <GPR> compiled.
+Entity <GPR> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/IType MIPS CPU/Simulation/Src_4sim/MIPS_ALU-empty.vhd" in Library work.
+Entity <MIPS_ALU> compiled.
+Entity <MIPS_ALU> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/IType MIPS CPU/Simulation/Src_4sim/Clock_driver_for_sim.vhd" in Library work.
+Entity <Clock_Driver> compiled.
+Entity <Clock_Driver> (Architecture <clock_divider>) compiled.
+Compiling vhdl file "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/IType MIPS CPU/Simulation/Src_4sim/HW5_MIPS_4sim-empty.vhd" in Library work.
+Entity <HW5_MIPS_4sim> compiled.
+Entity <HW5_MIPS_4sim> (Architecture <Behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <HW5_MIPS_4sim> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <Fetch_Unit> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <GPR> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <MIPS_ALU> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <Clock_Driver> in library <work> (architecture <clock_divider>).
+
+Analyzing hierarchy for entity <dual_port_memory_no_CK_read> in library <work> (architecture <dual_port_memory>) with generics.
+	depth = 32
+	width = 32
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <HW5_MIPS_4sim> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:2211 - "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/IType MIPS CPU/Simulation/Src_4sim/HW5_MIPS_4sim-empty.vhd" line 698: Instantiating black box module <HW5_Host_intf_4sim>.
+Entity <HW5_MIPS_4sim> analyzed. Unit <HW5_MIPS_4sim> generated.
+
+Analyzing Entity <Fetch_Unit> in library <work> (Architecture <Behavioral>).
+Entity <Fetch_Unit> analyzed. Unit <Fetch_Unit> generated.
+
+Analyzing Entity <GPR> in library <work> (Architecture <Behavioral>).
+Entity <GPR> analyzed. Unit <GPR> generated.
+
+Analyzing generic Entity <dual_port_memory_no_CK_read> in library <work> (Architecture <dual_port_memory>).
+	depth = 32
+	width = 32
+Entity <dual_port_memory_no_CK_read> analyzed. Unit <dual_port_memory_no_CK_read> generated.
+
+Analyzing Entity <MIPS_ALU> in library <work> (Architecture <Behavioral>).
+Entity <MIPS_ALU> analyzed. Unit <MIPS_ALU> generated.
+
+Analyzing Entity <Clock_Driver> in library <work> (Architecture <clock_divider>).
+Entity <Clock_Driver> analyzed. Unit <Clock_Driver> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Fetch_Unit>.
+    Related source file is "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/IType MIPS CPU/Simulation/Src_4sim/Fetch_Unit-empty.vhd".
+    Using one-hot encoding for signal <PC_Source>.
+    Found 32-bit adder for signal <branch_adrs>.
+    Found 32-bit adder for signal <PC_plus_4>.
+    Found 32-bit register for signal <PC_plus_4_pID>.
+    Found 32-bit register for signal <PC_reg>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+Unit <Fetch_Unit> synthesized.
+
+
+Synthesizing Unit <MIPS_ALU>.
+    Related source file is "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/IType MIPS CPU/Simulation/Src_4sim/MIPS_ALU-empty.vhd".
+WARNING:Xst:646 - Signal <substract<31:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Using one-hot encoding for signal <ALU_cmd>.
+    Found 32-bit addsub for signal <ALU_output$addsub0000>.
+    Found 32-bit xor2 for signal <ALU_output$xor0000> created at line 86.
+    Found 33-bit subtractor for signal <substract>.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+Unit <MIPS_ALU> synthesized.
+
+
+Synthesizing Unit <Clock_Driver>.
+    Related source file is "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/IType MIPS CPU/Simulation/Src_4sim/Clock_driver_for_sim.vhd".
+    Found 1-bit register for signal <half_ck_signal>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <Clock_Driver> synthesized.
+
+
+Synthesizing Unit <dual_port_memory_no_CK_read>.
+    Related source file is "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/IType MIPS CPU/Simulation/Src_4sim/dual_port_memory-empty.vhd".
+    Found 32x32-bit dual-port RAM <Mram_Memory_array> for signal <Memory_array>.
+    Found 32x32-bit dual-port RAM <Mram_Memory_array_ren> for signal <Memory_array>.
+    Summary:
+	inferred   2 RAM(s).
+Unit <dual_port_memory_no_CK_read> synthesized.
+
+
+Synthesizing Unit <GPR>.
+    Related source file is "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/IType MIPS CPU/Simulation/Src_4sim/GPR-empty.vhd".
+WARNING:Xst:1780 - Signal <GPR_wr_data> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <GPR> synthesized.
+
+
+Synthesizing Unit <HW5_MIPS_4sim>.
+    Related source file is "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/IType MIPS CPU/Simulation/Src_4sim/HW5_MIPS_4sim-empty.vhd".
+WARNING:Xst:653 - Signal <MIPS_reset_from_Fetch_Unit> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:737 - Found 1-bit latch for signal <MemToReg_pMEM>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 32-bit register for signal <A_reg>.
+    Found 2-bit register for signal <ALUOP_pEX>.
+    Found 32-bit register for signal <ALUout_reg>.
+    Found 32-bit register for signal <ALUout_reg_pWB>.
+    Found 1-bit register for signal <ALUsrcB_pEX>.
+    Found 32-bit register for signal <B_reg>.
+    Found 32-bit register for signal <B_reg_pMEM>.
+    Found 6-bit register for signal <Funct_pEX>.
+    Found 1-bit register for signal <MemToReg_pEX>.
+    Found 1-bit register for signal <MemToReg_pMEM>.
+    Found 1-bit register for signal <MemToReg_pWB>.
+    Found 1-bit register for signal <MemWrite_pEX>.
+    Found 1-bit register for signal <MemWrite_pMEM>.
+    Found 5-bit register for signal <Rd_pEX>.
+    Found 5-bit register for signal <Rd_pMEM>.
+    Found 5-bit register for signal <Rd_pWB>.
+    Found 1-bit register for signal <RegDst_pEX>.
+    Found 1-bit register for signal <RegWrite_pEX>.
+    Found 1-bit register for signal <RegWrite_pMEM>.
+    Found 1-bit register for signal <RegWrite_pWB>.
+    Found 32-bit comparator equal for signal <Rs_equals_Rt$cmp_eq0000> created at line 349.
+    Found 5-bit register for signal <Rt_pEX>.
+    Found 32-bit register for signal <sext_imm_reg>.
+    Summary:
+	inferred 230 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <HW5_MIPS_4sim> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 32x32-bit dual-port RAM                               : 2
+# Adders/Subtractors                                   : 4
+ 32-bit adder                                          : 2
+ 32-bit addsub                                         : 1
+ 33-bit subtractor                                     : 1
+# Registers                                            : 25
+ 1-bit register                                        : 11
+ 2-bit register                                        : 1
+ 32-bit register                                       : 8
+ 5-bit register                                        : 4
+ 6-bit register                                        : 1
+# Latches                                              : 1
+ 1-bit latch                                           : 1
+# Comparators                                          : 1
+ 32-bit comparator equal                               : 1
+# Xors                                                 : 1
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <MemToReg_pMEM>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <dual_port_memory_no_CK_read>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_Memory_array> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <wr_clk>        | rise     |
+    |     weA            | connected to signal <wr_en>         | high     |
+    |     addrA          | connected to signal <wr_address>    |          |
+    |     diA            | connected to signal <wr_data>       |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     addrB          | connected to signal <rd1_address>   |          |
+    |     doB            | connected to signal <rd1_data>      |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_Memory_array_ren> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <wr_clk>        | rise     |
+    |     weA            | connected to signal <wr_en>         | high     |
+    |     addrA          | connected to signal <wr_address>    |          |
+    |     diA            | connected to signal <wr_data>       |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     addrB          | connected to signal <rd2_address>   |          |
+    |     doB            | connected to signal <rd2_data>      |          |
+    -----------------------------------------------------------------------
+Unit <dual_port_memory_no_CK_read> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 32x32-bit dual-port distributed RAM                   : 2
+# Adders/Subtractors                                   : 4
+ 32-bit adder                                          : 2
+ 32-bit addsub                                         : 1
+ 33-bit subtractor                                     : 1
+# Registers                                            : 295
+ Flip-Flops                                            : 295
+# Latches                                              : 1
+ 1-bit latch                                           : 1
+# Comparators                                          : 1
+ 32-bit comparator equal                               : 1
+# Xors                                                 : 1
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+ERROR:Xst:528 - Multi-source in Unit <HW5_MIPS_4sim> on signal <rdbk12_out_to_TB<28>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of LD instance <MemToReg_pMEM/0>
+   Output signal of FDCE instance <MemToReg_pMEM_ren>
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.56 secs
+ 
+--> 
+
+Total memory usage is 245652 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

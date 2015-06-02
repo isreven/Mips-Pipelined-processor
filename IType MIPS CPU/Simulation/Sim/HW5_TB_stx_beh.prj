@@ -1,0 +1,7 @@
+vhdl isim_temp "../Src_4sim/dual_port_memory-empty.vhd"
+vhdl isim_temp "../Src_4sim/MIPS_ALU-empty.vhd"
+vhdl isim_temp "../Src_4sim/GPR-empty.vhd"
+vhdl isim_temp "../Src_4sim/Fetch_Unit-empty.vhd"
+vhdl isim_temp "../Src_4sim/Clock_driver_for_sim.vhd"
+vhdl isim_temp "../Src_4sim/HW5_MIPS_4sim-empty.vhd"
+vhdl isim_temp "../Src_4sim/HW5_TB_for_students_new.vhd"
