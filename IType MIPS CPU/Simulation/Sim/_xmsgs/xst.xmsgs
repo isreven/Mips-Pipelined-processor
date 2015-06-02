@@ -5,7 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/IType MIPS CPU/Simulation/Src_4sim/HW5_MIPS_4sim-empty.vhd</arg>&quot; line <arg fmt="%d" index="2">698</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">HW5_Host_intf_4sim</arg>&gt;.
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/IType MIPS CPU/Simulation/Src_4sim/HW5_MIPS_4sim-empty.vhd</arg>&quot; line <arg fmt="%d" index="2">698</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">HW5_Host_Intf_4sim</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">substract&lt;31:0&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.

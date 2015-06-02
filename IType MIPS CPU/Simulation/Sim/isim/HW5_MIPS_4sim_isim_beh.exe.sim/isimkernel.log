@@ -2,28 +2,28 @@ Command line:
    HW5_MIPS_4sim_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  49843
+     -socket  50260
 
-Mon Jun 01 21:24:32 2015
+Tue Jun 02 12:06:58 2015
 
 
- Elaboration Time: 0.0625 sec
+ Elaboration Time: 0.078125 sec
 
- Current Memory Usage: 364.863 Meg
+ Current Memory Usage: 364.851 Meg
 
- Total Signals          : 149
- Total Nets             : 1941
- Total Signal Drivers   : 107
- Total Blocks           : 10
- Total Primitive Blocks : 8
- Total Processes        : 90
+ Total Signals          : 214
+ Total Nets             : 2823
+ Total Signal Drivers   : 146
+ Total Blocks           : 11
+ Total Primitive Blocks : 9
+ Total Processes        : 127
  Total Traceable Variables  : 20
- Total Scalar Nets and Variables : 3470
-Total Line Count : 220
+ Total Scalar Nets and Variables : 4352
+Total Line Count : 491
 
- Total Simulation Time: 0.109375 sec
+ Total Simulation Time: 0.34375 sec
 
- Current Memory Usage: 364.863 Meg
+ Current Memory Usage: 679.44 Meg
 
-Tue Jun 02 11:26:10 2015
+Tue Jun 02 12:07:53 2015
 

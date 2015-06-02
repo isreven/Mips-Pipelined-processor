@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Reading design: HW5_MIPS_4sim.prj
 
@@ -145,7 +145,7 @@ Analyzing hierarchy for entity <dual_port_memory_no_CK_read> in library <work> (
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <HW5_MIPS_4sim> in library <work> (Architecture <Behavioral>).
-WARNING:Xst:2211 - "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/IType MIPS CPU/Simulation/Src_4sim/HW5_MIPS_4sim-empty.vhd" line 698: Instantiating black box module <HW5_Host_intf_4sim>.
+WARNING:Xst:2211 - "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/IType MIPS CPU/Simulation/Src_4sim/HW5_MIPS_4sim-empty.vhd" line 698: Instantiating black box module <HW5_Host_Intf_4sim>.
 Entity <HW5_MIPS_4sim> analyzed. Unit <HW5_MIPS_4sim> generated.
 
 Analyzing Entity <Fetch_Unit> in library <work> (Architecture <Behavioral>).
@@ -351,8 +351,8 @@ Drivers are:
    Output signal of FDCE instance <MemToReg_pMEM_ren>
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 5.56 secs
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 9.08 secs
  
 --> 
 

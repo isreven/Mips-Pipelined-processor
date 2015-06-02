@@ -1,18 +1,17 @@
-Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/IType MIPS CPU/Simulation/Sim/HW5_MIPS_4sim_isim_beh.exe" -prj "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/IType MIPS CPU/Simulation/Sim/HW5_MIPS_4sim_beh.prj" "work.HW5_MIPS_4sim" 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/IType MIPS CPU/Simulation/Sim/HW5_MIPS_4sim_isim_beh.exe -prj C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/IType MIPS CPU/Simulation/Sim/HW5_MIPS_4sim_beh.prj work.HW5_MIPS_4sim 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
 Parsing VHDL file "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/IType MIPS CPU/Simulation/Sim/../Src_4sim/dual_port_memory-empty.vhd" into library work
 Parsing VHDL file "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/IType MIPS CPU/Simulation/Sim/../Src_4sim/MIPS_ALU-empty.vhd" into library work
+Parsing VHDL file "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/IType MIPS CPU/Simulation/Sim/../Src_4sim/HW5_BYOC_Host_Intf_4sim.vhd" into library work
 Parsing VHDL file "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/IType MIPS CPU/Simulation/Sim/../Src_4sim/GPR-empty.vhd" into library work
 Parsing VHDL file "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/IType MIPS CPU/Simulation/Sim/../Src_4sim/Fetch_Unit-empty.vhd" into library work
 Parsing VHDL file "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/IType MIPS CPU/Simulation/Sim/../Src_4sim/Clock_driver_for_sim.vhd" into library work
 Parsing VHDL file "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/IType MIPS CPU/Simulation/Sim/../Src_4sim/HW5_MIPS_4sim-empty.vhd" into library work
 Starting static elaboration
-WARNING:HDLCompiler:89 - "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/IType MIPS CPU/Simulation/Sim/../Src_4sim/HW5_MIPS_4sim-empty.vhd" Line 698: <hw5_host_intf_4sim> remains a black-box since it has no binding entity.
 Completed static elaboration
-WARNING:Simulator:648 - "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/IType MIPS CPU/Simulation/Sim/../Src_4sim/HW5_MIPS_4sim-empty.vhd" Line 698. Instance hw5_host_intf_4sim is unbound
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package std_logic_arith
@@ -25,10 +24,11 @@ WARNING:HDLCompiler:1242 - "N:/P.20131013/rtf/vhdl/src/ieee/std_logic_arith.vhd"
 WARNING:HDLCompiler:1242 - "N:/P.20131013/rtf/vhdl/src/ieee/std_logic_arith.vhd" Line 2281: Warning: "CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0."
 Compiling architecture behavioral of entity MIPS_ALU [mips_alu_default]
 Compiling architecture clock_divider of entity Clock_Driver [clock_driver_default]
+Compiling architecture behavioral of entity HW5_Host_Intf_4sim [hw5_host_intf_4sim_default]
 Compiling architecture behavioral of entity hw5_mips_4sim
 Time Resolution for simulation is 1ps.
-Waiting for 2 sub-compilation(s) to finish...
-Compiled 16 VHDL Units
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 18 VHDL Units
 Built simulation executable C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/IType MIPS CPU/Simulation/Sim/HW5_MIPS_4sim_isim_beh.exe
-Fuse Memory Usage: 35684 KB
-Fuse CPU Usage: 1171 ms
+Fuse Memory Usage: 36032 KB
+Fuse CPU Usage: 1265 ms

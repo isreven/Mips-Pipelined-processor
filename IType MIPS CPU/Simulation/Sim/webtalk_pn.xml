@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Mon Jun 01 21:19:57 2015">
+<application name="pn" timeStamp="Tue Jun 02 11:52:50 2015">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="A97E04E062794299A185E20C8FF2BAE2" type="project"/>
 <property name="ProjectIteration" value="0" type="project"/>
@@ -18,7 +18,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_LastAppliedStrategy" value="Xilinx Default (unlocked)" type="design"/>
 <property name="PROP_ManualCompileOrderImp" value="false" type="design"/>
 <property name="PROP_PropSpecInProjFile" value="Store all values" type="design"/>
-<property name="PROP_SelectedInstanceHierarchicalPath" value="/HW5_TB/Testing_HW5_MIPS" type="process"/>
+<property name="PROP_SelectedInstanceHierarchicalPath" value="/BYOC_Host_Intf" type="process"/>
 <property name="PROP_Simulator" value="ISim (VHDL/Verilog)" type="design"/>
 <property name="PROP_SynthTopFile" value="changed" type="process"/>
 <property name="PROP_Top_Level_Module_Type" value="HDL" type="design"/>
@@ -28,7 +28,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_intWbtProjectID" value="A97E04E062794299A185E20C8FF2BAE2" type="design"/>
 <property name="PROP_intWorkingDirLocWRTProjDir" value="Same" type="design"/>
 <property name="PROP_intWorkingDirUsed" value="No" type="design"/>
-<property name="PROP_selectedSimRootSourceNode_behav" value="work.HW5_MIPS_4sim" type="process"/>
+<property name="PROP_selectedSimRootSourceNode_behav" value="work.BYOC_Host_Intf" type="process"/>
 <property name="PROP_xilxBitgStart_IntDone" value="true" type="process"/>
 <property name="PROP_AutoTop" value="true" type="design"/>
 <property name="PROP_DevFamily" value="Spartan3E" type="design"/>
