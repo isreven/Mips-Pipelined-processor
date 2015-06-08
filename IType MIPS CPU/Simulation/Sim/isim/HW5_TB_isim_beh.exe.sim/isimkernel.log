@@ -2,14 +2,14 @@ Command line:
    HW5_TB_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  52248
+     -socket  52265
 
-Mon Jun 08 18:08:22 2015
+Mon Jun 08 18:12:32 2015
 
 
  Elaboration Time: 0.0625 sec
 
- Current Memory Usage: 364.917 Meg
+ Current Memory Usage: 364.921 Meg
 
  Total Signals          : 259
  Total Nets             : 3341
@@ -21,9 +21,9 @@ Mon Jun 08 18:08:22 2015
  Total Scalar Nets and Variables : 4870
 Total Line Count : 596
 
- Total Simulation Time: 13.2031 sec
+ Total Simulation Time: 39.9844 sec
 
- Current Memory Usage: 364.917 Meg
+ Current Memory Usage: 679.51 Meg
 
-Mon Jun 08 18:08:40 2015
+Mon Jun 08 18:13:57 2015
 

@@ -27,13 +27,31 @@ PORT (
    ); 
 END ENTITY dual_port_memory_no_CK_read;
 
--- enter your design here
 
+ARCHITECTURE dual_port_memory OF dual_port_memory_no_CK_read IS
+type Memory_Type is array ((depth-1) downto 0) of std_logic_vector((width-1) downto 0);   
+shared variable  Memory_array : Memory_Type := (others => (others =>'0')); -- reset initial value to be 0
+
+begin
+
+Memory_wrdata: PROCESS (wr_clk)
+begin 
+if wr_clk'event and wr_clk = '1' then
+   if wr_en = '1' then
+      Memory_array(wr_address) := wr_data;
+   end if;
+end if ;
+end process Memory_wrdata;
+ 
+Memory_rddata1 : PROCESS (rd1_address,wr_clk)                        
+begin
+   rd1_data <= Memory_array(rd1_address);
+end process Memory_rddata1;
+
+Memory_rddata2 : PROCESS (rd2_address,wr_clk)                        
+begin
+   rd2_data <= Memory_array(rd2_address);
+end process Memory_rddata2;
 
 
 END ARCHITECTURE dual_port_memory;
-
- 
-
-
-

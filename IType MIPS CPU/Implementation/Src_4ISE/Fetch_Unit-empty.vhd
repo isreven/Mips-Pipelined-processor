@@ -110,25 +110,99 @@ Rs_equals_Rt <= Rs_equals_Rt_pID; --@@@ changes for Rtype MIPS
 
 IMem_adrs <= PC_reg; -- connect PC_reg to IMem
 
+	process (CK,RESET)
+	begin
+		if RESET = '1' then 
+			PC_reg <= x"00400000";
+		elsif CK'event and CK='1' then
+			if HOLD = '0' then
+				PC_reg <= PC_mux_out;
+			end if;
+		end if;
+	end process;
+
 --PC source mux
 
--- PC Adder - incrementing PC by 4
+	with PC_source select
+		PC_mux_out <=
+		PC_plus_4 when "00", 
+		branch_adrs when "01",
+		jr_adrs when "10",
+		jump_adrs when others;
 
--- IR_reg
-IR_reg <= IMem_rd_data;-- IMem_rd_data is the IR_reg (a register at the rd_data output of the IMem)
+-- PC Adder - incrementing PC by 4  (create the PC_plus_4 signal)
 
--- imm sign extension	
+	PC_plus_4 <= PC_reg + x"4";
+
+-- IR_reg   (rename of the IMem_rd_data signal)
+
+	IR_reg <= IMem_rd_data;
+
+-- imm sign extension	  (create the sext_imm signal)
+	imm <= IR_reg(15 downto 0);
+
+	with imm(15 downto 15) select
+		sext_imm <=
+		x"0000" & imm when b"0",
+		x"FFFF" & imm when others;
+
+-- BRANCH address  (create the branch_adrs signal)
+
+	branch_adrs <= PC_plus_4_pID + (sext_imm(29 downto 0) & b"00");
+
+-- JUMP address    (create the jump_adrs signal)
+
+	jump_adrs <= PC_plus_4_pID(31 downto 28) & IR_Reg(25 downto 0) & b"00";
+
+-- JR address    (create the jr_adrs signal)  
+
+	jr_adrs <= x"00400004";
+
+--PC_plus_4_dlyd register    (create the PC_plus_4_pID signal)
+
+	process (CK,RESET)
+	begin
+		if RESET = '1' then 
+			PC_plus_4_pID <= b"00000000000000000000000000000000";
+		elsif CK'event and CK='1' then
+			if HOLD = '0' then
+				PC_plus_4_pID <= pc_plus_4;
+			end if;
+		end if;
+	end process;
 
 -- BRANCH address
 
 -- JUMP address
 
--- JR address
+-- instruction decoder
+opcode <= IR_reg(31 downto 26);
+funct <= IR_reg(5 downto 0);
 	
 --PC_plus_4_dlyd register
 
 -- PC_source   (create the PC_source signal) --@@@ require changes for Rtype MIPS
 
+process (opcode,funct,Rs_equals_Rt)
+	begin
+		if opcode=b"00000" then -- R-type
+			if funct=b"001000" then --jr
+				PC_source <= b"10";
+			else 
+				PC_source <= b"00"; -- defualt
+			end if;
+		elsif opcode=b"00010" then -- jump
+			PC_source <= b"11"; -- 
+		elsif opcode=b"00011" then --jal
+			PC_source <= b"11";
+		elsif opcode=b"00100" and Rs_equals_Rt='1' then -- beq
+			PC_source <= b"01";
+		elsif opcode=b"00101" and Rs_equals_Rt='0' then -- bne
+			PC_source <= b"01";
+		else 
+			PC_source <= b"00";  -- defualt
+		end if;
+	end process;
 	
 
 
