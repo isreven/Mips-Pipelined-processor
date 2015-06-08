@@ -1,6 +1,0 @@
-vhdl work "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\IType MIPS CPU\Simulation\Src_4sim\dual_port_memory-empty.vhd"
-vhdl work "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\IType MIPS CPU\Simulation\Src_4sim\MIPS_ALU-empty.vhd"
-vhdl work "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\IType MIPS CPU\Simulation\Src_4sim\GPR-empty.vhd"
-vhdl work "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\IType MIPS CPU\Simulation\Src_4sim\Fetch_Unit-empty.vhd"
-vhdl work "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\IType MIPS CPU\Simulation\Src_4sim\Clock_driver_for_sim.vhd"
-vhdl work "C:\Users\Matan\Dropbox\IDC\Year 2\Spring\Build Your Own Computer\Mips-Pipelined-processor\IType MIPS CPU\Simulation\Src_4sim\HW5_MIPS_4sim-empty.vhd"

@@ -323,7 +323,7 @@ begin
 -- =============================== CKs & Rest signals ==============================
 
 -- RESET
-RESET <= switches_in(6) or MIPS_reset_from_Fetch_Unit;
+--RESET <= switches_in(6) or MIPS_reset_from_Fetch_Unit;
 
 
 --============================= IF phase processes ========================================
@@ -335,8 +335,12 @@ RESET <= switches_in(6) or MIPS_reset_from_Fetch_Unit;
 -- IR fields signals
 Opcode <= IR_reg(31 downto 26);
 Rs <= IR_reg(25 downto 21);
---Rt <= IR_reg(20 downto 16) or (JAL & JAL & JAL & JAL & JAL);-- if JAL, Rt=$31
-Rt <= IR_reg(20 downto 16);
+with opcode select
+		Rt <=
+		b"11111" when b"000011", 
+		IR_reg(20 downto 16) when others;
+		
+--Rt <= IR_reg(20 downto 16);-- or (JAL & JAL & JAL & JAL & JAL);-- if JAL, Rt=$31
 Rd <= IR_reg(15 downto 11);
 Funct <= IR_reg(5 downto 0);
 -- imm <= IR_reg(15 downto 0); not required here - already handled inside Fetch_Unit
@@ -365,12 +369,12 @@ end process;
 process (Opcode, Funct)
 	begin
 	-- Initialize all the ID signals.
-	RegWrite <= '0';
-	RegDst <= '0';
 	ALUsrcB <= '0';
 	ALUOP <= b"00";
+	RegDst <= '0';
 	MemWrite <= '0';
 	MemToReg <= '0';
+	RegWrite <= '0';
 	if Opcode = b"000000" then -- R Type
 		ALUsrcB <= '0'; -- Take the B register
 		ALUOP <= b"10"; -- ALU op will be decided by Fucnt signals
@@ -470,6 +474,18 @@ end process;
 
 --============================= MEM phase processes ========================================
 --========================================================================================
+--ALUOUT register;
+process (CK,RESET)
+begin
+	if RESET = '1' then 
+		ALUout_reg <= b"00000000000000000000000000000000";
+	elsif CK'event and CK='1' then
+		if HOLD = '0' then
+			ALUout_reg <= ALU_output;
+		end if;
+	end if;
+end process;
+
 --B delayed reg
 process (CK,RESET)
 begin
@@ -518,29 +534,8 @@ end process;
 
 --============================= WB phase processes ========================================
 --========================================================================================
---ALUOUT register;
-process (CK,RESET)
-begin
-	if RESET = '1' then 
-		ALUout_reg <= b"00000000000000000000000000000000";
-	elsif CK'event and CK='1' then
-		if HOLD = '0' then
-			ALUout_reg <= ALU_output;
-		end if;
-	end if;
-end process;
 
--- RegDst mux and Rd_pWB register
-process (CK,RESET)
-begin
-	if RESET = '1' then 
-		Rd_pWB <= b"00000";
-	elsif CK'event and CK='1' then
-		if HOLD = '0' then
-			Rd_pWB <= Rd_pMEM;
-		end if;
-	end if;
-end process;
+-- MDR_reg no need to define -- connected directly from HW5_Host_intf - resides inside the DMem
 
 
 --ALUout_pWB register
@@ -574,12 +569,12 @@ begin
 end process;
 
 -- control signals FFs 
--- RegWrite_pWB, MemToReg_pWB FFs
+-- RegWrite_pWB,  FFs
 process (CK,RESET)
 begin
 	if RESET = '1' then 
 		RegWrite_pWB <= '0';
-		MemToReg_pMEM <= '0';
+		MemToReg_pwB <= '0';
 	elsif CK'event and CK='1' then
 		if HOLD = '0' then
 			RegWrite_pWB <= RegWrite_pMEM;

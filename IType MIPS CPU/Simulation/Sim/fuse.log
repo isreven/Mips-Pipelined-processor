@@ -1,4 +1,4 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/IType MIPS CPU/Simulation/Sim/HW5_MIPS_4sim_isim_beh.exe -prj C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/IType MIPS CPU/Simulation/Sim/HW5_MIPS_4sim_beh.prj work.HW5_MIPS_4sim 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/IType MIPS CPU/Simulation/Sim/HW5_TB_isim_beh.exe -prj C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/IType MIPS CPU/Simulation/Sim/HW5_TB_beh.prj work.HW5_TB 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
@@ -10,12 +10,14 @@ Parsing VHDL file "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Compu
 Parsing VHDL file "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/IType MIPS CPU/Simulation/Sim/../Src_4sim/Fetch_Unit-empty.vhd" into library work
 Parsing VHDL file "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/IType MIPS CPU/Simulation/Sim/../Src_4sim/Clock_driver_for_sim.vhd" into library work
 Parsing VHDL file "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/IType MIPS CPU/Simulation/Sim/../Src_4sim/HW5_MIPS_4sim-empty.vhd" into library work
+Parsing VHDL file "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/IType MIPS CPU/Simulation/Sim/../Src_4sim/HW5_TB_for_students_new.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package std_logic_arith
 Compiling package std_logic_unsigned
+Compiling package textio
 Compiling package numeric_std
 Compiling architecture behavioral of entity Fetch_Unit [fetch_unit_default]
 Compiling architecture dual_port_memory of entity dual_port_memory_no_CK_read [\dual_port_memory_no_CK_read(32,...]
@@ -25,10 +27,10 @@ WARNING:HDLCompiler:1242 - "N:/P.20131013/rtf/vhdl/src/ieee/std_logic_arith.vhd"
 Compiling architecture behavioral of entity MIPS_ALU [mips_alu_default]
 Compiling architecture clock_divider of entity Clock_Driver [clock_driver_default]
 Compiling architecture behavioral of entity HW5_Host_Intf_4sim [hw5_host_intf_4sim_default]
-Compiling architecture behavioral of entity hw5_mips_4sim
+Compiling architecture behavioral of entity HW5_MIPS_4sim [hw5_mips_4sim_default]
+Compiling architecture testing of entity hw5_tb
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
-Compiled 18 VHDL Units
-Built simulation executable C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/IType MIPS CPU/Simulation/Sim/HW5_MIPS_4sim_isim_beh.exe
-Fuse Memory Usage: 36032 KB
-Fuse CPU Usage: 1265 ms
+Compiled 21 VHDL Units
+Built simulation executable C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/IType MIPS CPU/Simulation/Sim/HW5_TB_isim_beh.exe
+Fuse Memory Usage: 36456 KB
+Fuse CPU Usage: 1405 ms
