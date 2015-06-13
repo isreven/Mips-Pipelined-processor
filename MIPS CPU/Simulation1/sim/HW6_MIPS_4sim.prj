@@ -1,0 +1,7 @@
+vhdl work "../src_4sim/dual_port_memory-empty.vhd"
+vhdl work "../src_4sim/MIPS_ALU-empty.vhd"
+vhdl work "../src_4sim/HW6_Host_Intf_4sim.vhd"
+vhdl work "../src_4sim/GPR-empty.vhd"
+vhdl work "../src_4sim/Fetch_Unit-empty.vhd"
+vhdl work "../src_4sim/Clock_driver_for_sim.vhd"
+vhdl work "../src_4sim/HW6_MIPS_4sim-empty.vhd"

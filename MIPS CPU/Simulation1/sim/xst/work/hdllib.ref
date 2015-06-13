@@ -1,0 +1,14 @@
+EN clock_driver NULL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/MIPS CPU/Simulation1/src_4sim/Clock_driver_for_sim.vhd" sub00/vhpl08 1434231515
+EN hw6_host_intf_4sim NULL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/MIPS CPU/Simulation1/src_4sim/HW6_Host_Intf_4sim.vhd" sub00/vhpl10 1434231517
+EN dual_port_memory_no_ck_read NULL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/MIPS CPU/Simulation1/src_4sim/dual_port_memory-empty.vhd" sub00/vhpl00 1434231507
+EN mips_alu NULL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/MIPS CPU/Simulation1/src_4sim/MIPS_ALU-empty.vhd" sub00/vhpl06 1434231513
+AR fetch_unit behavioral "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/MIPS CPU/Simulation1/src_4sim/Fetch_Unit-empty.vhd" sub00/vhpl03 1434231510
+AR hw6_host_intf_4sim behavioral "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/MIPS CPU/Simulation1/src_4sim/HW6_Host_Intf_4sim.vhd" sub00/vhpl11 1434231518
+EN fetch_unit NULL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/MIPS CPU/Simulation1/src_4sim/Fetch_Unit-empty.vhd" sub00/vhpl02 1434231509
+AR gpr behavioral "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/MIPS CPU/Simulation1/src_4sim/GPR-empty.vhd" sub00/vhpl05 1434231512
+AR hw6_mips_4sim behavioral "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/MIPS CPU/Simulation1/src_4sim/HW6_MIPS_4sim-empty.vhd" sub00/vhpl13 1434231520
+AR mips_alu behavioral "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/MIPS CPU/Simulation1/src_4sim/MIPS_ALU-empty.vhd" sub00/vhpl07 1434231514
+AR dual_port_memory_no_ck_read dual_port_memory "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/MIPS CPU/Simulation1/src_4sim/dual_port_memory-empty.vhd" sub00/vhpl01 1434231508
+EN gpr NULL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/MIPS CPU/Simulation1/src_4sim/GPR-empty.vhd" sub00/vhpl04 1434231511
+AR clock_driver clock_divider "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/MIPS CPU/Simulation1/src_4sim/Clock_driver_for_sim.vhd" sub00/vhpl09 1434231516
+EN hw6_mips_4sim NULL "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/MIPS CPU/Simulation1/src_4sim/HW6_MIPS_4sim-empty.vhd" sub00/vhpl12 1434231519

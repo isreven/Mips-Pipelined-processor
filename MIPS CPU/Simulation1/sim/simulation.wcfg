@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/MIPS CPU/Simulation1/sim/HW6_TB_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="hw6_tb" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="textio" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="16" />
+   <wvobject fp_name="/hw6_tb/Testing_HW6_MIPS/ck" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ck</obj_property>
+      <obj_property name="ObjectShortName">ck</obj_property>
+   </wvobject>
+   <wvobject fp_name="/hw6_tb/Testing_HW6_MIPS/pc_plus_4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pc_plus_4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_plus_4[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/hw6_tb/Testing_HW6_MIPS/ir_reg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ir_reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ir_reg[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/hw6_tb/Testing_HW6_MIPS/opcode" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">opcode[5:0]</obj_property>
+      <obj_property name="ObjectShortName">opcode[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/hw6_tb/Testing_HW6_MIPS/rs" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rs[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rs[4:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/hw6_tb/Testing_HW6_MIPS/rt" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rt[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rt[4:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/hw6_tb/Testing_HW6_MIPS/rd" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rd[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rd[4:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/hw6_tb/Testing_HW6_MIPS/funct" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">funct[5:0]</obj_property>
+      <obj_property name="ObjectShortName">funct[5:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/hw6_tb/Testing_HW6_MIPS/sext_imm" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sext_imm[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sext_imm[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/hw6_tb/Testing_HW6_MIPS/alusrcb_pex" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">alusrcb_pex</obj_property>
+      <obj_property name="ObjectShortName">alusrcb_pex</obj_property>
+   </wvobject>
+   <wvobject fp_name="/hw6_tb/Testing_HW6_MIPS/aluop_pex" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">aluop_pex[1:0]</obj_property>
+      <obj_property name="ObjectShortName">aluop_pex[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/hw6_tb/i" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">i</obj_property>
+      <obj_property name="ObjectShortName">i</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/hw6_tb/err_cntr" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">err_cntr</obj_property>
+      <obj_property name="ObjectShortName">err_cntr</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/hw6_tb/expected_value2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">expected_value2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">expected_value2[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/hw6_tb/Testing_HW6_MIPS/fetch_unit_imp/imm_sign" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">imm_sign</obj_property>
+      <obj_property name="ObjectShortName">imm_sign</obj_property>
+   </wvobject>
+   <wvobject fp_name="/hw6_tb/Testing_HW6_MIPS/fetch_unit_imp/imm" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">imm[15:0]</obj_property>
+      <obj_property name="ObjectShortName">imm[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+</wave_config>

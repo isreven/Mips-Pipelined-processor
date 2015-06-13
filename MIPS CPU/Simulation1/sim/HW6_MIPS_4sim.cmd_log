@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/MIPS CPU/Simulation1/sim/HW6_MIPS_4sim.xst" -ofn "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/MIPS CPU/Simulation1/sim/HW6_MIPS_4sim.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "HW6_MIPS_4sim.ngc" HW6_MIPS_4sim.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o HW6_MIPS_4sim_map.ncd HW6_MIPS_4sim.ngd HW6_MIPS_4sim.pcf 

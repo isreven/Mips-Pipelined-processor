@@ -1,0 +1,1130 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.18 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.18 secs
+ 
+--> Reading design: HW6_MIPS_4sim.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "HW6_MIPS_4sim.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "HW6_MIPS_4sim"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : HW6_MIPS_4sim
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/MIPS CPU/Simulation1/src_4sim/dual_port_memory-empty.vhd" in Library work.
+Entity <dual_port_memory_no_CK_read> compiled.
+Entity <dual_port_memory_no_CK_read> (Architecture <dual_port_memory>) compiled.
+Compiling vhdl file "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/MIPS CPU/Simulation1/src_4sim/Fetch_Unit-empty.vhd" in Library work.
+Entity <Fetch_Unit> compiled.
+Entity <Fetch_Unit> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/MIPS CPU/Simulation1/src_4sim/GPR-empty.vhd" in Library work.
+Entity <GPR> compiled.
+Entity <GPR> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/MIPS CPU/Simulation1/src_4sim/MIPS_ALU-empty.vhd" in Library work.
+Entity <MIPS_ALU> compiled.
+Entity <MIPS_ALU> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/MIPS CPU/Simulation1/src_4sim/Clock_driver_for_sim.vhd" in Library work.
+Entity <Clock_Driver> compiled.
+Entity <Clock_Driver> (Architecture <clock_divider>) compiled.
+Compiling vhdl file "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/MIPS CPU/Simulation1/src_4sim/HW6_Host_Intf_4sim.vhd" in Library work.
+Entity <HW6_Host_Intf_4sim> compiled.
+Entity <HW6_Host_Intf_4sim> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/MIPS CPU/Simulation1/src_4sim/HW6_MIPS_4sim-empty.vhd" in Library work.
+Entity <HW6_MIPS_4sim> compiled.
+Entity <HW6_MIPS_4sim> (Architecture <Behavioral>) compiled.
+ERROR:HDLParsers - Cannot rename dependency database for library "work", file is "xst/work/hdpdeps.ref", Temporary database file "C:\Users\Dor\Dropbox\IDC\Build Your Own Computer\Projects\Mips-Pipelined-processor\MIPS CPU\Simulation1\sim\xst\work\xil_5508_13" will remain.  System error message is:  File exists
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <HW6_MIPS_4sim> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <Fetch_Unit> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <GPR> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <MIPS_ALU> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <Clock_Driver> in library <work> (architecture <clock_divider>).
+
+Analyzing hierarchy for entity <HW6_Host_intf_4sim> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <dual_port_memory_no_CK_read> in library <work> (architecture <dual_port_memory>) with generics.
+	depth = 32
+	width = 32
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <HW6_MIPS_4sim> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:819 - "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/MIPS CPU/Simulation1/src_4sim/HW6_MIPS_4sim-empty.vhd" line 635: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <JAL_pWB>
+Entity <HW6_MIPS_4sim> analyzed. Unit <HW6_MIPS_4sim> generated.
+
+Analyzing Entity <Fetch_Unit> in library <work> (Architecture <Behavioral>).
+Entity <Fetch_Unit> analyzed. Unit <Fetch_Unit> generated.
+
+Analyzing Entity <GPR> in library <work> (Architecture <Behavioral>).
+Entity <GPR> analyzed. Unit <GPR> generated.
+
+Analyzing generic Entity <dual_port_memory_no_CK_read> in library <work> (Architecture <dual_port_memory>).
+	depth = 32
+	width = 32
+Entity <dual_port_memory_no_CK_read> analyzed. Unit <dual_port_memory_no_CK_read> generated.
+
+Analyzing Entity <MIPS_ALU> in library <work> (Architecture <Behavioral>).
+Entity <MIPS_ALU> analyzed. Unit <MIPS_ALU> generated.
+
+Analyzing Entity <Clock_Driver> in library <work> (Architecture <clock_divider>).
+Entity <Clock_Driver> analyzed. Unit <Clock_Driver> generated.
+
+Analyzing Entity <HW6_Host_intf_4sim> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:819 - "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/MIPS CPU/Simulation1/src_4sim/HW6_Host_Intf_4sim.vhd" line 572: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <RESET>
+Entity <HW6_Host_intf_4sim> analyzed. Unit <HW6_Host_intf_4sim> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Fetch_Unit>.
+    Related source file is "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/MIPS CPU/Simulation1/src_4sim/Fetch_Unit-empty.vhd".
+    Using one-hot encoding for signal <PC_Source>.
+    Found 32-bit adder for signal <branch_adrs>.
+    Found 32-bit adder for signal <PC_plus_4>.
+    Found 32-bit register for signal <PC_plus_4_pID>.
+    Found 32-bit register for signal <PC_reg>.
+    Found 32-bit 4-to-1 multiplexer for signal <sext_imm>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  32 Multiplexer(s).
+Unit <Fetch_Unit> synthesized.
+
+
+Synthesizing Unit <MIPS_ALU>.
+    Related source file is "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/MIPS CPU/Simulation1/src_4sim/MIPS_ALU-empty.vhd".
+WARNING:Xst:646 - Signal <substract<31:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Using one-hot encoding for signal <ALU_cmd>.
+    Found 8-bit 4-to-1 multiplexer for signal <ALU_cmd>.
+    Found 32-bit addsub for signal <ALU_output$addsub0000>.
+    Found 32-bit xor2 for signal <ALU_output$xor0000> created at line 88.
+    Found 33-bit subtractor for signal <substract>.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   8 Multiplexer(s).
+Unit <MIPS_ALU> synthesized.
+
+
+Synthesizing Unit <Clock_Driver>.
+    Related source file is "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/MIPS CPU/Simulation1/src_4sim/Clock_driver_for_sim.vhd".
+    Found 1-bit register for signal <half_ck_signal>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <Clock_Driver> synthesized.
+
+
+Synthesizing Unit <HW6_Host_intf_4sim>.
+    Related source file is "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/MIPS CPU/Simulation1/src_4sim/HW6_Host_Intf_4sim.vhd".
+WARNING:Xst:647 - Input <buttons_in> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <switches_in<7>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <switches_in<5:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <HI_rdbk9> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_rdbk8> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_rdbk7> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_rdbk6> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_rdbk5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_rdbk4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_rdbk3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_rdbk2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_rdbk15> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_rdbk14> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_rdbk13> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_rdbk12> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_rdbk11> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_rdbk10> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_rdbk1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_rdbk0> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <HI_RS232_Rx> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 32-bit register for signal <DMem_rd_data>.
+    Found 32-bit register for signal <DMem_reg0>.
+    Found 32-bit register for signal <DMem_reg1>.
+    Found 32-bit register for signal <DMem_reg2>.
+    Found 32-bit register for signal <DMem_reg3>.
+    Found 32-bit register for signal <DMem_reg4>.
+    Found 8-bit up counter for signal <hold_cntr>.
+    Found 32-bit register for signal <IMem_rd_data>.
+    Found 1-bit register for signal <powerup_reset>.
+    Found 4-bit up counter for signal <reset_cntr>.
+    Found 4-bit comparator less for signal <reset_cntr$cmp_lt0000> created at line 150.
+    Summary:
+	inferred   2 Counter(s).
+	inferred 225 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <HW6_Host_intf_4sim> synthesized.
+
+
+Synthesizing Unit <dual_port_memory_no_CK_read>.
+    Related source file is "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/MIPS CPU/Simulation1/src_4sim/dual_port_memory-empty.vhd".
+    Found 32x32-bit dual-port RAM <Mram_Memory_array> for signal <Memory_array>.
+    Found 32x32-bit dual-port RAM <Mram_Memory_array_ren> for signal <Memory_array>.
+    Summary:
+	inferred   2 RAM(s).
+Unit <dual_port_memory_no_CK_read> synthesized.
+
+
+Synthesizing Unit <GPR>.
+    Related source file is "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/MIPS CPU/Simulation1/src_4sim/GPR-empty.vhd".
+WARNING:Xst:1780 - Signal <GPR_wr_data> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <GPR> synthesized.
+
+
+Synthesizing Unit <HW6_MIPS_4sim>.
+    Related source file is "C:/Users/Dor/Dropbox/IDC/Build Your Own Computer/Projects/Mips-Pipelined-processor/MIPS CPU/Simulation1/src_4sim/HW6_MIPS_4sim-empty.vhd".
+WARNING:Xst:1780 - Signal <Rs_pEX> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <MIPS_reset_from_Fetch_Unit> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <B_val_wt_fwd> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <B_reg_wt_fwd> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <A_val_wt_fwd> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <A_reg_wt_fwd> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 32-bit register for signal <A_reg>.
+    Found 2-bit register for signal <ALUOP_pEX>.
+    Found 32-bit register for signal <ALUout_reg>.
+    Found 32-bit register for signal <ALUout_reg_pWB>.
+    Found 1-bit register for signal <ALUsrcB_pEX>.
+    Found 32-bit register for signal <B_reg>.
+    Found 32-bit register for signal <B_reg_pMEM>.
+    Found 6-bit register for signal <Funct_pEX>.
+    Found 32-bit 4-to-1 multiplexer for signal <GPR_wr_data>.
+    Found 1-bit register for signal <JAL_pEX>.
+    Found 1-bit register for signal <JAL_pMEM>.
+    Found 1-bit register for signal <JAL_pWB>.
+    Found 1-bit register for signal <MemToReg_pEX>.
+    Found 1-bit register for signal <MemToReg_pMEM>.
+    Found 1-bit register for signal <MemToReg_pWB>.
+    Found 1-bit register for signal <MemWrite_pEX>.
+    Found 1-bit register for signal <MemWrite_pMEM>.
+    Found 32-bit register for signal <PC_plus_4_pEX>.
+    Found 32-bit register for signal <PC_plus_4_pMEM>.
+    Found 32-bit register for signal <PC_plus_4_pWB>.
+    Found 5-bit register for signal <Rd_pEX>.
+    Found 5-bit register for signal <Rd_pMEM>.
+    Found 5-bit register for signal <Rd_pWB>.
+    Found 1-bit register for signal <RegDst_pEX>.
+    Found 1-bit register for signal <RegWrite_pEX>.
+    Found 1-bit register for signal <RegWrite_pMEM>.
+    Found 1-bit register for signal <RegWrite_pWB>.
+    Found 32-bit comparator equal for signal <Rs_equals_Rt$cmp_eq0000> created at line 385.
+    Found 5-bit register for signal <Rt_pEX>.
+    Found 32-bit register for signal <sext_imm_reg>.
+    Summary:
+	inferred 329 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  32 Multiplexer(s).
+Unit <HW6_MIPS_4sim> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 32x32-bit dual-port RAM                               : 2
+# Adders/Subtractors                                   : 4
+ 32-bit adder                                          : 2
+ 32-bit addsub                                         : 1
+ 33-bit subtractor                                     : 1
+# Counters                                             : 2
+ 4-bit up counter                                      : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 39
+ 1-bit register                                        : 15
+ 2-bit register                                        : 1
+ 32-bit register                                       : 18
+ 5-bit register                                        : 4
+ 6-bit register                                        : 1
+# Comparators                                          : 2
+ 32-bit comparator equal                               : 1
+ 4-bit comparator less                                 : 1
+# Multiplexers                                         : 3
+ 32-bit 4-to-1 multiplexer                             : 2
+ 8-bit 4-to-1 multiplexer                              : 1
+# Xors                                                 : 1
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <IMem_rd_data_30> in Unit <hostintf> is equivalent to the following FF/Latch, which will be removed : <IMem_rd_data_31> 
+WARNING:Xst:1710 - FF/Latch <DMem_reg1_25> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg1_26> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg1_27> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg1_28> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg1_29> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg1_30> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg1_31> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg2_0> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg2_1> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg2_2> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg2_3> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg2_4> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg2_5> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg2_6> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg2_7> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg2_8> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg2_9> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg2_10> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg2_11> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg2_12> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg2_13> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg2_14> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg2_15> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg2_16> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg1_1> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg1_2> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg1_3> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg1_4> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg1_5> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg1_6> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg1_7> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg1_8> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg1_9> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg1_10> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg1_11> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg1_12> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg1_13> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg1_14> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg1_15> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg1_16> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg1_17> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg1_18> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg1_19> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg1_20> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg1_21> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg1_22> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg1_23> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg1_24> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg4_10> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg4_11> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg4_12> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg4_13> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg4_14> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg4_15> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg4_16> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg4_17> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg4_18> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg4_19> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg4_20> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg4_21> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg4_22> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg4_23> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg4_24> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg4_25> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg4_26> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg4_27> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg4_28> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg4_29> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg4_30> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg4_31> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <MemWrite_pEX> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <MemToReg_pEX> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg2_17> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg2_18> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg2_19> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg2_20> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg2_21> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg2_22> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg2_23> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg2_24> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg2_25> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg2_26> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg2_27> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg2_28> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg2_29> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg2_30> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg2_31> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg4_0> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg4_1> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg4_2> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg4_3> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg4_4> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg4_5> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg4_6> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg4_7> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg4_8> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg4_9> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_rd_data_25> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_rd_data_26> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_rd_data_27> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_rd_data_28> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_rd_data_29> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_rd_data_30> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_rd_data_31> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg0_0> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg0_1> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg0_2> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg0_3> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg0_4> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg0_5> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg0_6> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg0_7> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg0_8> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg0_9> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg0_10> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg0_11> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg0_12> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg0_13> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg0_14> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg0_15> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg0_16> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_rd_data_0> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_rd_data_1> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_rd_data_2> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_rd_data_3> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_rd_data_4> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_rd_data_5> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_rd_data_6> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_rd_data_7> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_rd_data_8> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_rd_data_9> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_rd_data_10> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_rd_data_11> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_rd_data_12> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_rd_data_13> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_rd_data_14> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_rd_data_15> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_rd_data_16> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_rd_data_17> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_rd_data_18> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_rd_data_19> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_rd_data_20> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_rd_data_21> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_rd_data_22> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_rd_data_23> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_rd_data_24> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg3_9> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg3_10> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg3_11> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg3_12> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg3_13> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg3_14> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg3_15> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg3_16> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg3_17> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg3_18> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg3_19> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg3_20> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg3_21> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg3_22> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg3_23> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg3_24> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg3_25> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg3_26> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg3_27> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg3_28> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg3_29> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg3_30> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg3_31> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg1_0> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg0_17> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg0_18> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg0_19> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg0_20> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg0_21> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg0_22> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg0_23> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg0_24> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg0_25> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg0_26> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg0_27> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg0_28> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg0_29> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg0_30> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg0_31> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IMem_rd_data_30> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg3_0> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg3_1> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg3_2> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg3_3> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg3_4> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg3_5> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg3_6> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg3_7> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DMem_reg3_8> (without init value) has a constant value of 0 in block <hostintf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MemWrite_pMEM> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MemToReg_pMEM> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MemToReg_pWB> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2404 -  FFs/Latches <IMem_rd_data<31:30>> (without init value) have a constant value of 0 in block <HW6_Host_intf_4sim>.
+
+Synthesizing (advanced) Unit <HW6_MIPS_4sim>.
+INFO:Xst:3226 - The RAM <GPR_file/GPR_file/Mram_Memory_array> will be implemented as a BLOCK RAM, absorbing the following register(s): <hostintf/IMem_rd_data>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <CK_out_to_TB>  | rise     |
+    |     weA            | connected to signal <GPR_file/GPR_we> | high     |
+    |     addrA          | connected to signal <rdbk12_out_to_TB> |          |
+    |     diA            | connected to signal <rdbk15_out_to_TB> |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <CK_out_to_TB>  | rise     |
+    |     enB            | connected to signal <HOLD_out_to_TB> | low      |
+    |     addrB          | connected to internal node          |          |
+    |     doB            | connected to signal <GPR_file/GPR_rd_data1> |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <GPR_file/GPR_file/Mram_Memory_array_ren> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <CK_out_to_TB>  | rise     |
+    |     weA            | connected to signal <GPR_file/GPR_we> | high     |
+    |     addrA          | connected to signal <rdbk12_out_to_TB> |          |
+    |     diA            | connected to signal <rdbk15_out_to_TB> |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     addrB          | connected to signal <rdbk3_out_to_TB> |          |
+    |     doB            | connected to signal <GPR_file/GPR_rd_data2> |          |
+    -----------------------------------------------------------------------
+Unit <HW6_MIPS_4sim> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 32x32-bit dual-port block RAM                         : 1
+ 32x32-bit dual-port distributed RAM                   : 1
+# Adders/Subtractors                                   : 4
+ 32-bit adder                                          : 2
+ 32-bit addsub                                         : 1
+ 33-bit subtractor                                     : 1
+# Counters                                             : 2
+ 4-bit up counter                                      : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 617
+ Flip-Flops                                            : 617
+# Comparators                                          : 2
+ 32-bit comparator equal                               : 1
+ 4-bit comparator less                                 : 1
+# Multiplexers                                         : 34
+ 1-bit 4-to-1 multiplexer                              : 32
+ 32-bit 4-to-1 multiplexer                             : 1
+ 8-bit 4-to-1 multiplexer                              : 1
+# Xors                                                 : 1
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg3_23> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg3_24> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg3_25> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg3_26> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg3_27> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg3_28> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg3_29> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg3_30> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg3_31> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg2_0> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg2_1> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg2_2> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg2_3> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg2_4> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg2_5> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg2_6> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg2_7> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg2_8> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg2_9> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg2_10> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg2_11> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg2_12> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg2_13> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg2_14> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg1_30> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg1_31> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg3_0> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg3_1> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg3_2> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg3_3> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg3_4> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg3_5> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg3_6> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg3_7> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg3_8> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg3_9> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg3_10> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg3_11> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg3_12> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg3_13> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg3_14> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg3_15> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg3_16> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg3_17> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg3_18> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg3_19> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg3_20> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg3_21> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg3_22> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg0_8> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg0_9> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg0_10> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg0_11> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg0_12> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg0_13> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg0_14> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg0_15> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg0_16> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg0_17> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg0_18> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg0_19> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg0_20> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg0_21> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg0_22> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg0_23> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg0_24> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg0_25> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg0_26> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg0_27> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg0_28> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg0_29> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg0_30> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg0_31> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg2_15> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg2_16> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg2_17> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg2_18> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg2_19> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg2_20> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg2_21> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg2_22> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg2_23> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg2_24> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg2_25> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg2_26> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg2_27> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg2_28> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg2_29> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg2_30> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg2_31> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg0_0> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg0_1> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg0_2> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg0_3> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg0_4> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg0_5> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg0_6> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg0_7> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_rd_data_22> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_rd_data_23> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_rd_data_24> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_rd_data_25> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_rd_data_26> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_rd_data_27> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_rd_data_28> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_rd_data_29> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_rd_data_30> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_rd_data_31> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg4_0> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg4_1> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg4_2> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg4_3> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg4_4> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg4_5> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg4_6> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg4_7> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg4_8> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg4_9> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg4_10> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg4_11> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg4_12> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg4_13> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <MemWrite_pEX> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <MemToReg_pEX> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_rd_data_0> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_rd_data_1> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_rd_data_2> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_rd_data_3> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_rd_data_4> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_rd_data_5> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_rd_data_6> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_rd_data_7> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_rd_data_8> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_rd_data_9> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_rd_data_10> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_rd_data_11> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_rd_data_12> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_rd_data_13> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_rd_data_14> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_rd_data_15> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_rd_data_16> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_rd_data_17> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_rd_data_18> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_rd_data_19> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_rd_data_20> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_rd_data_21> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg1_5> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg1_6> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg1_7> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg1_8> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg1_9> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg1_10> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg1_11> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg1_12> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg1_13> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg1_14> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg1_15> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg1_16> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg1_17> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg1_18> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg1_19> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg1_20> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg1_21> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg1_22> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg1_23> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg1_24> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg1_25> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg1_26> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg1_27> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg1_28> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg1_29> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg4_14> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg4_15> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg4_16> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg4_17> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg4_18> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg4_19> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg4_20> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg4_21> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg4_22> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg4_23> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg4_24> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg4_25> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg4_26> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg4_27> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg4_28> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg4_29> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg4_30> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg4_31> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg1_0> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg1_1> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg1_2> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg1_3> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hostintf/DMem_reg1_4> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MemToReg_pMEM> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MemWrite_pMEM> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MemToReg_pWB> (without init value) has a constant value of 0 in block <HW6_MIPS_4sim>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <HW6_MIPS_4sim> ...
+
+Optimizing unit <MIPS_ALU> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block HW6_MIPS_4sim, actual ratio is 11.
+FlipFlop hostintf/IMem_rd_data_29 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 433
+ Flip-Flops                                            : 433
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : HW6_MIPS_4sim.ngr
+Top Level Output File Name         : HW6_MIPS_4sim
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 538
+
+Cell Usage :
+# BELS                             : 1135
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 36
+#      LUT2                        : 61
+#      LUT2_D                      : 6
+#      LUT2_L                      : 5
+#      LUT3                        : 124
+#      LUT3_D                      : 15
+#      LUT3_L                      : 7
+#      LUT4                        : 487
+#      LUT4_D                      : 39
+#      LUT4_L                      : 56
+#      MUXCY                       : 150
+#      MUXF5                       : 43
+#      VCC                         : 1
+#      XORCY                       : 101
+# FlipFlops/Latches                : 433
+#      FDC                         : 8
+#      FDCE                        : 387
+#      FDE                         : 35
+#      FDPE                        : 1
+#      FDR                         : 2
+# RAMS                             : 65
+#      RAM16X1D                    : 64
+#      RAMB16_S36_S36              : 1
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 525
+#      IBUF                        : 1
+#      OBUF                        : 524
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      508  out of   4656    10%  
+ Number of Slice Flip Flops:            433  out of   9312     4%  
+ Number of 4 input LUTs:                967  out of   9312    10%  
+    Number used as logic:               839
+    Number used as RAMs:                128
+ Number of IOs:                         538
+ Number of bonded IOBs:                 526  out of    232   226% (*) 
+ Number of BRAMs:                         1  out of     20     5%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clock_divider/half_ck_signal1      | BUFG                   | 497   |
+CK_50MHz                           | BUFGP                  | 1     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------+------------------------+-------+
+Control Signal                         | Buffer(FF name)        | Load  |
+---------------------------------------+------------------------+-------+
+RESET_out_to_TB_OBUF(hostintf/RESET1:O)| NONE(ALUOP_pEX_0)      | 396   |
+---------------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 13.356ns (Maximum Frequency: 74.873MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 13.904ns
+   Maximum combinational path delay: 7.166ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock_divider/half_ck_signal1'
+  Clock period: 13.356ns (frequency: 74.873MHz)
+  Total number of paths / destination ports: 94133 / 1539
+-------------------------------------------------------------------------
+Delay:               13.356ns (Levels of Logic = 23)
+  Source:            hostintf/IMem_rd_data_28 (FF)
+  Destination:       fetch_unit_imp/PC_reg_30 (FF)
+  Source Clock:      clock_divider/half_ck_signal1 rising
+  Destination Clock: clock_divider/half_ck_signal1 rising
+
+  Data Path: hostintf/IMem_rd_data_28 to fetch_unit_imp/PC_reg_30
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             19   0.591   1.164  hostintf/IMem_rd_data_28 (hostintf/IMem_rd_data_28)
+     LUT2_D:I1->O         15   0.704   1.021  RegDst11_1 (RegDst11)
+     LUT4:I3->O           15   0.704   1.017  Rt<1>1_1 (Rt<1>1)
+     RAM16X1D:DPRA1->DPO    1   0.704   0.455  GPR_file/GPR_file/Mram_Memory_array_ren4 (N11)
+     LUT4:I2->O            2   0.704   0.482  GPR_file/GPR_data_out2<1>1 (GPR_rd_data2<1>)
+     LUT4:I2->O            1   0.704   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_lut<0> (Mcompar_Rs_equals_Rt_cmp_eq0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<0> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<1> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<2> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<3> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<4> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<5> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<6> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<7> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<8> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<9> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<10> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<11> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<12> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<13> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<14> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<14>)
+     MUXCY:CI->O           5   0.459   0.637  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<15> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<15>)
+     LUT4_D:I3->O         14   0.704   1.004  fetch_unit_imp/PC_Source_or0000 (fetch_unit_imp/PC_Source_or0000)
+     LUT4:I3->O            1   0.704   0.000  fetch_unit_imp/PC_mux_out<5>40 (fetch_unit_imp/PC_mux_out<5>)
+     FDCE:D                    0.308          fetch_unit_imp/PC_reg_5
+    ----------------------------------------
+    Total                     13.356ns (7.576ns logic, 5.780ns route)
+                                       (56.7% logic, 43.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CK_50MHz'
+  Clock period: 2.033ns (frequency: 491.884MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.033ns (Levels of Logic = 0)
+  Source:            clock_divider/half_ck_signal (FF)
+  Destination:       clock_divider/half_ck_signal (FF)
+  Source Clock:      CK_50MHz rising
+  Destination Clock: CK_50MHz rising
+
+  Data Path: clock_divider/half_ck_signal to clock_divider/half_ck_signal
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.591   0.531  clock_divider/half_ck_signal (clock_divider/half_ck_signal1)
+     FDR:R                     0.911          clock_divider/half_ck_signal
+    ----------------------------------------
+    Total                      2.033ns (1.502ns logic, 0.531ns route)
+                                       (73.9% logic, 26.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CK_50MHz'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.394ns (Levels of Logic = 1)
+  Source:            clock_divider/half_ck_signal (FF)
+  Destination:       CK_out_to_TB (PAD)
+  Source Clock:      CK_50MHz rising
+
+  Data Path: clock_divider/half_ck_signal to CK_out_to_TB
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.591   0.531  clock_divider/half_ck_signal (clock_divider/half_ck_signal1)
+     OBUF:I->O                 3.272          CK_out_to_TB_OBUF (CK_out_to_TB)
+    ----------------------------------------
+    Total                      4.394ns (3.863ns logic, 0.531ns route)
+                                       (87.9% logic, 12.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock_divider/half_ck_signal1'
+  Total number of paths / destination ports: 12172 / 396
+-------------------------------------------------------------------------
+Offset:              13.904ns (Levels of Logic = 22)
+  Source:            hostintf/IMem_rd_data_28 (FF)
+  Destination:       rdbk4_out_to_TB<0> (PAD)
+  Source Clock:      clock_divider/half_ck_signal1 rising
+
+  Data Path: hostintf/IMem_rd_data_28 to rdbk4_out_to_TB<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             19   0.591   1.164  hostintf/IMem_rd_data_28 (hostintf/IMem_rd_data_28)
+     LUT2_D:I1->O         15   0.704   1.021  RegDst11_1 (RegDst11)
+     LUT4:I3->O           15   0.704   1.017  Rt<1>1_1 (Rt<1>1)
+     RAM16X1D:DPRA1->DPO    1   0.704   0.455  GPR_file/GPR_file/Mram_Memory_array_ren4 (N11)
+     LUT4:I2->O            2   0.704   0.482  GPR_file/GPR_data_out2<1>1 (GPR_rd_data2<1>)
+     LUT4:I2->O            1   0.704   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_lut<0> (Mcompar_Rs_equals_Rt_cmp_eq0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<0> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<1> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<2> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<3> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<4> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<5> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<6> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<7> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<8> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<9> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<10> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<11> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<12> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<13> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<14> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<14>)
+     MUXCY:CI->O           5   0.459   0.633  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<15> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<15>)
+     OBUF:I->O                 3.272          rdbk4_out_to_TB_0_OBUF (rdbk4_out_to_TB<0>)
+    ----------------------------------------
+    Total                     13.904ns (9.132ns logic, 4.772ns route)
+                                       (65.7% logic, 34.3% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               7.166ns (Levels of Logic = 3)
+  Source:            switches_in<6> (PAD)
+  Destination:       RESET_out_to_TB (PAD)
+
+  Data Path: switches_in<6> to RESET_out_to_TB
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.218   0.595  switches_in_6_IBUF (switches_in_6_IBUF)
+     LUT2:I0->O          397   0.704   1.377  hostintf/RESET1 (RESET_out_to_TB_OBUF)
+     OBUF:I->O                 3.272          RESET_out_to_TB_OBUF (RESET_out_to_TB)
+    ----------------------------------------
+    Total                      7.166ns (5.194ns logic, 1.972ns route)
+                                       (72.5% logic, 27.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 32.00 secs
+Total CPU time to Xst completion: 32.14 secs
+ 
+--> 
+
+Total memory usage is 320360 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :  427 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

@@ -1,0 +1,29 @@
+Command line:
+   HW6_TB_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  10377
+
+Sun Jun 14 01:01:15 2015
+
+
+ Elaboration Time: 0.202801 sec
+
+ Current Memory Usage: 1166.09 Meg
+
+ Total Signals          : 274
+ Total Nets             : 3607
+ Total Signal Drivers   : 172
+ Total Blocks           : 13
+ Total Primitive Blocks : 10
+ Total Processes        : 131
+ Total Traceable Variables  : 20
+ Total Scalar Nets and Variables : 5136
+Total Line Count : 602
+
+ Total Simulation Time: 8.45525 sec
+
+ Current Memory Usage: 1166.09 Meg
+
+Sun Jun 14 01:01:27 2015
+
