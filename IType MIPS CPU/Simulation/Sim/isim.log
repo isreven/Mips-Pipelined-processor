@@ -18,4 +18,4 @@ at 0 ps, Instance /hw5_tb/Testing_HW5_MIPS/GPR_file/ : Warning: CONV_INTEGER: Th
 Finished circuit initialization process.
 # run all
 at 5880 ns(6): Note: ============ Test pass!! =============== (/hw5_tb/).
-Stopped at time : 12708160 ns : File "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/IType MIPS CPU/Simulation/Src_4sim/HW5_MIPS_4sim-empty.vhd" Line 591
+Stopped at time : 2085650 ns : File "C:/Users/Matan/Dropbox/IDC/Year 2/Spring/Build Your Own Computer/Mips-Pipelined-processor/IType MIPS CPU/Simulation/Src_4sim/Clock_driver_for_sim.vhd" Line 26

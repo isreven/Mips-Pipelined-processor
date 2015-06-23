@@ -392,6 +392,7 @@ process (Opcode, Funct)
 		MemWrite <= '1';
 	elsif Opcode = b"101011" then -- lw 
 		MemToReg <= '1';
+		RegWrite <= '1';
 	end if;
 end process;
 --============================= EX phase processes ========================================
