@@ -78,6 +78,8 @@
     <transform xil_pn:end_ts="1435073431" xil_pn:in_ck="-6618622584734948207" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-9003054407679963634" xil_pn:start_ts="1435073424">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="HW5_TB_beh.prj"/>
       <outfile xil_pn:name="HW5_TB_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
@@ -85,7 +87,7 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1435073432" xil_pn:in_ck="3844395921834561903" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-3619682945211252165" xil_pn:start_ts="1435073431">
+    <transform xil_pn:end_ts="1435075465" xil_pn:in_ck="3844395921834561903" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-3619682945211252165" xil_pn:start_ts="1435075465">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="HW5_TB_isim_beh.wdb"/>
